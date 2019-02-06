@@ -1,6 +1,6 @@
 {
   "versions": [{
-    "versiontype": "second edition",
+    "versiontype": "second_edition",
     "title": "Analyzing meaning.",
     "authors": [{"name": "Paul Kroeger"}],
     "publishedAt": "2018-02-07T00:00:33.000Z"
