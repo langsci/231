@@ -16,6 +16,7 @@
 \newcommand{\eotms}{eotms}
 \newcommand{\eotmsig}{eotmsig}
 \newcommand{\eurosla}{eurosla}
+\newcommand{\ela}{ela}
 \newcommand{\hpls}{hpls}
 \newcommand{\loc}{loc}
 \newcommand{\lv}{lv}            %Language Variation
@@ -57,6 +58,7 @@
             \item Friesen, Dianne. A grammar of Moloko.
             \item Ali, Mark, Scott Grimm \& Adams Bodomo. A dictionary and  grammatical sketch of Dagaare.
             \end{enumerate}
+            \item  Namyalo, Saudah,   Alena Witzlack-Makarevich,   Anatole Kiriggwajjo,   Amos Atuhairwe,   Zarina Molochieva,   Ruth Gimbo Mukama   \& Margaret Zellers. A dictionary and grammatical sketch of Ruruuli-Lunyala.
         }
 \fi
 \ifx\lsSeries\calseries %\cal is already taken as a command
@@ -81,6 +83,8 @@
             \item Kandybowicz, Jason, Travis Major \& Harold Torrence (eds.). African linguistics on the prairie: Selected papers from the 45th Annual Conference on African Linguistics.
             \item Clem, Emily, Peter Jenks   \& Hannah Sande (eds.). Theory and description in African Linguistics: Selected papers from the 47th Annual Conference on African Linguistics.
             \item Lotven, Samson, Silvina Bongiovanni, Phillip Weirich, Robert Botne \& Samuel Gyasi Obeng (eds.). African linguistics across the disciplines: Selected papers from the 48th Annual Conference on African Linguistics.
+            \item Sibanda, Galen, Deo Ngonyani, Jonathan Choti \& Ann Biersteker (eds.). Descriptive and theoretical approaches to African linguistics: Selected papers from the 49th Annual Conference on African Linguistics.
+            \item Akinlabi, Akinbiyi, Lee Bickmore, Michael Cahill, Michael Diercks, Laura J. Downing, James Essegbey, Katie Franich, Laura McPherson \& Sharon Rose (eds.). Celebrating 50 years of ACAL: Selected papers from the 50th Annual Conference on African Linguistics.
             \end{enumerate}
             }
 \fi
@@ -103,8 +107,8 @@
         \begin{enumerate}
           \item Lucas, Christopher \& Stefano Manfredi (eds.). Arabic and contact-induced change.
           \item Pinto, Jorge \& Nélia Alexandre (eds.).  Multilingualism and third language acquisition: Learning and teaching trends.
-          % % \item Hamikov.
-          % % \item Sánchez Moreano, Santiago \& Élodie Blestel. Prácticas lingüísticas heterogéneas: Nuevas perspectivas para el estudio del español en contacto con lenguas amerindias.
+          \item Hakimov, Nikolay. Explaining Russian-German code-mixing: A usage-based approach.
+          \item Sánchez Moreano, Santiago \& Élodie Blestel. Prácticas lingüísticas heterogéneas: Nuevas perspectivas para el estudio del español en contacto con lenguas amerindias.
         \end{enumerate}
         }
 \fi
@@ -178,16 +182,18 @@
             \end{minipage}
 
             \bigskip
-            \bigskip
 
-            In this series:
+            \textbf{In this series:}
 
             \begin{enumerate}
             \item Enfield, N. J. {Natural causes of language}.
             \item Müller, Stefan. {A lexicalist account of argument structure: Template-based phrasal LFG approaches and a lexical HPSG alternative}.
             \item Schmidtke-Bode, Karsten,  Natalia Levshina, Susanne Maria Michaelis \& Ilja A. Seržant (eds.).  Explanation in typology: Diachronic sources, functional motivations and the nature of the evidence.
             \item Morley, Rebecca L. Sound structure and sound change: A modeling approach.
-	    \item Asoulin, Eran. Language and scientific explanation: Where does semantics fit in?
+            \item Asoulin, Eran. Language and scientific explanation: Where does semantics fit in?
+            \item Boeckx, Cedric. Reflections on language evolution: From minimalism to pluralism.
+            \item Archangeli, Diana \& Douglas Pulleyblank. Emergent phonology.
+            \item Lund, Kristine, Pierluigi Basso Fossali, Audrey Mazur \& Magali Ollagnier-Beldame (eds.). Language is a complex adaptive system.
             \end{enumerate}
 
             }
@@ -195,6 +201,8 @@
 \ifx\lsSeries\cogl
 	\newcommand{\lsSeriesTitle}{Comprehensive Grammar Library}
 	\newcommand{\lsSeriesColor}{lsNightBlue}
+	\renewcommand{\lsISSNelectronic}{2749-7798}
+ 	\renewcommand{\lsISSNprint}{2748-971X} 
 	\renewcommand{\lsSeriesText}{
             {\large Comprehensive Grammar Library}
 
@@ -208,6 +216,7 @@
             \item Jacques, Guillaume. A grammar of Japhug.
             \item Grimm, Nadine. A grammar of Gyeli.
             \item Maurer-Cecchini, Philippe. A grammar of Tuatschin: A Sursilvan Romansh dialect.
+            \item Visser, Eline. A grammar of Kalamang.
             \end{enumerate}
 
 
@@ -289,8 +298,8 @@
 
             \bigskip
 
-            Chief Editor: Stefan Müller \\
-            Consulting Editors: Berthold Crysmann, Laura Kallmeyer
+            Chief Editor: Stefan Müller\\
+            Consulting Editors: Berthold Crysmann, Ana R. Luís
 
             \bigskip
 
@@ -304,7 +313,9 @@
             \item Guzmán Naranjo, Matías. Analogical classification in formal grammar.
             \item Flick, Johanna. Die Entwicklung des Definitartikels im Althochdeutschen: Eine kognitiv-linguistische Korpusuntersuchung.
             \item Crysmann, Berthold \& Manfred Sailer (eds.). One-to-many relations in morphology, syntax, and semantics.
-            %%%\item Zinova, Yulia. Russian verbal prefixation: A frame semantic analysis.
+            \item Zinova, Yulia. Russian verbal prefixation: A frame semantic analysis.
+            \item  Müller, Stefan, Anne Abeillé, Robert D. Borsley \& Jean-Pierre Koenig. Head-Driven Phrase Structure Grammar: The handbook.
+	    \item Diewald, Gabriele \& Katja Politt (eds.). Paradigms regained: Theoretical and empirical arguments for the reassessment of the notion of paradigm.	    
             \end{enumerate}
             }
 \fi
@@ -322,10 +333,10 @@
 
             \bigskip
 
-            Editor: 
-            Amanda Edmonds, Université Côte d'Azur\\
-            Associate editors:
-            Gabriele Pallotti, University of Modena and Reggio Emilia
+            Editor:
+            Amanda Edmonds, Université Côte d'Azur\smallskip\\
+            Associate editors:\\
+            Gabriele Pallotti, University of Modena and Reggio Emilia\\
             Ineke Vedder, University of Amsterdam
 
             \bigskip
@@ -335,9 +346,37 @@
             \begin{enumerate}
             \item Pérez Vidal, Carmen, Sonia López-Serrano, Jennifer Ament \& Dakota J. Thomas-Wilhelm (eds.).  Learning context effects: Study abroad, formal instruction and international immersion classrooms
             \item Saturno, Jacopo. Utterance structure in initial L2 acquisition.
-	    \item Bardel, Camilla \& Laura Sánchez (eds.). Third language acquisition: Age, proficiency and multilingualism.
-	    \item  Edmonds, Amanda, Pascale Leclercq \& Aarnes Gudmestad (eds.), Interpreting  language-learning data.
+            \item Bardel, Camilla \& Laura Sánchez (eds.). Third language acquisition: Age, proficiency and multilingualism.
+            \item  Edmonds, Amanda, Pascale Leclercq \& Aarnes Gudmestad (eds.), Interpreting  language-learning data.
+            \item Berthele, Raphael \& Isabelle Udry (eds.). Individual differences in early instructed language learning: The role of language aptitude, cognition, and motivation.
             \end{enumerate}
+	}
+\fi
+\ifx\lsSeries\ela
+        \newcommand{\elatitle}{Estudios de Lingüística Amerindia}
+        \newcommand{\elaeditor}{Editores:}
+        \newcommand{\elainthisseries}{En esta serie:}
+	\newcommand{\lsSeriesTitle}{\elatitle}
+	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
+
+	\renewcommand{\lsSeriesText}{
+            {\large  \elatitle}
+
+            \bigskip
+
+            \elaeditor
+
+    Carolina González. Florida State University\\
+    Siri Tuttle. Navajo Technical University in New Mexico\\
+    Thiago Chacon. University of Brasilia\\
+    Heriberto Avelino. National Institute for Anthropology and History\\
+
+            \bigskip
+
+            \elainthisseries
+
+            %\begin{enumerate}
+            %\end{enumerate}
 	}
 \fi
 \ifx\lsSeries\hpls
@@ -364,6 +403,7 @@
             \item Aussant, Émilie \& Jean-Michel Fortis. Historical journey in a linguistic archipelago: Case studies on concepts, fields, and commitments.
             \item McElvenny, James \& Ploder, Andrea. Holisms of communication: The early history of audio-visual sequence analysis.
             \end{enumerate}
+            \item Anderson, Stephen R. Phonology in the Twentieth Century : Second edition, revised and expanded.
 
             }
 \fi
@@ -416,6 +456,7 @@
             \item Dellert, Johannes. Information-theoretic causal inference of lexical flow.
             \item Zimmer, Christian (ed.). German(ic) in language contact: Grammatical and sociolinguistic dynamics.
             \item Tahmasebi, Nina, Lars Borin, Adam Jatowt, Yang Xu and Simon Hengchen (eds.). Computational approaches to semantic change.
+            \item Paulsen, Ingrid. The emergence of American English as a discursive variety: Tracing enregisterment processes in nineteenth-century U.S. newspapers.
             \end{enumerate}
             }
 \fi
@@ -467,6 +508,7 @@
             \begin{enumerate}
             \item Watters, John R. (ed.). East Benue-Congo: Nouns, pronouns, and verbs.
             \item Pozdniakov, Konstantin. The numeral system of Proto-Niger-Congo: A step-by-step reconstruction.
+            \item Pozdniakov, Konstantin. Proto-Fula–Sereer: Lexicon, morphophonology, and noun classes.
             \end{enumerate}
 
 
@@ -476,8 +518,8 @@
 \ifx\lsSeries\ogl
 	\newcommand{\lsSeriesTitle}{Open Germanic Linguistics}
 	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
-	\renewcommand{\lsISSNelectronic}{} %online
-	\renewcommand{\lsISSNprint}{} %Print
+	\renewcommand{\lsISSNelectronic}{ISSN 2750-557X} %online
+	\renewcommand{\lsISSNprint}{2750-5588} %Print
 	\renewcommand{\lsSeriesText}{
             {\large  Open Germanic Linguistics
             
@@ -530,6 +572,7 @@
             \item Bárány, András, Theresa Biberauer, Jamie Douglas \& Sten Vikner (eds.). Syntactic architecture and its consequences I: Syntax inside the grammar.
             \item Bárány, András, Theresa Biberauer, Jamie Douglas \& Sten Vikner (eds.). Syntactic architecture and its consequences II: Between syntax and morphology.
             \item Bárány, András, Theresa Biberauer, Jamie Douglas \& Sten Vikner (eds.). Syntactic architecture and its consequences III: Inside syntax.
+            \item Laszakovits, Sabine \& Zheng Shen (eds.). The size of things I: Structure building.
             \end{enumerate}
             }
 \fi
@@ -560,6 +603,7 @@
             \item Blümel, Andreas, Jovana Gajić, Ljudmila Geist, Uwe Junghanns \&  Hagen Pitsch (eds.). Advances in formal Slavic linguistics 2018.
             \item Dočekal, Mojmír \& Marcin Wągiel (eds.). Formal approaches to number in Slavic and beyond.
             \item Wągiel, Marcin. Subatomic quantification.
+            \item Kolaković, Zrinka, Edyta Jurkiewicz-Rohrbacher, Björn Hansen, Dušica Filipović Đurđević \& Nataša Fritz. Clitics in the wild: Empirical studies on the microvariation of the pronominal, reflexive and verbal clitics in Bosnian, Croatian and Serbian.
             \end{enumerate}
             }
 \fi
@@ -595,8 +639,8 @@
 \ifx\lsSeries\rcg
 	\newcommand{\lsSeriesTitle}{Research on Comparative Grammar}
 	\newcommand{\lsSeriesColor}{lsDarkOrange}
-	\renewcommand{\lsISSNelectronic}{ } %online
-	\renewcommand{\lsISSNprint}{} %Print
+	\renewcommand{\lsISSNelectronic}{2749-781X} %online
+	\renewcommand{\lsISSNprint}{2749-7801} %Print
 	\renewcommand{\lsSeriesText}{
             {\large Research on Comparative Grammar }
 
@@ -753,6 +797,7 @@
              \item Ferreira, Marcelo. Curso de semântica formal.
              \item Stefanowitsch, Anatol. Corpus linguistics: A guide to the methodology.
              \item Müller, Stefan. {\tblseight}.
+             \item Kahane, Sylvain \& Kim Gerdes. Syntaxe théorique et formelle. Vol. 1: Modélisation, unités, structures.
              \end{enumerate}
              }
 \fi
@@ -801,8 +846,9 @@
 
             \bigskip
 
-            In this series:
-            \begin{enumerate}\itemsep=0pt
+            In this series (see the complete series history at \url{https://langsci-press.org/catalog/series/tmnlp}):
+            
+            \lsSeriesHistoryWheel[12]{
             \item Fantinuoli, Claudio \& Federico Zanettin (eds.). New directions in corpus-based translation studies.
             \item Hansen-Schirra, Silvia \& Sambor Grucza (eds.). Eyetracking and Applied Linguistics.
             \item Neumann, Stella, Oliver Čulo \& Silvia Hansen-Schirra (eds.). Annotation, exploitation and evaluation of parallel corpora: TC3\,I.
@@ -818,7 +864,10 @@
             \item Vandevoorde, Lore. Semantic differences in translation.
             \item Bisiada, Mario (ed.). Empirical studies in translation and discourse.
             \item Tra\&Co Group (ed.). Translation, interpreting, cognition: The way out of the box.
-            \end{enumerate}
+            \item Nitzke, Jean \& Silvia Hansen-Schirra. A short guide to post-editing.
+            \item Hoberg, Felix. Informationsintegration in mehrsprachigen Textchats: Der Skype Translator im Sprachenpaar Katalanisch-Deutsch.
+            \item Kenny, Dorothy (ed.). Machine translation for everyone: Empowering users in the age of artificial intelligence.
+            }
             }
 \fi
 \ifx\lsSeries\tpd
