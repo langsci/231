@@ -189,7 +189,7 @@ B(7) = 4
 \z
 
 
-The membership of any set S can be expressed as a function which maps the elements of S onto the set \{1,0\}. In this context, 1 represents “True” and 0 represents “False”. Functions of this kind are called the \textsc{characteristic functions} (or, sometimes, “membership functions”). For example, the characteristic function of set C (members of the Beatles, as specified in \ref{ex:13.10}a), is the function f\textsubscript{1} as defined in (\ref{ex:13.11}a). The characteristic function of set D (numbers between 10 and 20, as specified in \ref{ex:13.10}b) is the function f\textsubscript{2} as defined in (\ref{ex:13.11}b). (The abbreviation “iff” stands for “if and only if”.)
+The membership of any set S can be expressed as a function which maps the elements of S onto the set \{1,0\}. In this context, 1 represents “True” and 0 represents “False”. Functions of this kind are called \textsc{characteristic functions} (or, sometimes, “membership functions”). For example, the characteristic function of set C (members of the Beatles, as specified in \ref{ex:13.10}a), is the function f\textsubscript{1} as defined in (\ref{ex:13.11}a). The characteristic function of set D (numbers between 10 and 20, as specified in \ref{ex:13.10}b) is the function f\textsubscript{2} as defined in (\ref{ex:13.11}b). (The abbreviation “iff” stands for “if and only if”.)
 
 
 \ea \label{ex:13.10}
@@ -238,7 +238,7 @@ B = \{2,3,4,5,6,7\}
 
   \textsf{A}\small{${\subseteq}$}\textsf{B}\\
 
-\caption{\label{fig:13:1} Set inclusion (the subset \textbf{relation)}}
+\caption{\label{fig:13:1} Set inclusion (the subset relation)}
 \end{figure}
 
 \ea \label{ex:13.13}
@@ -288,7 +288,7 @@ B = \{3,4,5,6,7,8\}
 % % \includegraphics[width=\textwidth]{figures/KroegerIntroSemPragprepubv2g-img2.png}
 
 
-\caption{\label{fig:13:2}: Set intersection}
+\caption{\label{fig:13:2} Set intersection}
 \end{figure}
 
 \ea \label{ex:13.15}
@@ -312,7 +312,7 @@ The \textsc{union} of two sets, written “A${\cup}$B”, is the set consisting 
 \node at (0.5,-1.5) (text) {\textsf{A${\cup}$B}};
 \end{tikzpicture}
 
-\caption{\label{fig:13:3}Set union}
+\caption{\label{fig:13:3} Set union}
 \end{figure}
 
 \ea \label{ex:13.16}
@@ -388,7 +388,7 @@ We have noted several times that denotations, including the denotations of refer
 
 
 
-As a first illustration of how the system works, let us return to our simple situation containing just three individuals: King Henry VIII, Anne Boleyn, and Thomas More. Our model of this situation, which we might call Model 1, would provide the information listed in \REF{ex:13.20}. We often use the name “U” as a convenient way to refer to the domain (the “universal set” of individuals). The notation $\llbracket\text{x}\rrbracket$  represents the denotation (or “semantic value”) of x within the current model. This notation can be used either for object language expressions or for logical formulae; so, for example, $\llbracket\text{SNORE}\rrbracket$  names the same set as $\llbracket\text{\itshape snores}\rrbracket$. By convention we use small letters for logical “constants”, e.g. proper names, and capital letters for predicates.
+As a first illustration of how the system works, let us return to our simple situation containing just three individuals: King Henry VIII, Anne Boleyn, and Thomas More. Our model of this situation, which we might call Model 1, would provide the information listed in \REF{ex:13.20}. We often use the name “U” as a convenient way to refer to the domain (the “universal set” of individuals). The notation $\llbracket\text{x}\rrbracket$  represents the denotation (or “semantic value”) of x within the current model. This notation can be used either for object language expressions or for logical formulae; so, for example, $\llbracket\text{SNORE}\rrbracket$  names the same set as $\llbracket\text{\itshape snores}\rrbracket$. Recall that in the logic format presented in \chapref{sec:4}, we use small letters for logical “constants”, e.g. proper names, and capital letters for predicates.
 
 \newpage 
 \ea \label{ex:13.20}Model 1\\
@@ -424,7 +424,7 @@ c. &   {Henry VIII is a man who snores}. & MAN(h) $\wedge$ SNORE(h) & Henry VIII
 \tablevspace
 d. & {All men snore}.& ${\forall}$x[MAN(x) → SNORE(x)] & $\llbracket\text{MAN}\rrbracket {\subseteq} \llbracket\text{SNORE}\rrbracket$  & F\\
 \tablevspace
-e. &   {No women snore.} &  ¬${\exists}$x[WOMAN(x) $\wedge$ SNORE(x)] & $\llbracket\text{WOMAN}\rrbracket {\cap} \llbracket\text{SNORE}\rrbracket$  = ∅ & T\\
+e. &   {No women snore.} &  ¬${\exists}$x[WOMAN(x) $\wedge$ SNORE(x)]\hspace{2mm} & $\llbracket\text{WOMAN}\rrbracket {\cap} \llbracket\text{SNORE}\rrbracket$  = ∅ & T\\
 \lspbottomrule
 \end{tabularx} 
 \end{table}
@@ -450,7 +450,7 @@ We have already stated an informal rule of interpretation for simple sentences: 
 \ea \label{ex:13.23}
 \textbf{syntax}: S  →  NP\textsubscript{subj}  VP\\
 \textbf{semantics}: The semantic value of a sentence is ‘true’ if the semantic value of the subject is a member of the set which is the semantic value of the VP, and ‘false’ otherwise;\\
-{}$\llbracket\text{S}\rrbracket$  = ‘true’  iff  $\llbracket\text{NP}_{subj}\rrbracket {\in} \llbracket\text{VP}\rrbracket$ 
+{}$\llbracket\text{S}\rrbracket$  = ‘true’  iff  $\llbracket\text{NP\textsubscript{subj}}\rrbracket {\in} \llbracket\text{VP}\rrbracket$ 
 \z
 
 
@@ -523,7 +523,7 @@ The main syntactic difference between the sentences in \REF{ex:13.27} and those 
 \ea $\llbracket\text{\textit{loves Anne Boleyn}}\rrbracket$  = \{x: $\langle$x, Anne Boleyn$\rangle {\in} \llbracket\text{LOVE}\rrbracket$ \}
 \ex \textbf{syntax}: VP  →  V\textsubscript{trans}  NP\textsubscript{obj}\\
 \textbf{semantics}: The semantic value of a VP containing a transitive verb meaning P together with an object NP meaning α is the set of all individuals x for which P(x,α) is true;\\
-{}$\llbracket\text{VP}\rrbracket$  =  \{x: $\langle$x, $\llbracket\text{NP}_{obj}\rrbracket \rangle {\in} \llbracket\text{V}_{trans}\rrbracket$ \}
+{}$\llbracket\text{VP}\rrbracket$  =  \{x: $\langle$x, $\llbracket\text{NP\textsubscript{obj}}\rrbracket \rangle {\in} \llbracket\text{V\textsubscript{trans}}\rrbracket$ \}
 \z \z
 
 

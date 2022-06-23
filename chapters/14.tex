@@ -22,7 +22,7 @@ Quantifier words like \textit{all}, \textit{some}, and \textit{no} have been int
 
 \section{Quantifiers as relations between sets}\label{sec:14.2}
 
-Let us begin by asking what claim sentence (\ref{ex:14.1}a) makes about the world. Under what circumstances will it be true? Intuitively, it will be true in any situation in which all of the individuals that are men have the property of snoring; that is, when every member of the denotation set $\llbracket$MAN$\rrbracket$  is also a member of the denotation set $\llbracket$SNORE$\rrbracket$. But this is equivalent to saying that $\llbracket$MAN$\rrbracket$  is a subset of $\llbracket$SNORE$\rrbracket$, as indicated in \REF{extab:13.19} of \chapref{sec:13} (page \pageref{extab:13.19}).
+Let us begin by asking what claim sentence (\ref{ex:14.1}a) makes about the world. Under what circumstances will it be true? Intuitively, it will be true in any situation in which all of the individuals that are men have the property of snoring; that is, when every member of the denotation set $\llbracket$MAN$\rrbracket$  is also a member of the denotation set $\llbracket$SNORE$\rrbracket$. But this is equivalent to saying that $\llbracket$MAN$\rrbracket$  is a subset of $\llbracket$SNORE$\rrbracket$, as we can see from the definition of the subset relation shown in the last line of example \REF{extab:13.19}, \chapref{sec:13} (page \pageref{extab:13.19}).
 
 
 
@@ -34,11 +34,11 @@ Now let us think about how this meaning is composed. We have said that the sente
 \z
 
 
-Now it may seem odd to suggest that \textit{all} really means ‘subset’, but that is what the principle of compositionality seems to lead us to. The subset relation is a relation between two sets. More abstractly, we can think of the determiner \textit{all} as naming a relation between two sets, in this case the set of all men and the set of all individuals that snore.
+Now it may seem odd to suggest that \textit{all} really means ‘subset’, but that is what the principle of compositionality seems to lead us to. The subset relation is a relation between two sets. Thus, we can think of the determiner \textit{all} as indicating that a certain relation holds between two sets (in this example, the set of all men and the set of all individuals that snore).
 
 
 
-Now let us consider sentence (\ref{ex:14.1}b), \textit{No women snore}. Under what circumstances will this sentence be true? Intuitively, it will be true in any situation in which no individual who is a woman has the property of snoring; that is, when no individual is a member both of the denotation set $\llbracket$WOMAN$\rrbracket$  and of the denotation set $\llbracket$SNORE$\rrbracket$. But this is equivalent to saying that the intersection of $\llbracket$WOMAN$\rrbracket$  with $\llbracket$SNORE$\rrbracket$  is empty, as indicated in \REF{extab:13.19} of \chapref{sec:13} (page \pageref{extab:13.19}). This interpretation is expressed in the formula in \REF{ex:14.3}. By the same reasoning that we used above, the principle of compositionality leads us to the conclusion that the determiner \textit{no} means ‘empty intersection’. Once again, this is a relation between two sets.
+Now let us consider sentence (\ref{ex:14.1}b), \textit{No women snore}. Under what circumstances will this sentence be true? Intuitively, it will be true in any situation in which no individual who is a woman has the property of snoring; that is, when no individual is a member both of the denotation set $\llbracket$WOMAN$\rrbracket$  and of the denotation set $\llbracket$SNORE$\rrbracket$. But, given the definition of \textit{intersection} presented in \REF{extab:13.19} of \chapref{sec:13} (page \pageref{extab:13.19}), this is equivalent to saying that the intersection of $\llbracket$WOMAN$\rrbracket$  with $\llbracket$SNORE$\rrbracket$  is empty. This interpretation is expressed in the formula in \REF{ex:14.3}. By the same reasoning that we used above, the principle of compositionality leads us to the conclusion that the determiner \textit{no} means ‘empty intersection’. Once again, this is a relation between two sets.
 
 
 \ea \label{ex:14.3}
@@ -117,7 +117,7 @@ In a number of languages, including English, quantifying determiners like \texti
 \z
 
 
-Not all languages make use of quantifying determiners; adverbial quantifiers seem to be more common cross-linguistically. Other strategies for expressing quantifier meanings are attested as well: quantificational verb roots, verbal affixes, particles, etc. For some languages it has been claimed that the syntactic means available for expressing quantification limits the range of quantifier meanings which can be expressed.\footnote{\citet{Baker1995}; \citet{Bittner1995}; \citet{KoenigMichelson2010}.} Most of the examples in our discussion below involve English quantifying determiners, and these have been the focus of a vast amount of study. However, we should not forget that other quantification strategies are also common.
+Not all languages make use of quantifying determiners; adverbial quantifiers seem to be more common cross-linguistically. Other strategies for expressing quantifier meanings are attested as well: quantificational verb roots, verbal affixes, particles, etc. For some languages it has been claimed that the syntactic means available for expressing quantification limit the range of quantifier meanings which can be expressed.\footnote{\citet{Baker1995}; \citet{Bittner1995}; \citet{KoenigMichelson2010}.} Most of the examples in our discussion below involve English quantifying determiners, and these have been the focus of a vast amount of study. However, we should not forget that other quantification strategies are also common.
 
 
 \section{Quantifiers in logical form}\label{sec:14.3}
@@ -193,7 +193,7 @@ For example, the quantifying determiner in (\ref{ex:14.13}c) is \textit{all}; th
 \ea  \textit{Most men who snore are libertarians}.\\
   {}[\textit{most} x: MAN(x) $\wedge$ SNORE(x)] LIBERTARIAN(x)\\
 \ex \textit{Few strict Baptists drink or smoke}.\\
-  {}[\textit{few} x: BAPTIST(x) $\wedge$ STRICT(x)] DRINK(x) $\vee$ SMOKE(x)
+  {}[\textit{few} x: BAPTIST(x) $\wedge$ STRICT(x)] DRINK(x) $\vee$ SMOKE(x)\footnote{This logical rendering of the sentence meaning ignores the fact that \textit{strict} is actually a non-intersective adjective. See \chapref{sec:15} for discussion.}
                        \z
 \z
 
@@ -205,7 +205,7 @@ Of course, translations in this format do not tell us what the quantifying deter
 \ea \relax [\textit{all} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\subseteq}$ $\llbracket$Q$\rrbracket$ \\
 \ex{} [\textit{no} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  $=$ \O \\
 \ex{} [\textit{four} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $=$ 4\\
-\ex{} [\textit{most} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  >  ½ {\textbar} $\llbracket$P$\rrbracket$ {\textbar}
+\ex{} [\textit{most} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $>$  ½ {\textbar} $\llbracket$P$\rrbracket$ {\textbar}
                        \z
 \z
 
@@ -216,7 +216,7 @@ As these definitions show, a quantifying determiner names a relation between two
 \ea \label{ex:14.16}
 \ea  \textit{Most students are brilliant}.\\
 {}[\textit{most} x: STUDENT(x)] BRILLIANT(x)\\
-{\textbar} $\llbracket$STUDENT$\rrbracket$  ${\cap}$ $\llbracket$BRILLIANT$\rrbracket$  {\textbar}  >  ½ \textsc{{\textbar}} $\llbracket$STUDENT$\rrbracket$ {\textbar}
+{\textbar} $\llbracket$STUDENT$\rrbracket$  ${\cap}$ $\llbracket$BRILLIANT$\rrbracket$  {\textbar}  $>$  ½ \textsc{{\textbar}} $\llbracket$STUDENT$\rrbracket$ {\textbar}
 \ex \textit{No women snore}.\\
 {}[\textit{no} x: WOMAN(x)] SNORE(x)\\
 $\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket$  $=$ \O
@@ -394,7 +394,9 @@ Therefore, this rock is not gold.\footnote{\url{http://www.fallacyfiles.org/scop
 \z
 
 
-Part of the reason that speakers do not feel the proverb to be ambiguous is that only one reading is consistent with what we know about the world. However, it also seems to be the case that the (b) reading is generally preferred in sentences of this type. On the other hand, naturally occurring examples of the (a) reading can be found as well, such as those listed in \REF{ex:14.34}. (In each case the context makes it clear that the intended reading gives widest scope to the quantifier; so (\ref{ex:14.34}c) for example is intended to mean that no person is perfect.)
+Part of the reason that speakers do not feel the proverb to be ambiguous is that only one reading is consistent with what we know about the world. However, a number of other factors also contribute to making one reading seem more plausible than the other in particular cases. These factors include grammatical functions (e.g., subject vs. object), discourse functions (topic vs. focus), word order effects, linguistic context, pragmatic plausibility, etc.
+
+Another significant factor is our general tendency when speaking to avoid ambiguity when possible. If an unambiguous paraphrase (e.g., \textit{not all X are Y} or \textit{no  X is Y}) is possible, the ambiguous form \textit{all X are not Y} may seem unnatural and hard to process. Nevertheless, naturally occurring examples of this pattern are easy to find, and either of the possible readings may be intended. The examples in \REF{ex:14.34}--\REF{ex:14.41} come from the internet. The intended reading for the examples listed in \REF{ex:14.34}, as the context makes clear, gives widest scope to the universal quantifier. Example (\ref{ex:14.34}c) for example is intended to mean that no person is perfect.
 
 
 \ea \label{ex:14.34}
@@ -403,6 +405,18 @@ Part of the reason that speakers do not feel the proverb to be ambiguous is that
 \ex Every person is not perfect.
                        \z
 \z
+
+
+In the examples listed in \REF{ex:14.41}, the intended reading (as determined from the context) gives negation wide scope over the universal quantifier. Example (\ref{ex:14.41}b) for example is intended to mean that not all options are on the table.
+
+
+\ea \label{ex:14.41}
+\ea All of us are not trained for those jobs.\\
+\ex Headline:``All Options Are Not on the Table as Biden Moves Troops Closer to Ukraine"\\
+\ex All enzymes are proteins, but all proteins are not enzymes.
+                       \z
+\z
+
 
 
 Example \REF{ex:14.35} illustrates how ambiguity can (and frequently does) arise from the interaction between two quantifiers: either may occur within the scope of the other. The (a) reading says that there are many individual linguists who have read every paper by Chomsky. The (b) reading says that for any given paper by Chomsky there are many linguists who have read it. It would be possible for the (b) reading to be true while the (a) reading is false under the same circumstances.
@@ -416,7 +430,10 @@ Example \REF{ex:14.35} illustrates how ambiguity can (and frequently does) arise
 \z
 
 
-A similar example is presented in \REF{ex:14.36}. The (a) reading says that every student in some contextually-determined set, e.g. all those enrolled in a certain course, knows two languages; but each student could know a different pair of languages. The (b) reading says that there is some specific pair of languages, e.g.  {Urdu} and  {Swahili}, which every student in the relevant set knows. (Another example of this type was mentioned in \chapref{sec:4}, ex. \ref{ex:4.29}a.)
+Scope ambiguities involving two quantifiers often seem more obvious (e.g., to the addressee) than those involving one quantifier plus negation. This may be because unambiguous paraphrases of the various readings are harder to construct, and in many cases would be more complex in their structure than the original (ambiguous) sentence. This extra complexity might reduce the addressee's expectation that speaker would choose the unambiguous form.
+
+
+Another example involving two quantifiers is presented in \REF{ex:14.36}. The (a) reading says that every student in some contextually-determined set, e.g. all those enrolled in a certain course, knows two languages; but each student could know a different pair of languages. The (b) reading says that there is some specific pair of languages, e.g.  {Urdu} and  {Swahili}, which every student in the relevant set knows. (Another example of this type was mentioned in \chapref{sec:4}, ex. \ref{ex:4.29}a.)
 
 
 \ea \label{ex:14.36}
@@ -528,7 +545,7 @@ Use logical notation to express the two readings for the following sentences, an
 \begin{enumerate}
 \item Solomon answered every riddle.
 
-\shortmodelanswer{Model answer}{${\forall}$x[RIDDLE(x) → ANSWER(s,x)]}
+\shortmodelanswer{Model answer}{${\forall}$x[RIDDLE(x) \LARGE→\normalsize ANSWER(s,x)]}
  
 \item All ambitious politicians visit Paris.
 \item Someone betrayed Caesar.

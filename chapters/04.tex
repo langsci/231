@@ -107,7 +107,7 @@ Conclusion: \textit{Therefore,} \textit{the wasp died.}
 \z
 
 
-This inference is not determined by the meanings of logical words or quantifiers, but only by the meanings of the verbs \textit{kill} and \textit{die}. Neither propositional logic nor predicate logic actually addresses this kind of inference. Logic deals with general patterns or forms of reasoning, rather that the meanings of individual words. However, predicate logic provides a notation for representing the meanings of the content words within each proposition, and thus gives us a way of expressing lexical entailments (e.g., \textit{kill} entails \textit{die}; see \chapref{sec:6}).
+This inference is not determined by the meanings of logical words or quantifiers, but only by the meanings of the verbs \textit{kill} and \textit{die}. Neither propositional logic nor predicate logic actually addresses this kind of inference. Logic deals with general patterns or forms of reasoning, rather than the meanings of individual words. However, predicate logic provides a notation for representing the meanings of the content words within each proposition, and thus gives us a way of expressing lexical entailments (e.g., \textit{kill} entails \textit{die}; see \chapref{sec:7}).
 
 
 
@@ -179,7 +179,7 @@ The other operators also specify the truth values of the complex propositions th
 \begin{tabular}[t]{>{\sffamily}c>{\sffamily}c}
 \lsptoprule
 \tablehead{
- p & ¬p\\\midrule
+ p & {$¬$}p\\\midrule
 }
   T &  F\\
   F &  T\\
@@ -249,7 +249,7 @@ The \textsc{material} \textsc{implication} operator (→) is defined by the trut
 \begin{tabular}[t]{>{\sffamily}c>{\sffamily}c>{\sffamily}c}
 \lsptoprule
 \tablehead{
- p & q & p → q\\\midrule
+ p & q & p\LARGE→\normalsize q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily F\\
@@ -370,7 +370,7 @@ Now let us consider a slightly more complex example: \textit{((p$\vee$q) $\wedge
 \begin{tabular}[t]{*{6}{>{\sffamily}c}}
 \lsptoprule
 \tablehead{ 1 & 2 & 3 & 4 & 5 & 6 \\
- p & q & p$\vee$q & ¬p & (p$\vee$q)$\wedge$¬p & ((p$\vee$q)$\wedge$¬p) → q\\\midrule
+ p & q & p$\vee$q & ¬p & (p$\vee$q)$\wedge$¬p & ((p$\vee$q)$\wedge$¬p)\LARGE→\normalsize q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T & \sffamily F & \sffamily F & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily T & \sffamily F & \sffamily F & \sffamily T\\
@@ -412,7 +412,7 @@ As we noted in an earlier chapter, tautologies are not very informative because 
 \begin{tabular}[t]{*{5}{>{\sffamily}c}}
 \lsptoprule
 \tablehead{
- p & q & p→q & (p→q) $\wedge$ p & ((p→q) $\wedge$ p) → q\\\midrule
+ p & q & p\LARGE→\normalsize q & (p\LARGE→\normalsize q) $\wedge$ p & ((p\LARGE→\normalsize q) $\wedge$ p)\LARGE→\normalsize q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T & \sffamily T & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily F & \sffamily F & \sffamily T\\
@@ -562,7 +562,7 @@ In the same way, variables bound by one of the logical quantifier symbols are as
 
 
 
-Variables bound by a quantifier do not refer to a specific individual or entity, but rather allow for the arbitrary selection of any individual or entity within the universal set. Once a particular value is assigned to a given variable, the same assignment is understood to hold for all occurrences of that variable within the \textsc{scope} of the quantifier (the material inside the square brackets). So for example, if we assume that the universal set in \REF{ex:4.27} is the set of all real numbers, (\ref{ex:4.27}a) can be interpreted as follows: “Choose any real number. If you add that number to itself, the sum will be equal to that number multiplied by two.” The equation in (\ref{ex:4.27}b) can be interpreted as follows: “There exists some real number which, when added to four, will be equal to the quotient of that same number divided by three.”
+Variables bound by a quantifier do not refer to a specific individual or entity, but rather allow for the arbitrary selection of any individual or entity within the universal set. Once a particular value is assigned to a given variable, the same assignment is understood to hold for all occurrences of that variable within the \textsc{scope} of the quantifier. (The scope of a quantifier is the domain over which the quantifier operates. In the format used in \REF{ex:4.27}, this corresponds to the material inside the square brackets.) So for example, if we assume that the universal set in \REF{ex:4.27} is the set of all real numbers, (\ref{ex:4.27}a) can be interpreted as follows: “Choose any real number. If you add that number to itself, the sum will be equal to that number multiplied by two.” The equation in (\ref{ex:4.27}b) can be interpreted as follows: “There exists some real number which, when added to four, will be equal to the quotient of that same number divided by three.”
 
 
 

@@ -36,12 +36,12 @@ An important feature of these definitions is that they are restricted to “gram
 
 
 
-One way to represent the “location” of a situation in time is to define logical operators (e.g.~\textsc{past} and \textsc{future}) which will add tense information to a basic proposition. These tense operators can be defined as existential quantifiers over times, as suggested in \REF{ex:21.3}.\footnote{\citet{Prior1957,Prior1967}.} This definition says that \textsc{past}(p) will be true at the time of speaking just in case there was some time prior to the time of speaking when p was true; and similarly for \textsc{future}(p). (The letter \textit{t} stands for ‘time’, and “<” in this context means ‘prior to’. TU represents the time of speaking; this is typically the time for which the truth value of a statement is evaluated.)
+One way to represent the “location” of a situation in time is to define logical operators (e.g.~\textsc{past} and \textsc{future}) which will add tense information to a basic proposition. These tense operators can be defined as existential quantifiers over times, as suggested in \REF{ex:21.3}.\footnote{\citet{Prior1957,Prior1967}.} This definition says that \textsc{past}(p) will be true at the time of speaking just in case there was some time prior to the time of speaking when p was true; and similarly for \textsc{future}(p). (The letter \textit{t} stands for ‘time’, and “{$<$}” in this context means ‘prior to’. TU represents the time of speaking; this is typically the time for which the truth value of a statement is evaluated.)
 
 
 \ea \label{ex:21.3}
-\textsc{past}(p) is true at TU  iff  ${\exists}$t [t < TU $\wedge$ (p is true at time t)]\\
-\textsc{future}(p) is true at TU  iff  ${\exists}$t [TU < t $\wedge$ (p is true at time t)]
+\textsc{past}(p) is true at TU  iff  ${\exists}$t [t {$<$} TU $\wedge$ (p is true at time t)]\\
+\textsc{future}(p) is true at TU  iff  ${\exists}$t [TU {$<$} t $\wedge$ (p is true at time t)]
 \z
 
 
@@ -58,10 +58,10 @@ If the positive statement \textit{I turned off the stove} is interpreted as show
 
 \ea \label{ex:21.5}
 \ea   \textit{I turned off the stove}. \\ 
-${\exists}$t [t < TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]
+${\exists}$t [t {$<$} TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]
 \ex   \textit{I didn’t turn off the stove}. \\
-$¬{\exists}$t [t < TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]\\
-  or:  ${\exists}$t [t < TU $\wedge$ ($¬$TURN\_OFF(speaker, stove) is true at t)]
+$¬{\exists}$t [t {$<$} TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]\\
+  or:  ${\exists}$t [t {$<$} TU $\wedge$ ($¬$TURN\_OFF(speaker, stove) is true at t)]
 \z \z
 
 In \chapref{sec:20} we introduced Klein’s analysis of tense, which crucially defines tense as indicating the location of Topic Time rather than the location in time of the situation itself. Under Klein’s analysis, the past tense in \REF{ex:21.4} \textit{I didn’t turn off the stove} indicates that Topic Time is prior to the Time of Utterance. The Topic Time is determined by the context; in this situation, it would be the time immediately before leaving the house. The speaker is asserting that at that particular time, she didn’t turn off the stove. No assertion is made about other times. This analysis provides the correct interpretation.
@@ -85,7 +85,7 @@ Klein’s framework is based on the very influential work of \citet{Reichenbach1
 
 
 
-Because tense is (normally) marked relative to the time of the speech event, tense markers are considered to be deictic elements. It is helpful to remember that tense markers normally do not fully specify the location of the topic time; rather, they impose constraints on that location, such as TT < TU (for past tense). More specific time reference can be achieved by using temporal adverbs, adverbial clauses, etc.
+Because tense is (normally) marked relative to the time of the speech event, tense markers are considered to be deictic elements. It is helpful to remember that tense markers normally do not fully specify the location of the topic time; rather, they impose constraints on that location, such as TT {$<$} TU (for past tense). More specific time reference can be achieved by using temporal adverbs, adverbial clauses, etc.
 
 
 
@@ -133,7 +133,7 @@ What happens when an event-type predicate is expressed in the simple pres\-ent? 
                        \z
 \z
 
-As discussed in \chapref{sec:20}, habitual aspect describes a recurring event or on-going state which is a characteristic property of a certain period of time.\footnote{\citet[27--28]{Comrie1976}.} Examples (\ref{ex:21.9}b) and (\ref{ex:21.10}b) describe not what Mary and Sam are doing at the time of speaking, but characteristic properties of Mary and Sam; thus these sentences actually refer to states, not events. This is an example of coercion: since the aspectual sensitivity of the simple present blocks the normal eventive sense of these predicates, they take on a stative meaning in this context. The fact that the habitual readings encode states rather than events can be seen in the fact that (\ref{ex:21.9}b) and (\ref{ex:21.10}b) cannot be appropriately used to answer the question, “What is happening?”
+As discussed in \chapref{sec:20}, habitual aspect describes a recurring event or on-going state which is a characteristic property of a certain period of time.\footnote{\citet[27--28]{Comrie1976}.} Examples (\ref{ex:21.9}b) and (\ref{ex:21.10}b) describe not what Mary and Sam are doing at the time of speaking, but characteristic properties of Mary and Sam during the current period of their lives; thus these sentences actually refer to states, not events. This is an example of coercion: since the aspectual sensitivity of the simple present blocks the normal eventive sense of these predicates, they take on a stative meaning in this context. The fact that the habitual readings encode states rather than events can be seen in the fact that (\ref{ex:21.9}b) and (\ref{ex:21.10}b) cannot be appropriately used to answer the question, “What is happening?”
 
 
 A very similar use of the simple present is for \textsc{gnomic} (or universal) statements, like those in \REF{ex:21.11}; see also (\ref{ex:21.8}c). Again, even though the verbs used in \REF{ex:21.11} are eventive, these sentences do not refer to specific events but to general properties.
@@ -185,7 +185,7 @@ I’m not here right now.
 \z
 
 
-In this example the identity of the speaker and location of the speech event are interpreted in the normal way, but the hearer is expected to interpret the deictic \textit{right now} as referring to the time when the recording is played, the time of hearing, rather than the original time of speaking. More study is needed to understand why this shift of reference point should license an apparent violation of the aspectual restrictions discussed above.
+In this example the identity of the speaker and location of the speech event are interpreted in the normal way, but the hearer is expected to interpret the deictic \textit{right now} as referring to the time when the recording is played, the time of hearing, rather than the original time of speaking. More study is needed to understand why a similar shift of reference point in the historical present might license an apparent violation of the aspectual restrictions discussed above.
 
 
 
@@ -215,14 +215,14 @@ We will refer to the contextually determined reference point of a relative tense
 
 
 
-The most likely interpretation for (\ref{ex:21.16}a) is diagrammed in \REF{ex:21.17}. Relative past tense imposes the constraint that TT < PT, but does not specify whether TT is before or after TU. The fact that TT is later than TU is a pragmatic inference; if the speaker had already left before the time of speaking, it would be more natural and informative to simply say ‘I have already left.’ (The relationship between TT and TSit is determined by the perfective aspect of the simple past form, as discussed in \chapref{sec:20}.)
+The most likely interpretation for (\ref{ex:21.16}a) is diagrammed in \REF{ex:21.17}. Relative past tense imposes the constraint that TT {$<$} PT, but does not specify whether TT is before or after TU. The fact that TT is later than TU is a pragmatic inference; if the speaker had already left before the time of speaking, it would be more natural and informative to simply say ‘I have already left.’ (The relationship between TT and TSit is determined by the perfective aspect of the simple past form, as discussed in \chapref{sec:20}.)
 
 
 \ea \label{ex:21.17}
 \begin{tabular}{ccc}
 TU  &  [ \hspace{35pt} TT \hspace{35pt} ] & PT  \\
 \hline
-& {\textbar} TSit: my departure  {\textbar} &    [ your arrival ]
+& {\textbar} TSit: my departure  {\textbar} &    (your arrival)
 \end{tabular}
 \z
 
@@ -315,7 +315,7 @@ The relative positions of TT, PT and TU for the italicized verbs in examples (\r
 \ea \label{ex:21.25}
 \begin{xlist}
  \exbox{
-\begin{tabularx}{.9\textwidth}{cccS}
+\begin{tabularx}{.9\textwidth}{cccY}
 [ TT: 1905 ] &  PT & TU  &  “past in the past” (\ref{ex:21.23}b)\\
 \cline{1-3}
 {\textbar} TSit {\textbar} &     (1922) &   (now)&\\
@@ -323,7 +323,7 @@ The relative positions of TT, PT and TU for the italicized verbs in examples (\r
 }
 \medskip
 \exbox{
-\begin{tabularx}{.9\textwidth}{cccS}
+\begin{tabularx}{.9\textwidth}{cccY}
 TU &  [ TT: Mon. eve. ] &   PT &  “past in the future” (\ref{ex:21.24}a)\\
 \cline{1-3}
   (now) &     {\textbar} TSit {\textbar} &      (Tues. pm) & \\
@@ -331,7 +331,7 @@ TU &  [ TT: Mon. eve. ] &   PT &  “past in the future” (\ref{ex:21.24}a)\\
 }
 \medskip
 \exbox{
-\begin{tabularx}{.9\textwidth}{cccS}
+\begin{tabularx}{.9\textwidth}{cccY}
 PT &  [ TT: 1922 ] &   TU &  “future in the past” (\ref{ex:21.24}b)\\
 \cline{1-3}
   (1905)   &    {\textbar} TSit {\textbar}  &   (now) &\\  
@@ -605,7 +605,7 @@ Several of these points were illustrated in our discussion of the simple present
 \modelanswer{Model answer}{
 I managed to get to the station at 3:15 pm, but the train \textit{had left} promptly at 3:00.\\
 
-\begin{tabularx}{.85\textwidth}{cccS}
+\begin{tabularx}{.85\textwidth}{cccY}
       [  TT: 3:00  ] &  PT &  TU &    “past in the past”\\
       \cline{1-3}
      {\textbar} TSit {\textbar} &    (3:15) & & \\     
@@ -638,7 +638,7 @@ I managed to get to the station at 3:15 pm, but the train \textit{had left} prom
 
 Einstein published four ground-breaking papers in 1905, including the one for which he \textit{would win}  the Nobel prize in 1922.
 
-\begin{tabularx}{.8\textwidth}{cccS}
+\begin{tabularx}{.8\textwidth}{cccY}
     PT  & [  TT: 1922  ]  & TU&      “future in the past”\\
     \cline{1-3}
   (1905)  &  {\textbar} TSit {\textbar} &     (2016) & 
