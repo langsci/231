@@ -42,7 +42,7 @@ Now let us consider sentence (\ref{ex:14.1}b), \textit{No women snore}. Under wh
 
 
 \ea \label{ex:14.3}
-{}$\llbracket$\textit{No woman snores}$\rrbracket =$ true ↔  ($\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket =$ \O)
+{}$\llbracket$\textit{No woman snores}$\rrbracket =$ true ↔  ($\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket =$ ∅)
 \z
 
 
@@ -50,7 +50,7 @@ Sentence (\ref{ex:14.1}c), \textit{Some man snores}, will be true in any situati
 
 
 \ea \label{ex:14.4}
-{}$\llbracket$\textit{Some man snores}$\rrbracket =$ true ↔  ($\llbracket$MAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket \neq$ \O)
+{}$\llbracket$\textit{Some man snores}$\rrbracket =$ true ↔  ($\llbracket$MAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket \neq$ ∅)
 \z
 
 
@@ -58,9 +58,9 @@ The key insight which has helped semanticists understand the meaning contributio
 
 \ea \label{ex:14.5}
 \ea  \parbox{4.5cm}{All students are brilliant.}\parbox{6cm}{$S \subseteq B$}
-\ex   \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} = $ \O}
+\ex   \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} = $ ∅}
 \ex \parbox{4.5cm}{Some students are brilliant.}\parbox{6cm}{$|S \cap {B}{|} {\geq} 2$}
-\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq $ \O; or:  $|S \cap B| \geq 1$}
+\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq $ ∅; or:  $|S \cap B| \geq 1$}
 \ex \parbox{4.5cm}{Four students are brilliant.}\parbox{6cm}{$|S \cap B | = 4$\footnotemark{}}
 \ex \parbox{4.5cm}{Most students are brilliant.}\parbox{6cm}{$|S \cap B | > |S - B|$; or: $|S \cap B| > ½|S|$}
 \ex  \parbox{4.5cm}{Few students are brilliant.}\parbox[t]{5.7cm}{$|S \cap B | <$ some contextually defined\\\rule{0pt}{0pt}\hfill number}
@@ -144,7 +144,7 @@ Now we are in a position to understand why these forms work as translations of t
 \ex 
 \small
 ${\forall}$x[x ${\in}$ (A${\cap}$B)  ↔   ((x${\in}$A) $\wedge$ (x${\in}$B))]  \hfill [\textsc{intersection}] \\
-  ($\llbracket$MAN$\rrbracket$ ${\cap}$ $\llbracket$SNORE$\rrbracket$  ≠ \O) ↔   ${\exists}$x[(x${\in}\llbracket$ MAN $\rrbracket$ ) $\wedge$ (x${\in} \llbracket$  SNORE $\rrbracket$ )]
+  ($\llbracket$MAN$\rrbracket$ ${\cap}$ $\llbracket$SNORE$\rrbracket$  ≠ ∅) ↔   ${\exists}$x[(x${\in}\llbracket$ MAN $\rrbracket$ ) $\wedge$ (x${\in} \llbracket$  SNORE $\rrbracket$ )]
 \z \z
 \normalsize
 
@@ -203,7 +203,7 @@ Of course, translations in this format do not tell us what the quantifying deter
 
 \ea \label{ex:14.15}
 \ea \relax [\textit{all} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\subseteq}$ $\llbracket$Q$\rrbracket$ \\
-\ex{} [\textit{no} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  $=$ \O \\
+\ex{} [\textit{no} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  $=$ ∅ \\
 \ex{} [\textit{four} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $=$ 4\\
 \ex{} [\textit{most} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $>$  ½ {\textbar} $\llbracket$P$\rrbracket$ {\textbar}
                        \z
@@ -219,7 +219,7 @@ As these definitions show, a quantifying determiner names a relation between two
 {\textbar} $\llbracket$STUDENT$\rrbracket$  ${\cap}$ $\llbracket$BRILLIANT$\rrbracket$  {\textbar}  $>$  ½ \textsc{{\textbar}} $\llbracket$STUDENT$\rrbracket$ {\textbar}
 \ex \textit{No women snore}.\\
 {}[\textit{no} x: WOMAN(x)] SNORE(x)\\
-$\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket$  $=$ \O
+$\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket$  $=$ ∅
 \ex   \textit{All brave men are lonely}.\\
 {}[\textit{all} x: MAN(x) $\wedge$ BRAVE(x)] LONELY(x)\\
 ($\llbracket$MAN$\rrbracket$  ${\cap}$ $\llbracket$BRAVE$\rrbracket$ )  ${\subseteq}$ $\llbracket$LONELY$\rrbracket$ 
@@ -235,7 +235,7 @@ This same procedure applies whether the quantified NP is a subject, object, or o
 ($\llbracket$GIRL$\rrbracket$  ${\cap}$ $\llbracket$PRETTY$\rrbracket$) ${\subseteq}$ \{x:~$\langle$j,x$\rangle \, {\in} \, \llbracket$LOVE$\rrbracket$ \}
 \ex \textit{Susan has married a cowboy who teases her.}\\
 {}[\textit{an} x: COWBOY(x) $\wedge$ TEASE(x,s)] MARRY(s,x)\\
-($\llbracket$COWBOY$\rrbracket$  ${\cap}$ \{x:~$\langle$x,s$\rangle \, {\in} \, \llbracket$TEASE$\rrbracket$ \}) ${\cap}$ \{y:~$\langle$s,y$\rangle \, {\in} \, \llbracket$MARRY$\rrbracket$ \} $\neq$ \O 
+($\llbracket$COWBOY$\rrbracket$  ${\cap}$ \{x:~$\langle$x,s$\rangle \, {\in} \, \llbracket$TEASE$\rrbracket$ \}) ${\cap}$ \{y:~$\langle$s,y$\rangle \, {\in} \, \llbracket$MARRY$\rrbracket$ \} $\neq$ ∅ 
 \z \z
 
 

@@ -185,7 +185,7 @@ One very influential approach during the middle of the 20\textsuperscript{th} ce
 \end{tabular}
 }
 
-Features like gender and adulthood are binary, and so lend themselves to representation in either tree or matrix format, as illustrated in \REF{ex:7.17}. Notice that in addition to the values + and –, features may also be unspecified (represented by \O\space in the matrix). For example, the word \textit{foal} is unspecified for gender, and the word \textit{horse} is unspecified for both age and gender.
+Features like gender and adulthood are binary, and so lend themselves to representation in either tree or matrix format, as illustrated in \REF{ex:7.17}. Notice that in addition to the values + and –, features may also be unspecified (represented by ∅ in the matrix). For example, the word \textit{foal} is unspecified for gender, and the word \textit{horse} is unspecified for both age and gender.
 
 
 \ea \label{ex:7.17}
@@ -194,10 +194,10 @@ Binary feature analysis for horse terms:\\
 \begin{tabular}[t]{lcc}
 \lsptoprule
 & [adult] & [male]\\\midrule
-\itshape horse & \O & \O\\
+\itshape horse & ∅ & ∅\\
 \itshape stallion & + & +\\
 \itshape mare & + & –\\
-\itshape foal & – & \O\\
+\itshape foal & – & ∅\\
 \itshape colt & – & +\\
 \itshape filly & – & –\\
 \lspbottomrule
@@ -221,10 +221,10 @@ Binary feature analysis for horse terms:\\
 \begin{tabular}[t]{lcc} 
 \lsptoprule
 & [adult] & [male]\\ \midrule
-\textit{man\textsubscript{1}}\textit{/human} & \O & \O\\
+\textit{man\textsubscript{1}}\textit{/human} & ∅ & ∅\\
 \textit{man\textsubscript{2}} & + & +\\
 \itshape woman & + & –\\
-\itshape child & – & \O\\
+\itshape child & – & ∅\\
 \itshape boy & – & +\\
 \itshape girl & – & –\\
 \lspbottomrule
