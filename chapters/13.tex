@@ -6,7 +6,7 @@ We have said that one of the most important goals of semantic theory is to under
 
 
 
-Just as syntacticians try to construct rule systems which replicate the judgments of native speakers about the grammaticality of sentences, semanticists try to construct rule systems which replicate the ability of speakers to identify the denotation of an expression in a particular context of use, and in particular, to determine the truth values of sentences in a given context. A crucial step in this kind of analysis is to describe the situation under discussion in very explicit terms, so that predictions about denotations can be easily checked. The explicit description of a situation is called a \textsc{model}, so this general approach to semantics is often referred to as \textsc{Model Theory}.\footnote{A \textsc{model} can also be defined as an interpretation under which a given sentence or set of sentences is true \citep{Hodges2013}. But by spelling out the denotations of the basic expressions used in the sentence(s) under discussion, the model also specifies the relevant facts about a particular situation.}
+Just as syntacticians try to construct rule systems which replicate the judgments of native speakers about the grammaticality of sentences, semanticists try to construct rule systems which replicate the ability of speakers to identify the denotation of an expression in a particular context of use, and in particular, to determine the truth values of sentences in a given context. A crucial step in this kind of analysis is to describe the situation under discussion in very explicit terms, so that predictions about denotations can be easily checked. The explicit description of a situation is called a \textsc{model}, so this general approach to semantics is often referred to as \textsc{model theory}.\footnote{A \textsc{model} can also be defined as an interpretation under which a given sentence or set of sentences is true \citep{Hodges2013}. But by spelling out the denotations of the basic expressions used in the sentence(s) under discussion, the model also specifies the relevant facts about a particular situation.}
 
 
 
@@ -70,11 +70,11 @@ The identity of a set is defined by its membership. If two sets have the same me
 
 
 \ea \label{ex:13.3}
-\{a,b,c\} = \{b,a,c\} = \{c,a,b\} = \{a,b,c,b,a\}, etc. 
+$\{a,b,c\} = \{b,a,c\} = \{c,a,b\} = \{a,b,c,b,a\}$, etc. 
 \z
 
 
-We use the {Greek} letter epsilon to indicate that a certain element belongs to a given set. The formula “x ${\in}$ B” can be read as: “x is a member (or element) of set B”. This would be true, for example, if B = \{x,y,z\}; but false if B = \{w,y,z\}. The formula “x ${\notin}$ B” means that x is not a member of set B.
+We use the {Greek} letter epsilon to indicate that a certain element belongs to a given set. The formula “$x \in B$” can be read as: “$x$ is a member (or element) of set $B$”. This would be true, for example, if $B = \{x,y,z\}$; but false if $B = \{w,y,z\}$. The formula “$x \notin B$” means that $x$ is not a member of set $B$.
 
 
 
@@ -82,7 +82,7 @@ It is possible for a set to have an infinite number of members. Examples of such
 
 
 
-It is possible for a set to have no members. In fact, there is exactly one set of this kind, and it is called the \textsc{empty set} (often symbolized as “∅”). The fact that there can be only one empty set follows from the principle that a set is defined by its membership. (If there were two sets, A and B, both of which had no members, then they would contain exactly the same members; and so by the principle stated above, they would be the same set.)
+It is possible for a set to have no members. In fact, there is exactly one set of this kind, and it is called the \textsc{empty set} (often symbolized as “∅”). The fact that there can be only one empty set follows from the principle that a set is defined by its membership. (If there were two sets, $A$ and $B$, both of which had no members, then they would contain exactly the same members; and so by the principle stated above, they would be the same set.)
 
 
 
@@ -94,13 +94,13 @@ A set is distinct from any of its members. A set containing just one element is 
 \z
 
 
-The \textsc{cardinality} of a set is the number of members or elements which belong to that set. For example, the cardinality of the set \{a,b,c\} is 3, because it has three members. We use the symbol {\textbar}B{\textbar} to refer to the cardinality of set B; so {\textbar}\{a,b,c\}{\textbar} = 3. Some further examples are given below:
+The \textsc{cardinality} of a set is the number of members or elements which belong to that set. For example, the cardinality of the set $\{a,b,c\}$ is 3, because it has three members. We use the symbol $|B|$ to refer to the cardinality of set $B$; so $|\{a,b,c\}| = 3$. Some further examples are given below:
 
 
 \ea \label{ex:13.5}
-{\textbar}\{a,b,c,d,f\}{\textbar} = 5\\
-{\textbar}∅{\textbar} = 0\\
-{\textbar}\{∅\}{\textbar} = 1
+$|\{a,b,c,d,f\}| = 5$\\
+$|\text{∅}| = 0$\\
+$|\{\text{∅}\}| = 1$
 \z
 
 
@@ -108,11 +108,11 @@ In order for a given collection of things to be a well-defined set, it must be p
 
 
 
-The membership of a set can be specified either by listing its members, as in (\ref{ex:13.2}--\ref{ex:13.3}), or by stating a rule of membership (e.g., \textit{the set of all female British monarchs}, \textit{the set of all months whose name includes the letter “r”}, \textit{the set of all integers}, etc.). A general notation for defining the membership of a set is illustrated in \REF{ex:13.6}, which is one way of describing the set of all even numbers (we will call this set E): ‘the set of all numbers which are divisible by 2’. In this notation, the variable is assumed to be an element of the currently relevant \textsc{universal set}, or universe of discourse.\footnote{See \chapref{sec:4}.} The colon in this notation stands for ‘such that’. (Some authors use a vertical bar {\textbar} instead of the colon.) If we assume that the currently relevant universal set is the set of all real numbers, then the set description in \REF{ex:13.6} can be read as: ‘the set of all real numbers x such that x/2 is an integer.’
+The membership of a set can be specified either by listing its members, as in (\ref{ex:13.2}--\ref{ex:13.3}), or by stating a rule of membership (e.g., \textit{the set of all female British monarchs}, \textit{the set of all months whose name includes the letter “r”}, \textit{the set of all integers}, etc.). A general notation for defining the membership of a set is illustrated in \REF{ex:13.6}, which is one way of describing the set of all even numbers (we will call this set $E$): ‘the set of all numbers which are divisible by 2’. In this notation, the variable is assumed to be an element of the currently relevant \textsc{universal set}, or universe of discourse.\footnote{See \chapref{sec:4}.} The colon in this notation stands for ‘such that’. (Some authors use a vertical bar {\textbar} instead of the colon.) If we assume that the currently relevant universal set is the set of all real numbers, then the set description in \REF{ex:13.6} can be read as: ‘the set of all real numbers $x$ such that $x/2$ is an integer.’
 
 
 \ea \label{ex:13.6}
-E = \{x: $\frac{x}{2}$ is an integer\}
+$\displaystyle E = \left\{x: \frac{x}{2} \text{ is an integer}\right\}$
 \z
 
 \subsection{Relations and functions}\label{sec:13.3.1}
@@ -121,24 +121,24 @@ Up to this point all of our examples have involved sets of individuals: numbers,
 
 
 
-In this example, the members of each pair can be distinguished by the title “Mr.” vs. “Mrs.”, no matter which one is mentioned first; but this is not always the case. As we will see, it is often useful to define sets of pairs of things in which the members of each pair are distinguished by specifying the order in which they occur. We refer to such pairs as \textsc{ordered pairs}, using the notation $\langle$x,y$\rangle$ to represent the pair which consists of x followed by y. Unlike sets, two ordered pairs may have the same members but still be distinct, if those members occur in different orders. So $\langle$x,y$\rangle$ and $\langle$y,x$\rangle$ are two distinct ordered pairs, but \{x,y\} and \{y,x\} are two different ways of representing the same set.
+In this example, the members of each pair can be distinguished by the title “Mr.” vs. “Mrs.”, no matter which one is mentioned first; but this is not always the case. As we will see, it is often useful to define sets of pairs of things in which the members of each pair are distinguished by specifying the order in which they occur. We refer to such pairs as \textsc{ordered pairs}, using the notation $\langle x,y\rangle$ to represent the pair which consists of $x$ followed by $y$. Unlike sets, two ordered pairs may have the same members but still be distinct, if those members occur in different orders. So $\langle x,y\rangle$ and $\langle y,x\rangle$ are two distinct ordered pairs, but $\{x,y\}$ and $\{y,x\}$ are two different ways of representing the same set.
 
 
 
-A set of ordered pairs is called a \textsc{relation}. The \textsc{domain} of the relation is the set of all the first elements of each pair and its \textsc{range} is the set of all the second elements. So, referring to the two sets defined in \REF{ex:13.7}, the domain of A is the set \{a,c,f\}, while the range of A is the set \{3,4,6,7\}. The domain of B is the set \{2,3,4,5,6,7\}, while the range of B is the set \{2,3,4,7\}. 
+A set of ordered pairs is called a \textsc{relation}. The \textsc{domain} of the relation is the set of all the first elements of each pair and its \textsc{range} is the set of all the second elements. So, referring to the two sets defined in \REF{ex:13.7}, the domain of $A$ is the set $\{a,c,f\}$, while the range of $A$ is the set $\{3,4,6,7\}$. The domain of $B$ is the set $\{2,3,4,5,6,7\}$, while the range of $B$ is the set $\{2,3,4,7\}$. 
 
 
 \ea \label{ex:13.7}
-A = \{$\langle$a,3$\rangle$, $\langle$f,4$\rangle$, $\langle$c,6$\rangle$, $\langle$a,7$\rangle$\}\\
-B = \{$\langle$2,3$\rangle$, $\langle$3,2$\rangle$, $\langle$4,7$\rangle$, $\langle$5,2$\rangle$, $\langle$6,7$\rangle$, $\langle$7,4$\rangle$\}
-\z
+$A = \{\langle a,3\rangle, \langle f,4\rangle, \langle c,6\rangle, \langle a,7\rangle\}$\\
+$B = \{\langle 2,3\rangle, \langle 3,2\rangle, \langle 4,7\rangle, \langle 5,2\rangle, \langle 6,7\rangle, \langle 7,4\rangle\}$
+\z                                                                         
 
 
-A set of ordered pairs defines a \textsc{mapping}, or correspondence, from the domain onto the range. The mappings defined by sets A and B are shown in \REF{ex:13.8}:
+A set of ordered pairs defines a \textsc{mapping}, or correspondence, from the domain onto the range. The mappings defined by sets $A$ and $B$ are shown in \REF{ex:13.8}:
 
 %\todo{draw object}
 \ea \label{ex:13.8}
-\ea Set A\\
+\ea Set $A$\\
 \begin{tikzpicture}
 \matrix[matrix of nodes] (matrix1) {
 a &[3em] 3\\
@@ -151,7 +151,7 @@ f & 4     \\
 \draw[-{Triangle[]}] (matrix1-3-1) -- (matrix1-3-2);
 \draw[-{Triangle[]}] (matrix1-4-1) -- (matrix1-4-2);
 \end{tikzpicture}
-\ex  Set B\\
+\ex  Set $B$\\
 \begin{tikzpicture}
 \matrix[matrix of nodes] (matrix2) {
 2 &[3em] 3\\
@@ -172,55 +172,54 @@ f & 4     \\
 \z \z
 
 
-A \textsc{function} is a relation (= a set of ordered pairs) in which each element of the domain is mapped to a single, unique value in the range. The relation which corresponds to set A above is not a function, because A contains two distinct ordered pairs which have the same first element ($\langle$a,3$\rangle$ and $\langle$a,7$\rangle$). The relation which corresponds to set B is a function, even though B contains distinct ordered pairs which have the same second element ($\langle$3,2$\rangle$ and $\langle$5,2$\rangle$; $\langle$4,7$\rangle$ and $\langle$6,7$\rangle$). What matters is that each member of the domain occurs in just one ordered pair.
+A \textsc{function} is a relation (= a set of ordered pairs) in which each element of the domain is mapped to a single, unique value in the range. The relation which corresponds to set $A$ above is not a function, because $A$ contains two distinct ordered pairs which have the same first element ($\langle a,3\rangle$ and $\langle a,7\rangle$). The relation which corresponds to set $B$ is a function, even though $B$ contains distinct ordered pairs which have the same second element ($\langle 3,2\rangle$ and $\langle 5,2\rangle$; $\langle 4,7\rangle$ and $\langle 6,7\rangle$). What matters is that each member of the domain occurs in just one ordered pair.
 
 
 
-The function B is defined in \REF{ex:13.7} by listing all the ordered pairs which belong to it. Another way of defining this same function is shown in \REF{ex:13.9}. The first member of each ordered pair is called an \textsc{argument} of the function, while the second member of each ordered pair is called a \textsc{value}. The information in \REF{ex:13.9} is equivalent to that in (\ref{ex:13.8}b), showing how the function maps each argument onto a unique value. The format in \REF{ex:13.9} is more convenient for stating the value which corresponds to a single argument, when we do not need to list the entire set.
+The function $B$ is defined in \REF{ex:13.7} by listing all the ordered pairs which belong to it. Another way of defining this same function is shown in \REF{ex:13.9}. The first member of each ordered pair is called an \textsc{argument} of the function, while the second member of each ordered pair is called a \textsc{value}. The information in \REF{ex:13.9} is equivalent to that in (\ref{ex:13.8}b), showing how the function maps each argument onto a unique value. The format in \REF{ex:13.9} is more convenient for stating the value which corresponds to a single argument, when we do not need to list the entire set.
 
 
 \ea \label{ex:13.9}
-B(2) = 3\\
-B(3) = 2\\
-B(4) = 7\\
-B(5) = 2\\
-B(6) = 7\\
-B(7) = 4
+$B(2) = 3$\\
+$B(3) = 2$\\
+$B(4) = 7$\\
+$B(5) = 2$\\
+$B(6) = 7$\\
+$B(7) = 4$
 \z
 
 
-The membership of any set S can be expressed as a function which maps the elements of S onto the set \{1,0\}. In this context, 1 represents “True” and 0 represents “False”. Functions of this kind are called \textsc{characteristic functions} (or, sometimes, “membership functions”). For example, the characteristic function of set C (members of the Beatles, as specified in \ref{ex:13.10}a), is the function f\textsubscript{1} as defined in (\ref{ex:13.11}a). The characteristic function of set D (numbers between 10 and 20, as specified in \ref{ex:13.10}b) is the function f\textsubscript{2} as defined in (\ref{ex:13.11}b). (The abbreviation “iff” stands for “if and only if”.)
+The membership of any set $S$ can be expressed as a function which maps the elements of $S$ onto the set $\{1,0\}$. In this context, 1 represents “True” and 0 represents “False”. Functions of this kind are called \textsc{characteristic functions} (or, sometimes, “membership functions”). For example, the characteristic function of set $C$ (members of the Beatles, as specified in \ref{ex:13.10}a), is the function $f_1$ as defined in (\ref{ex:13.11}a). The characteristic function of set $D$ (numbers between 10 and 20, as specified in \ref{ex:13.10}b) is the function $f_2$ as defined in (\ref{ex:13.11}b). (The abbreviation “iff” stands for “if and only if”.)
 
 
 \ea \label{ex:13.10}
-\ea  C = \{John, Paul, George, Ringo\}\\
-\ex D = \{x: 10 < x < 20\}
+\ea  $C = \{\text{John}, \text{Paul}, \text{George}, \text{Ringo}\}$\\
+\ex  $D = \{x: 10 < x < 20\}$
                        \z
-\z
-
-\ea \label{ex:13.11}
-\ea  f\textsubscript{1}(John) = 1\\
-f\textsubscript{1}(Paul) = 1\\
-f\textsubscript{1}(George) = 1\\
-f\textsubscript{1}(Ringo) = 1\\
-in all other cases, f\textsubscript{1}(x) = 0
-\ex f\textsubscript{2}(x) = 1 iff 10 < x < 20\\
-in all other cases, f\textsubscript{2}(x) = 0
+\ex \label{ex:13.11}
+\ea  
+$f_{1}(\text{John})   = 1$\\
+$f_{1}(\text{Paul})   = 1$\\
+$f_{1}(\text{George}) = 1$\\
+$f_{1}(\text{Ringo})  = 1$\\
+in all other cases, $f_1(x) = 0$
+\ex $f_{2}(x) = 1$ iff $10 < x < 20$\\
+in all other cases, $f_{2}(x) = 0$
 \z \z
 
 \subsection{Operations and relations on sets}\label{sec:13.3.2}
 
-When we use set concepts and terminology as a tool for interpreting sentences, we will often want to say something about the relationship between two sets, or to combine two or more sets in certain ways to define a new set. In order for this to be possible, we must assume that the elements of each of the sets under discussion are drawn from the same universal set. This universal set is referred to as U.
+When we use set concepts and terminology as a tool for interpreting sentences, we will often want to say something about the relationship between two sets, or to combine two or more sets in certain ways to define a new set. In order for this to be possible, we must assume that the elements of each of the sets under discussion are drawn from the same universal set. This universal set is referred to as $U$.
 
 
 
-A very important relation which may hold between two sets is the \textsc{subset} relation, also referred to as \textsc{set} \textsc{inclusion}. We say that set A is a \textsc{subset} of set B (written “A${\subseteq}$B”) if A is included in B; that is, if all the elements which are members of A are also members of B. We can illustrate this situation using the sets defined in \REF{ex:13.12}. The universal set U is assumed to be the set of all integers between 1 and 10. By comparing the elements in set A with those in set B, we see that all the elements which are members of A are also members of B; so in this context, “A${\subseteq}$B” is a true proposition. However, “B${\subseteq}$A” would be false in this context, because there are some members of B which are not members of A, namely 2, 5, and 7.
+A very important relation which may hold between two sets is the \textsc{subset} relation, also referred to as \textsc{set} \textsc{inclusion}. We say that set $A$ is a \textsc{subset} of set $B$ (written “$A\subseteq B$”) if $A$ is included in $B$; that is, if all the elements which are members of $A$ are also members of $B$. We can illustrate this situation using the sets defined in \REF{ex:13.12}. The universal set $U$ is assumed to be the set of all integers between 1 and 10. By comparing the elements in set $A$ with those in set $B$, we see that all the elements which are members of $A$ are also members of $B$; so in this context, “$A \subseteq B$” is a true proposition. However, “$B \subseteq A$” would be false in this context, because there are some members of $B$ which are not members of $A$, namely 2, 5, and 7.
 
 
 \ea \label{ex:13.12}
-U = \{1,2,3,4,5,6,7,8,9,10\}\\
-A = \{3,4,6\}\\
-B = \{2,3,4,5,6,7\}
+$U = \{1,2,3,4,5,6,7,8,9,10\}$\\
+$A = \{3,4,6\}$\\
+$B = \{2,3,4,5,6,7\}$
 \z
 
 
@@ -230,45 +229,45 @@ B = \{2,3,4,5,6,7\}
 \begin{figure}
 % \includegraphics[width=\textwidth]{figures/KroegerIntroSemPragprepubv2g-img1.png}
 \begin{tikzpicture}
- \node at (0,0) (A) {A}; 
- \node[left=3em of A] (B) {B};
+ \node at (0,0) (A) {$A$}; 
+ \node[left=3em of A] (B) {$B$};
  \node[fit =(A),draw,ellipse] (fit1) {};
  \node[fit =(B) (fit1),draw,ellipse] (fit2) {};
 \end{tikzpicture}
 
-  \textsf{A}\small{${\subseteq}$}\textsf{B}\\
+  $A\subseteq B$\\
 
 \caption{\label{fig:13:1} Set inclusion (the subset relation)}
 \end{figure}
 
 \ea \label{ex:13.13}
-\ea  \{a,b,c\} ${\subseteq}$ \{a,b,c,d,f\}\\
-\ex \{a,b,c\} ${\nsubseteq}$ \{c,d,f\} \\
-\ex \{a,b,c\} ${\subseteq}$ \{a,b,c\}\\
-\ex ${\forall}$S (where S is a set), ∅ ${\subseteq}$ S
+\ea $\{a,b,c\} \subseteq \{a,b,c,d,f\}$\\
+\ex $\{a,b,c\}  \nsubseteq \{c,d,f\}$ \\
+\ex $\{a,b,c\}  \subseteq \{a,b,c\}$\\
+\ex $\forall S$ (where $S$ is a set), $\emptyset \subseteq S$
                        \z
 \z
 
 
-Every set is a subset of itself, because all the elements which are members of set A are by definition members of set A. For this reason, the proposition “A${\subseteq}$A” will be true whenever A is a well-defined set, as illustrated in (\ref{ex:13.13}c). If we want to specify that set A is a subset of set B, but that the two sets are not equal, we can write “A${\subset}$B”. This symbol means that set A is a \textsc{proper subset} of set B. The proposition “A${\subset}$A” will be false for any set A.
+Every set is a subset of itself, because all the elements which are members of set $A$ are by definition members of set $A$. For this reason, the proposition “$A\subseteq A$” will be true whenever $A$ is a well-defined set, as illustrated in (\ref{ex:13.13}c). If we want to specify that set $A$ is a subset of set $B$, but that the two sets are not equal, we can write “$A\subset B$”. This symbol means that set $A$ is a \textsc{proper subset} of set $B$. The proposition “$A\subset A$” will be false for any set $A$.
 
 
 
-Since the elements of every set must be members of the current universal set U, “A${\subseteq}$U” must always be true. If “U${\subseteq}$A” is true, then it must be the case that A=U.
+Since the elements of every set must be members of the current universal set $U$, “$A\subseteq U$” must always be true. If “$U\subseteq A$” is true, then it must be the case that $A=U$.
 
 
 
-The \textsc{intersection} of two sets, written “A${\cap}$B”, is defined as the set consisting of all elements which are both members of A and members of B. We can illustrate this situation using the sets defined in \REF{ex:13.14}. By comparing the elements in set A with those in set B, we see that the two sets share only the following elements in common: 3, 4, and 6; so A${\cap}$B = \{3,4,6\}.
+The \textsc{intersection} of two sets, written “$A\cap B$”, is defined as the set consisting of all elements which are both members of $A$ and members of $B$. We can illustrate this situation using the sets defined in \REF{ex:13.14}. By comparing the elements in set $A$ with those in set $B$, we see that the two sets share only the following elements in common: 3, 4, and 6; so $A\cap B$ = $\{3,4,6\}$.
 
 
 \ea \label{ex:13.14}
-U = \{1,2,3,4,5,6,7,8,9,10\}\\
-A = \{2,3,4,6\}\\
-B = \{3,4,5,6,7,8\}
+$U = \{1,2,3,4,5,6,7,8,9,10\}$\\
+$A = \{2,3,4,6\}$\\
+$B = \{3,4,5,6,7,8\}$
 \z
 
 
-\figref{fig:13:2} illustrates set intersection in the form of a diagram: the ovals represent two sets, labeled A and B, while the shaded portion which is included in both ovals represents the intersection of the two sets (A${\cap}$B). Another example in standard set notation is provided in \REF{ex:13.15}.
+\figref{fig:13:2} illustrates set intersection in the form of a diagram: the ovals represent two sets, labeled $A$ and $B$, while the shaded portion which is included in both ovals represents the intersection of the two sets ($A\cap B$). Another example in standard set notation is provided in \REF{ex:13.15}.
 
 %\todo{drawobject}
 \begin{figure}
@@ -279,9 +278,9 @@ B = \{3,4,5,6,7,8\}
 \endscope
 \draw (0,0) circle (1)
       (1,0) circle (1);
-\node at (-.5,0) {A};
-\node at (1.5,0) {B};
-\node at (0.5,-1.5) (text) {\textsf{A${\cap}$B}};
+\node at (-.5,0) {$A$};
+\node at (1.5,0) {$B$};
+\node at (0.5,-1.5) (text) {$A\cap B$};
 \draw[-{Triangle[]}] (text.north) -- (0.5,0);
 \end{tikzpicture}
  
@@ -292,11 +291,11 @@ B = \{3,4,5,6,7,8\}
 \end{figure}
 
 \ea \label{ex:13.15}
-\{a,b,c\} ${\cap}$ \{c,d,f\} = \{c\}
+$\{a,b,c\} \cap \{c,d,f\} = \{c\}$
 \z
 
 
-The \textsc{union} of two sets, written “A${\cup}$B”, is the set consisting of all elements which are either members of A or members of B. Returning to the sets defined in \REF{ex:13.14}, the union of the two sets is formed by combining all the elements from both, which yields the following result: A${\cup}$B = \{2,3,4,5,6,7,8\}. \figref{fig:13:3} illustrates this in the form of a diagram, and another example in standard set notation is provided in \REF{ex:13.16}.
+The \textsc{union} of two sets, written “$A\cup B$”, is the set consisting of all elements which are either members of $A$ or members of $B$. Returning to the sets defined in \REF{ex:13.14}, the union of the two sets is formed by combining all the elements from both, which yields the following result: $A\cup B = \{2,3,4,5,6,7,8\}$. \figref{fig:13:3} illustrates this in the form of a diagram, and another example in standard set notation is provided in \REF{ex:13.16}.
 
 
 \begin{figure}
@@ -307,33 +306,33 @@ The \textsc{union} of two sets, written “A${\cup}$B”, is the set consisting 
 \endscope
 \draw[fill=gray!40] (0,0) circle (1)
       (1,0) circle (1);
-\node at (-.5,0) {A};
-\node at (1.5,0) {B};
-\node at (0.5,-1.5) (text) {\textsf{A${\cup}$B}};
+\node at (-.5,0) {$A$};
+\node at (1.5,0) {$B$};
+\node at (0.5,-1.5) (text) {$A\cup B$};
 \end{tikzpicture}
 
 \caption{\label{fig:13:3} Set union}
 \end{figure}
 
 \ea \label{ex:13.16}
-\{a,b,c\} ${\cup}$ \{c,d,f\} = \{a,b,c,d,f\}
+$\{a,b,c\} \cup \{c,d,f\} = \{a,b,c,d,f\}$
 \z
 
 
-The \textsc{complement} of set A, written as $\overline{A}$ or $A'$, is defined as the set which contains all the elements of U that are not elements of A. Some simple examples are shown in \REF{ex:13.17}. Here, the only elements of U which are not in A are 1 and 5, so
-$\overline{\textnormal{A}}$ = \{1,5\}. Similarly, the elements of U which are not in B are 1, 2, 5, and 6; so $\overline{\textnormal{B}}$ = \{1,2,5,6\}.
+The \textsc{complement} of set $A$, written as $\overline{A}$ or $A'$, is defined as the set which contains all the elements of $U$ that are not elements of $A$. Some simple examples are shown in \REF{ex:13.17}. Here, the only elements of $U$ which are not in $A$ are 1 and 5, so
+$\overline{A} = \{1,5\}$. Similarly, the elements of $U$ which are not in $B$ are 1, 2, 5, and 6; so $\overline{B} = \{1,2,5,6\}$.
 
 
 \ea \label{ex:13.17}
-U = \{1,2,3,4,5,6\}\\
-A = \{2,3,4,6\}\\
-$\overline{\textnormal{A}}$ = \{1,5\}\\
-B = \{3,4\}\\
-$\overline{\textnormal{B}}$ = \{1,2,5,6\}
+$U = \{1,2,3,4,5,6\}$\\
+$A = \{2,3,4,6\}$\\
+$\overline{A} = \{1,5\}$\\
+$B = \{3,4\}$\\
+$\overline{B} = \{1,2,5,6\}$
 \z
 
 
-This basic notion of complement set involves complements relative to the universal set U. It is often useful to refer to the complement of one set relative to some other set. The complement of A relative to B, written “B–A”, is the set consisting of all elements which are members of B but not members of A.\footnote{This operation is sometimes referred to as “set subtraction.”} Another way of expressing this definition is the following: B–A = B${\cap}\overline{\textnormal{A}}$. \figref{fig:13:4} illustrates this in the form of a diagram, and several examples in standard set notation are provided in \REF{ex:13.18}.
+This basic notion of complement set involves complements relative to the universal set $U$. It is often useful to refer to the complement of one set relative to some other set. The complement of $A$ relative to $B$, written “$B-A$”, is the set consisting of all elements which are members of $B$ but not members of $A$.\footnote{This operation is sometimes referred to as “set subtraction.”} Another way of expressing this definition is the following: $B-A = B\cap\overline{A}$. \figref{fig:13:4} illustrates this in the form of a diagram, and several examples in standard set notation are provided in \REF{ex:13.18}.
 
 %\todo{drawobject}
 \begin{figure}
@@ -353,22 +352,22 @@ This basic notion of complement set involves complements relative to the univers
       (1,0) circle (1);
 \node at (-.5,0) {A};
 \node at (1.5,0) {B};
-\node at (1.25,-1.5) (text) {\textsf{B–A}};
+\node at (1.25,-1.5) (text) {$B-A$};
 \draw[-{Triangle[]}] (text.north) -- (1.25,-.5);
 \end{tikzpicture}
 \caption{\label{fig:13:4} Set complementation}
 \end{figure}
 
 \ea \label{ex:13.18}
-\{a,b,c\} – \{b,c\} = \{a\}\\
-\{a,b,c,d,f\} – \{a,b,c,j,k,p\} = \{d,f\}\\
-A – ∅ = A\\
-∅ – A = ∅\\
-U – A = $\overline{\textnormal{A}}$
+$\{a,b,c\} - \{b,c\} = \{a\}$\\
+$\{a,b,c,d,f\} - \{a,b,c,j,k,p\} = \{d,f\}$\\
+$A - ∅ = A$\\
+$∅ - A = ∅$\\
+$U - A = \overline{A}$
 \z
 
 
-To summarize, we have defined three basic operations on sets (\textsc{intersection}, \textsc{union}, and \textsc{complement} or “difference”), and one relation between sets, namely \textsc{inclusion} (the \textsc{subset} relation). The three operations provide ways of combining two existing sets to define a new set. It is important to note that “A${\cap}$B”, “A${\cup}$B”, and “B–A” are names of sets; but “A${\subseteq}$B” is a proposition, a claim about the membership of the two sets, which could be true or false.
+To summarize, we have defined three basic operations on sets (\textsc{intersection}, \textsc{union}, and \textsc{complement} or “difference”), and one relation between sets, namely \textsc{inclusion} (the \textsc{subset} relation). The three operations provide ways of combining two existing sets to define a new set. It is important to note that “$A\cap B$”, “$A\cup B$”, and “$B-A$” are names of sets; but “$A\subseteq B$” is a proposition, a claim about the membership of the two sets, which could be true or false.
 
 
 
@@ -376,10 +375,10 @@ More precise definitions of set intersection, union, complementation, and inclus
 
 
 \ea \label{extab:13.19}
-${\forall}$x [x ${\in}$ (A${\cap}$B)  ↔   ((x${\in}$A) $\wedge$ (x${\in}$B))] \hfill [\textsc{intersection}]\\
-${\forall}$x [x ${\in}$ (A${\cup}$B)  ↔   ((x${\in}$A) $\vee$ (x${\in}$B))] \hfill [\textsc{union}]\\
-${\forall}$x [x ${\in}$ (A–B)  ↔   ((x${\in}$A) $\wedge$ (x${\notin}$B))] \hfill [\textsc{complement}]\\
-(A ${\subseteq}$ B)  ↔   ${\forall}$x [(x${\in}$A) → (x${\in}$B)] \hfill [\textsc{subset}]
+$\forall x [x \in (A\cap B) \leftrightarrow ((x \in A) \wedge  (x \in B))]$ \hfill [\textsc{intersection}]\\
+$\forall x [x \in (A\cup B) \leftrightarrow ((x \in A) \vee    (x \in B))]$ \hfill [\textsc{union}]\\
+$\forall x [x \in (A–B)     \leftrightarrow ((x \in A) \wedge  (x \notin B))]$ \hfill [\textsc{complement}]\\
+$(A \subseteq B)            \leftrightarrow \forall x [(x \in A) \rightarrow (x \in B)]$ \hfill [\textsc{subset}]
 \z
 
 \section{Truth relative to a model}\label{sec:13.4}
@@ -388,19 +387,21 @@ We have noted several times that denotations, including the denotations of refer
 
 
 
-As a first illustration of how the system works, let us return to our simple situation containing just three individuals: King Henry VIII, Anne Boleyn, and Thomas More. Our model of this situation, which we might call Model 1, would provide the information listed in \REF{ex:13.20}. We often use the name “U” as a convenient way to refer to the domain (the “universal set” of individuals). The notation $\llbracket\text{x}\rrbracket$  represents the denotation (or “semantic value”) of x within the current model. This notation can be used either for object language expressions or for logical formulae; so, for example, $\llbracket\text{SNORE}\rrbracket$  names the same set as $\llbracket\text{\itshape snores}\rrbracket$. Recall that in the logic format presented in \chapref{sec:4}, we use small letters for logical “constants”, e.g. proper names, and capital letters for predicates.
+As a first illustration of how the system works, let us return to our simple situation containing just three individuals: King Henry\,VIII, Anne Boleyn, and Thomas More. Our model of this situation, which we might call Model 1, would provide the information listed in \REF{ex:13.20}. We often use the name “$U$” as a convenient way to refer to the domain (the “universal set” of individuals). The notation $\llbracket x\rrbracket$  represents the denotation (or “semantic value”) of $x$ within the current model. This notation can be used either for object language expressions or for logical formulae; so, for example, $\llbracket\text{SNORE}\rrbracket$  names the same set as $\llbracket\text{\itshape snores}\rrbracket$. Recall that in the logic format presented in \chapref{sec:4}, we use small letters for logical “constants”, e.g. proper names, and capital letters for predicates.
 
 \newpage 
 \ea \label{ex:13.20}Model 1\\
 \begin{enumerate}[label=\roman*.]
-\item the set of individuals U = \{ King Henry VIII, Anne Boleyn, Thomas More \}
-\item denotations:\\
-$\llbracket\text{MAN}\rrbracket$  = \{King Henry VIII, Thomas More\}\\
-$\llbracket\text{WOMAN}\rrbracket$  = \{Anne Boleyn\}\\
-$\llbracket\text{SNORE}\rrbracket$  = \{King Henry VIII\}\\
-$\llbracket\text{a}\rrbracket$  = Anne Boleyn\\
-$\llbracket\text{h}\rrbracket$  = King Henry VIII\\
-$\llbracket\text{t}\rrbracket$  = Thomas More
+\item the set of individuals $U$ = \{ King Henry VIII, Anne Boleyn, Thomas More \}
+\item denotations:\smallskip\\
+\begin{tabular}{@{}l@{~}c@{~}l@{}}
+$\llbracket\text{MAN}\rrbracket$   & = & \{King Henry VIII, Thomas More\}\\
+$\llbracket\text{WOMAN}\rrbracket$ & = & \{Anne Boleyn\}\\
+$\llbracket\text{SNORE}\rrbracket$ & = & \{King Henry VIII\}\\
+$\llbracket a\rrbracket$           & = & Anne Boleyn\\
+$\llbracket h\rrbracket$           & = & King Henry VIII\\
+$\llbracket t\rrbracket$           & = & Thomas More
+\end{tabular}
 \end{enumerate}
 \z
 
@@ -429,7 +430,7 @@ e. &   {No women snore.} &  ¬${\exists}$x[WOMAN(x) $\wedge$ SNORE(x)]\hspace{2m
 \end{tabularx} 
 \end{table}
 
-The interpretations in \tabref{extab:13.21}b--e can be derived from the corresponding logical forms, based on the definitions of intersection, union, and subset provided in \REF{extab:13.19}. For example, the \textit{or} statement in \tabref{extab:13.21}b constitutes a claim that a certain individual (Anne Boleyn) is a member of the union of two sets, because the definition of A${\cup}$B involves an \textit{or} statement. Once the truth conditions are stated in terms of set relations, we can determine the truth values for each sentence by inspecting the membership of the denotation sets specified in the model. The statement in \tabref{extab:13.21}b is true relative to Model 1 because the individual Anne Boleyn is a member of the set $\llbracket\text{WOMAN}\rrbracket$ , and thus a member of $\llbracket\text{MAN}\rrbracket {\cup} \llbracket\text{WOMAN}\rrbracket$ .
+The interpretations in \tabref{extab:13.21}b--e can be derived from the corresponding logical forms, based on the definitions of intersection, union, and subset provided in \REF{extab:13.19}. For example, the \textit{or} statement in \tabref{extab:13.21}b constitutes a claim that a certain individual (Anne Boleyn) is a member of the union of two sets, because the definition of $A\cup B$ involves an \textit{or} statement. Once the truth conditions are stated in terms of set relations, we can determine the truth values for each sentence by inspecting the membership of the denotation sets specified in the model. The statement in \tabref{extab:13.21}b is true relative to Model 1 because the individual Anne Boleyn is a member of the set $\llbracket\text{WOMAN}\rrbracket$ , and thus a member of $\llbracket\text{MAN}\rrbracket \cup \llbracket\text{WOMAN}\rrbracket$ .
 
 
 \section{Rules of interpretation}\label{sec:13.5}
@@ -448,9 +449,8 @@ We have already stated an informal rule of interpretation for simple sentences: 
 
 
 \ea \label{ex:13.23}
-\textbf{syntax}: S  →  NP\textsubscript{subj}  VP\\
-\textbf{semantics}: The semantic value of a sentence is ‘true’ if the semantic value of the subject is a member of the set which is the semantic value of the VP, and ‘false’ otherwise;\\
-{}$\llbracket\text{S}\rrbracket$  = ‘true’  iff  $\llbracket\text{NP\textsubscript{subj}}\rrbracket {\in} \llbracket\text{VP}\rrbracket$ 
+\textit{Syntax}: S  →  NP\textsubscript{subj}  VP\\
+\textit{Semantics}: The semantic value of a sentence is ‘true’ if the semantic value of the subject is a member of the set which is the semantic value of the VP, and ‘false’ otherwise; {}$\llbracket\text{S}\rrbracket$  = ‘true’  iff  $\llbracket\text{NP\textsubscript{subj}}\rrbracket \in \llbracket\text{VP}\rrbracket$ 
 \z
 
 
@@ -458,16 +458,16 @@ Applying this rule to the sentence in (\ref{ex:13.22}a), we get the formula in \
 
 
 \ea \label{ex:13.24}
-{}$\llbracket\text{\itshape King Henry VIII snores}\rrbracket$  = ‘true’  iff  $\llbracket\text{\itshape King Henry VIII}\rrbracket {\in} \llbracket\text{\itshape  snores}\rrbracket$ 
+{}$\llbracket\text{\itshape King Henry VIII snores}\rrbracket$  = ‘true’  iff  $\llbracket\text{\itshape King Henry VIII}\rrbracket \in \llbracket\text{\itshape  snores}\rrbracket$ 
 \z
 
 
-The statement in \REF{ex:13.24} can be expressed in logical notation as in (\ref{ex:13.25}a). This formula is a specific instance of the general rule for evaluating the truth of propositions involving a one-place predicate. This general rule, shown in (\ref{ex:13.25}b), states that the proposition \textit{P(α)} is true if and only if the entity denoted by \textit{α} is an element of the denotation set of \textit{P}.
+The statement in \REF{ex:13.24} can be expressed in logical notation as in (\ref{ex:13.25}a). This formula is a specific instance of the general rule for evaluating the truth of propositions involving a one-place predicate. This general rule, shown in (\ref{ex:13.25}b), states that the proposition $P(\alpha)$ is true if and only if the entity denoted by $\alpha$ is an element of the denotation set of \textit{P}.
 
 \ea \label{ex:13.25}
-\ea  $\llbracket\text{SNORE(h)}\rrbracket$  = ‘true’  iff  $\llbracket\text{h}\rrbracket {\in} \llbracket\text{SNORE}\rrbracket$ 
-\ex  if α refers to an entity and P is a one-place predicate,\\
-  then  $\llbracket\text{P(α)}\rrbracket$  = ‘true’  iff  $\llbracket\text{α}\rrbracket {\in} \llbracket\text{P}\rrbracket$ 
+\ea  $\llbracket\text{SNORE}(h)\rrbracket$  = ‘true’  iff  $\llbracket h\rrbracket \in \llbracket\text{SNORE}\rrbracket$ 
+\ex  if $\alpha$ refers to an entity and $P$ is a one-place predicate,\\
+  then  $\llbracket P(\alpha)\rrbracket$  = ‘true’  iff  $\llbracket \alpha \rrbracket \in \llbracket P\rrbracket$ 
 \z \z
 
 
@@ -476,18 +476,19 @@ Let us now add a few more vocabulary items to our simple model, calling the new 
 
 \ea \label{ex:13.26} Model 1$'$\\
 \begin{enumerate}[label=\roman*.]
-\item the set of individuals U = \{King Henry VIII, Anne Boleyn, Thomas
-More\}
-\item denotations:\\
-{}$\llbracket\text{MAN}\rrbracket$  = \{King Henry VIII, Thomas More\}\\[.6em]
-$\llbracket\text{WOMAN}\rrbracket$  = \{Anne Boleyn\}\\[.6em]
-$\llbracket\text{SNORE}\rrbracket$  = \{King Henry VIII\}\\[.6em]
-$\llbracket\text{HAPPY}\rrbracket$  = \{King Henry VIII, Anne Boleyn\}\\[.6em]
-$\llbracket\text{LOVE}\rrbracket$  = \{ $\langle$King Henry VIII, Anne Boleyn$\rangle$, $\langle$Anne Boleyn, King Henry VIII$\rangle$ \}\\[.6em]
-$\llbracket\text{ANGRY\_AT}\rrbracket$  = \{ $\langle$King Henry VIII, Thomas More$\rangle$ \}\\[.6em]
-$\llbracket\text{a}\rrbracket$  = Anne Boleyn\\[.6em]
-$\llbracket\text{h}\rrbracket$  = King Henry VIII\\[.6em]
-$\llbracket\text{t}\rrbracket$  = Thomas More
+\item the set of individuals $U = \{\text{King Henry VIII}, \text{Anne Boleyn}, \text{Thomas More}\}$
+\item denotations:\smallskip\\
+\begin{tabularx}{\linewidth}{@{}l@{~}c@{~}Q@{}}
+$\llbracket\text{MAN}\rrbracket$        & = & \{King Henry VIII, Thomas More\}\\
+$\llbracket\text{WOMAN}\rrbracket$      & = & \{Anne Boleyn\}\\
+$\llbracket\text{SNORE}\rrbracket$      & = & \{King Henry VIII\}\\
+$\llbracket\text{HAPPY}\rrbracket$      & = & \{King Henry VIII, Anne Boleyn\}\\
+$\llbracket\text{LOVE}\rrbracket$       & = & \{ $\langle$King Henry VIII, Anne Boleyn$\rangle$, $\langle$Anne Boleyn, King Henry VIII$\rangle$ \}\\
+$\llbracket\text{ANGRY\_AT}\rrbracket$  & = & \{ $\langle$King Henry VIII, Thomas More$\rangle$ \}\\
+$\llbracket a\rrbracket$          & = & Anne Boleyn\\
+$\llbracket h\rrbracket$          & = & King Henry VIII\\
+$\llbracket t\rrbracket$          & = & Thomas More
+\end{tabularx}
 \end{enumerate}
 \z
 
@@ -498,17 +499,15 @@ Model 1$'$ includes some two-place (i.e, transitive) predicates, and should allo
 \ea  {King Henry VIII loves Anne Boleyn}.\\
 \ex  {King Henry VIII is angry at}  {Thomas More}.
                        \z
-\z
-
-\ea \label{ex:13.28}
-\ea  LOVE(h,a)\\
-\ex  $\llbracket\text{LOVE(h,a)}\rrbracket$  = ‘true’  
+\ex \label{ex:13.28}
+\ea  LOVE($h,a$)\\
+\ex  $\llbracket\text{LOVE}(h,a)\rrbracket$  = ‘true’  
     iff  
-    $\langle\llbracket\text{h}\rrbracket,\llbracket\text{a}\rrbracket \rangle {\in} \llbracket\text{LOVE}\rrbracket$ 
-\ex  if α, β refer to entities and P is a two-place predicate,\\
-  then  $\llbracket\text{P(α,β)}\rrbracket$  = ‘true’  
+    $\langle\llbracket h\rrbracket,\llbracket a\rrbracket \rangle \in \llbracket\text{LOVE}\rrbracket$ 
+\ex  if $\alpha, \beta$ refer to entities and $P$ is a two-place predicate,\\
+  then  $\llbracket P(\alpha,\beta)\rrbracket$  = ‘true’  
   iff  
-  $\langle\llbracket\text{α}\rrbracket,\llbracket\text{β}\rrbracket \rangle {\in} \llbracket\text{P}\rrbracket$ 
+  $\langle\llbracket \alpha\rrbracket,\llbracket \beta\rrbracket \rangle \in \llbracket P\rrbracket$ 
 \z \z
 
 
@@ -516,14 +515,14 @@ So far we have been dealing with the meanings of complete sentences all at once.
 
 
 
-The main syntactic difference between the sentences in \REF{ex:13.27} and those in \REF{ex:13.22} is the structure of VP: transitive in \REF{ex:13.27}, intransitive in \REF{ex:13.22}. In order to apply rule \REF{ex:13.23} to the sentences in \REF{ex:13.27}, we need another rule which will provide the semantic value of a transitive VP. Intuitively, rule \REF{ex:13.23} says that the proposition expressed by a (declarative) sentence will be true if and only if the referent of the subject NP is a member of the denotation set of the VP. So we need to say that sentence (\ref{ex:13.27}a) will be true if and only if King Henry VIII belongs to a certain set. What is the relevant set? It would be the set of all individuals that love Anne Boleyn. This set will be the denotation set of the VP \textit{loves Anne Boleyn}. The standard notation for defining such a set is shown in (\ref{ex:13.29}a), which says that the denotation set of this VP will be the set of all individuals x such that the ordered pair $\langle$x, Anne Boleyn$\rangle$ is an element of the denotation set of the transitive verb \textit{love}.
+The main syntactic difference between the sentences in \REF{ex:13.27} and those in \REF{ex:13.22} is the structure of VP: transitive in \REF{ex:13.27}, intransitive in \REF{ex:13.22}. In order to apply rule \REF{ex:13.23} to the sentences in \REF{ex:13.27}, we need another rule which will provide the semantic value of a transitive VP. Intuitively, rule \REF{ex:13.23} says that the proposition expressed by a (declarative) sentence will be true if and only if the referent of the subject NP is a member of the denotation set of the VP. So we need to say that sentence (\ref{ex:13.27}a) will be true if and only if King Henry VIII belongs to a certain set. What is the relevant set? It would be the set of all individuals that love Anne Boleyn. This set will be the denotation set of the VP \textit{loves Anne Boleyn}. The standard notation for defining such a set is shown in (\ref{ex:13.29}a), which says that the denotation set of this VP will be the set of all individuals $x$ such that the ordered pair $\langle x, \text{Anne Boleyn}\rangle$ is an element of the denotation set of the transitive verb \textit{love}.
 
 
 \ea \label{ex:13.29}
-\ea $\llbracket\text{\textit{loves Anne Boleyn}}\rrbracket$  = \{x: $\langle$x, Anne Boleyn$\rangle {\in} \llbracket\text{LOVE}\rrbracket$ \}
-\ex \textbf{syntax}: VP  →  V\textsubscript{trans}  NP\textsubscript{obj}\\
-\textbf{semantics}: The semantic value of a VP containing a transitive verb meaning P together with an object NP meaning α is the set of all individuals x for which P(x,α) is true;\\
-{}$\llbracket\text{VP}\rrbracket$  =  \{x: $\langle$x, $\llbracket\text{NP\textsubscript{obj}}\rrbracket \rangle {\in} \llbracket\text{V\textsubscript{trans}}\rrbracket$ \}
+\ea $\llbracket\text{\textit{loves Anne Boleyn}}\rrbracket  = \{x: \langle x, \text{Anne Boleyn}\rangle \in \llbracket\text{LOVE}\rrbracket \}$
+\ex \textit{Syntax}: VP  →  V\textsubscript{trans}  NP\textsubscript{obj}\\
+\textit{Semantics}: The semantic value of a VP containing a transitive verb meaning $P$ together with an object NP meaning $\alpha$ is the set of all individuals $x$ for which $P(x,\alpha)$ is true;\\
+{}$\llbracket\text{VP}\rrbracket  =  \{x: \langle x, \llbracket\text{NP\textsubscript{obj}}\rrbracket \rangle \in \llbracket\text{V\textsubscript{trans}}\rrbracket \}$
 \z \z
 
 
@@ -550,15 +549,15 @@ Sentence (\ref{ex:13.30}c) is more complex, because the predicate NP contains a 
 
 
 
-The combination of word meanings in \textit{happy man} follows the same pattern we have already discussed in connection with the phrase \textit{yellow submarine}. The proposition asserted in (\ref{ex:13.30}c) might be represented by the formula in (\ref{ex:13.31}a). The truth conditions for this proposition are stated in terms of set membership in (\ref{ex:13.31}b). (Recall the definition of intersection given in \REF{extab:13.19}.) The general rule for interpreting modifying adjectives is stated in (\ref{ex:13.31}c); we use the category label N$'$ for the constituent formed by A+N. Ignoring once again any possible semantic contribution of the copula and the indefinite article, the denotation set of the VP \textit{is a happy man} is simply $\llbracket\text{HAPPY}\rrbracket {\cap} \llbracket\text{MAN}\rrbracket$. This is a set of individuals, and so rule \REF{ex:13.23} will apply correctly to sentence (\ref{ex:13.30}c) as well.
+The combination of word meanings in \textit{happy man} follows the same pattern we have already discussed in connection with the phrase \textit{yellow submarine}. The proposition asserted in (\ref{ex:13.30}c) might be represented by the formula in (\ref{ex:13.31}a). The truth conditions for this proposition are stated in terms of set membership in (\ref{ex:13.31}b). (Recall the definition of intersection given in \REF{extab:13.19}.) The general rule for interpreting modifying adjectives is stated in (\ref{ex:13.31}c); we use the category label N$'$ for the constituent formed by A+N. Ignoring once again any possible semantic contribution of the copula and the indefinite article, the denotation set of the VP \textit{is a happy man} is simply $\llbracket\text{HAPPY}\rrbracket \cap \llbracket\text{MAN}\rrbracket$. This is a set of individuals, and so rule \REF{ex:13.23} will apply correctly to sentence (\ref{ex:13.30}c) as well.
 
 
 \ea \label{ex:13.31}
-\ea  HAPPY(h) $\wedge$ MAN(h)\\
-\ex  $\llbracket\text{HAPPY(h)} \wedge \text{MAN(h)}\rrbracket$  = ‘true’  iff  $\llbracket\text{h}\rrbracket {\in} (\llbracket\text{HAPPY}\rrbracket {\cap} \llbracket\text{MAN}\rrbracket)$
-\ex  \textbf{syntax}: N$'$ →  A N\\
-\textbf{semantics}: The semantic value of an N$'$ constituent containing a modifying adjective and a head noun is the intersection of the semantic values of the adjective and noun;\\
-{}$\llbracket\text{A N}\rrbracket$  =  $\llbracket\text{A}\rrbracket {\cap} \llbracket\text{N}\rrbracket$ 
+\ea  $\text{HAPPY}(h) \wedge \text{MAN}(h)$\\
+\ex  $\llbracket\text{HAPPY}(h) \wedge \text{MAN}(h)\rrbracket$  = ‘true’  iff  $\llbracket h\rrbracket \in (\llbracket\text{HAPPY}\rrbracket \cap \llbracket\text{MAN}\rrbracket)$
+\ex  \textit{Syntax}: N$'$ →  A N\\
+     \textit{Semantics}: The semantic value of an N$'$ constituent containing a modifying adjective and a head noun is the intersection of the semantic values of the adjective and noun;\\
+{}$\llbracket\text{A N}\rrbracket$  =  $\llbracket\text{A}\rrbracket \cap \llbracket\text{N}\rrbracket$ 
 \z \z
 
 \section{Conclusion}\label{sec:13.6}
@@ -582,7 +581,6 @@ Good brief introductions to set theory are provided in \citet[ch. 2]{AllwoodEtAl
 
 }
 
-\newpage
 \discussionexercises{
 \paragraph*{A. Set theory.}
 
@@ -591,13 +589,13 @@ Fill in the following tables:
 {\small
 \noindent
 % \eabox{%1 
-\begin{tabularx}{\textwidth}{lQXQ}
+\begin{tabularx}{\textwidth}{lQQ>{\raggedright\arraybackslash}p{\widthof{the set of all}}}
 \lsptoprule
- & Set A & Set B & A${\cap}$B  \\
+ & Set $A$ & Set $B$ & $A \cap B$  \\
 \midrule
 a. &  the set of all mammals & the set of all animals that lay eggs & the set of all \textsc{monotremes}\footnote{Platypus plus four species of echidna}\\
 \tablevspace
-b. &  \{p,q,s,t\} & \{q,t,w,x\} & \\
+b. &  $\{p,q,s,t\}$ & $\{q,t,w,x\}$ & \\
 \tablevspace
 c. &  the set of all odd numbers & the set of all even numbers & \\
 \tablevspace
@@ -613,11 +611,11 @@ e. & the set of all Hollywood stars  & the set of all governors of California (p
 % \eabox{ 
 \begin{tabularx}{\textwidth}{lXXQ}
 \lsptoprule
- &Set A & Set B & A${\cup}$B\\
+ &Set $A$ & Set $B$ & $A \cup B$\\
  \midrule
 a. & the set of all the books of the Old Testament & the set of all the books of the New Testament & the set of the canonical books of the Bible  \\
 \tablevspace
-b. & \{p,q,s,t\} & \{q,t,w,x\} & \\
+b. & $\{p,q,s,t\}$ & $\{q,t,w,x\}$ & \\
 \tablevspace
 c. & the set of all odd numbers & the set of all even numbers & \\
 \tablevspace
@@ -635,12 +633,12 @@ e. & the set of all female     British monarchs            & the set of all fema
 % \eabox{ 
 \begin{tabularx}{\textwidth}{lQQQ}
 \lsptoprule
- & Set A & Set B & A–B\\
+ & Set $A$ & Set $B$ & $A-B$\\
  \midrule
 a. & nations that have won at least one FIFA World Cup title & nations that have won a FIFA World Cup title playing in their own homeland
 & \{Brazil, Spain\} (as of Dec. 2018) \\
 \tablevspace
-b. & \{p,q,s,t\} & \{q,t,w,x\} & \\
+b. & $\{p,q,s,t\}$ & $\{q,t,w,x\}$ & \\
 \tablevspace
 c. & the set of all integers & the set of all even numbers & \\
 \tablevspace
@@ -655,14 +653,14 @@ e. & the set of all {French} monarchs & the set of all female {French} monarchs 
 \noindent
 % \todo{check labels}    
 % \eabox{ 
-\begin{tabularx}{\textwidth}{lQQQ}
+\begin{tabularx}{\textwidth}{lQQl}
 \lsptoprule
-&  Set A & Set B & A${\subseteq}$B?\\
+&  Set $A$ & Set $B$ & $A \subseteq B$?\\
 \midrule
 a. & the set of all \textsc{monotremes} &  the set of all mammals & \\
 \tablevspace
 
-b. & \{p,q,s,t\} & \{q,t,w,x\} & \\
+b. & $\{p,q,s,t\}$ & $\{q,t,w,x\}$ & \\
 \tablevspace
 
 c. & the set of all odd numbers & the set of all integers & \\
@@ -680,31 +678,32 @@ e. & the set of all Indo-European  languages & the set of all SVO languages & \\
 
 
 \paragraph*{B. Model theory}
-\largerpage
-\ea  
-         Sketch a picture of the situation defined by the following model:
+\ea Sketch a picture of the situation defined by the following model:
 
-\ea the set of individuals U = \{Able, Baker, Charlie, Doug, Echo, Fred, Geronimo\}
-\ex denotation assignments:\\
-$\llbracket\text{FISH}\rrbracket$  = \{Able, Baker, Charlie, Doug\}\\
-$\llbracket\text{SUBMARINE}\rrbracket$  = \{Echo\}\\
-$\llbracket\text{SEAHORSE}\rrbracket$  = \{Fred, Geronimo\}\\
-$\llbracket\text{RED}\rrbracket$  = \{Able, Baker, Fred\}\\
-$\llbracket\text{GREEN}\rrbracket$  = \{Charlie, Geronimo\}\\
-$\llbracket\text{BLUE}\rrbracket$  = \{Doug, Echo\}\\
-$\llbracket\text{SWIM}\rrbracket$  = \{Able, Baker, Charlie, Doug, Fred, Geronimo\}\\
-$\llbracket\text{OCTOPUS}\rrbracket$  = ∅\\
-{}$\llbracket\text{FOLLOW}\rrbracket$  = \{$\langle$Able, Echo$\rangle$, $\langle$Doug, Able$\rangle$, $\langle$Doug, Echo$\rangle,\langle$Charlie, Fred$\rangle$\}\\ 
-$\llbracket\text{a}\rrbracket$  = Able    \\
-$\llbracket\text{b}\rrbracket$  = Baker   \\
-$\llbracket\text{c}\rrbracket$  = Charlie \\
-$\llbracket\text{d}\rrbracket$  = Doug\\
-$\llbracket\text{e}\rrbracket$  = Echo\\
-$\llbracket\text{f}\rrbracket$  = Fred\\ 
-$\llbracket\text{g}\rrbracket$  = Geronimo\\
-    \z \z
-\newpage 
-\ea  
+
+\ea the set of individuals $U$ = \{Able, Baker, Charlie, Doug, Echo, Fred, Geronimo\}
+\ex denotation assignments:\smallskip\\
+  \begin{tabularx}{\linewidth}{@{} l@{~}c@{~}Q  @{}}
+$\llbracket\text{FISH}\rrbracket$      & = & \{Able, Baker, Charlie, Doug\}\\
+$\llbracket\text{SUBMARINE}\rrbracket$ & = & \{Echo\}\\
+$\llbracket\text{SEAHORSE}\rrbracket$  & = & \{Fred, Geronimo\}\\
+$\llbracket\text{RED}\rrbracket$       & = & \{Able, Baker, Fred\}\\
+$\llbracket\text{GREEN}\rrbracket$     & = & \{Charlie, Geronimo\}\\
+$\llbracket\text{BLUE}\rrbracket$      & = & \{Doug, Echo\}\\
+$\llbracket\text{SWIM}\rrbracket$      & = & \{Able, Baker, Charlie, Doug, Fred, Geronimo\}\\
+$\llbracket\text{OCTOPUS}\rrbracket$   & = & ∅\\
+$\llbracket\text{FOLLOW}\rrbracket$  & = & \{$\langle$Able, Echo$\rangle$, $\langle$Doug, Able$\rangle$, $\langle$Doug, Echo$\rangle,\langle$Charlie, Fred$\rangle$\}\\ 
+$\llbracket a\rrbracket$ & = & Able    \\
+$\llbracket b\rrbracket$ & = & Baker   \\
+$\llbracket c\rrbracket$ & = & Charlie \\
+$\llbracket d\rrbracket$ & = & Doug\\
+$\llbracket e\rrbracket$ & = & Echo\\
+$\llbracket f\rrbracket$ & = & Fred\\ 
+$\llbracket g\rrbracket$ & = & Geronimo\\
+\end{tabularx}
+    \z 
+    
+\ex  
           Complete the following table by providing logical formulae and set-theoretic interpretations for sentences (e–i), and evaluate the truth value of each sentence relative to the model provided above.
     \z 
 
@@ -714,13 +713,13 @@ $\llbracket\text{g}\rrbracket$  = Geronimo\\
 \lsptoprule
 &   English sentence &  logical form &  set interpretation & \\% current truth value\\
 \midrule
-a. & \textit{Geronimo is a seahorse}. & SEAHORSE(g) & Geronimo ${\in} \llbracket\text{SEAHORSE}\rrbracket$  & T\\
+a. & \textit{Geronimo is a seahorse}. & $\text{SEAHORSE}(g)$ & $\text{Geronimo} \in \llbracket\text{SEAHORSE}\rrbracket$  & T\\
 \tablevspace
-b. & \textit{Doug is a blue fish}.    & BLUE(d) $\wedge$ {FISH}(d) & Doug ${\in}$ ($\llbracket\text{BLUE}\rrbracket {\cap} \llbracket\text{FISH}\rrbracket$ ) & T  \\
+b. & \textit{Doug is a blue fish}.    & $\text{BLUE}(d) \wedge \text{FISH}(d)$ & $\text{Doug} \in (\llbracket\text{BLUE}\rrbracket \cap \llbracket\text{FISH}\rrbracket )$ & T  \\
 \tablevspace
-c. & \textit{Charlie is red or green}. & RED(c) $\vee$ GREEN(c) & Charlie ${\in}$ ($\llbracket\text{RED}\rrbracket {\cup} \llbracket\text{GREEN}\rrbracket$ ) & T\\
+c. & \textit{Charlie is red or green}. & $\text{RED}(c) \vee \text{GREEN}(c)$ & $\text{Charlie} \in (\llbracket\text{RED}\rrbracket \cup \llbracket\text{GREEN}\rrbracket )$ & T\\
 \tablevspace
-d. & \textit{All fish are red}.       & ${\forall}$x[\textsc{FISH}(x) → RED(x)] & $\llbracket\text{FISH}\rrbracket {\subseteq} \llbracket\text{RED}\rrbracket$  & F\\
+d. & \textit{All fish are red}.       & $\forall x[\text{FISH}(x) \rightarrow \text{RED}(x)]$ & $\llbracket\text{FISH}\rrbracket \subseteq \llbracket\text{RED}\rrbracket$  & F\\
 \tablevspace
 e. & \textit{Echo swims}. &  &  & \\
 \tablevspace
@@ -749,12 +748,12 @@ i. & \textit{Two fish are red}. &  &  & \\
 \paragraph*{A:} Assume that the following individuals are included in our universe of discourse:\\
 
 \begin{quote}
-$\llbracket\text{b}\rrbracket$  = Mrs. Bennet\\
-$\llbracket\text{c}\rrbracket$  = Mr. Collins\\
-$\llbracket\text{d}\rrbracket$  = Mr. Darcy\\
-$\llbracket\text{e}\rrbracket$  = Elizabeth (Bennet)\\
-$\llbracket\text{l}\rrbracket$  = Lydia (Bennet)\\
-$\llbracket\text{w}\rrbracket$  = Mr. Wickham\\
+$\llbracket b \rrbracket$  = Mrs. Bennet\\
+$\llbracket c \rrbracket$  = Mr. Collins\\
+$\llbracket d \rrbracket$  = Mr. Darcy\\
+$\llbracket e \rrbracket$  = Elizabeth (Bennet)\\
+$\llbracket l \rrbracket$  = Lydia (Bennet)\\
+$\llbracket w \rrbracket$  = Mr. Wickham\\
 \end{quote}
 
 For each of the following logical formulae, provide an English translation and an interpretation stated in terms of set notation. Then create a model under which sentences (2--3) will be false, and the rest (including 1) will be true.\footnote{Patterned loosely after \citet[350]{Saeed2009}.} 
@@ -762,18 +761,18 @@ For each of the following logical formulae, provide an English translation and a
 \medskip 
 
 \begin{enumerate}[noitemsep]
-\item LOVE(d,e)
+\item $\text{LOVE}(d,e)$
 
 \shortmodelanswer{Model answer}{English translation: ‘Mr. Darcy loves/loved Elizabeth.’\\
-truth conditions: $\langle$Darcy, Elizabeth$\rangle {\in} \llbracket\text{LOVE}\rrbracket$ 
+truth conditions: $\langle$Darcy, Elizabeth$\rangle \in \llbracket\text{LOVE}\rrbracket$ 
 }\smallskip 
 
-\item REJECT(e,c)
-\item ${\forall}$x [(MAN(x) $\wedge$ WEALTHY(x)) → ADMIRE(b,x)]
-\item ${\exists}$x [MAN(x) $\wedge$ WEALTHY(x) $\wedge$ ADMIRE(b,x)]
-\item ¬${\exists}$x [WOMAN(x) $\wedge$ LOVE(x,c)]
-\item DECEIVE(w,l) $\wedge$ RESCUE(d,l)
-\item ${\forall}$x [WOMAN(x) → CHARM(w,x)] $\wedge {\forall}$y [MAN(y) → ANGER(w,y)]
+\item $\text{REJECT}(e,c)$
+\item $\forall x [(\text{MAN}(x)\wedge \text{WEALTHY}(x)) \rightarrow \text{ADMIRE}(b,x)]$
+\item $\exists x [\text{MAN}(x) \wedge \text{WEALTHY}(x) \wedge \text{ADMIRE}(b,x)]$
+\item $\neg \exists x [\text{WOMAN}(x) \wedge \text{LOVE}(x,c)]$
+\item $\text{DECEIVE}(w,l) \wedge \text{RESCUE}(d,l)$
+\item $\forall x [\text{WOMAN}(x) \rightarrow \text{CHARM}(w,x)] \wedge \forall y [\text{MAN}(y) \rightarrow \text{ANGER}(w,y)]$
 \end{enumerate}
 }
 
