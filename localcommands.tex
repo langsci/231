@@ -14,14 +14,23 @@
 \newcommand{\vernacular}[1]{\emph{#1}}
 \newcommand{\gloss}[1]{#1}
 
+
+\NewDocumentCommand{\discussionexercises}{+m}
+  {\begin{tblsfilledsymbol}{Discussion exercises}{people}%
+   \setcounter{equation}{0}%
+   #1\end{tblsfilledsymbol}}
+   
+\NewDocumentCommand{\homeworkexercises}{+m}
+  {\begin{tblsfilledsymbol}{Homework exercises}{pencil}%
+   \setcounter{equation}{0}%
+   #1\end{tblsfilledsymbol}}
+   
+\NewDocumentCommand{\furtherreading}{+m}
+  {\begin{tblsfilledsymbol}{Further reading}{book}%
+   \setcounter{equation}{0}%
+   #1\end{tblsfilledsymbol}}
+
 \newenvironment{stylepoints}{\ea}{\z}
-\newcommand{\furtherreading}[1]{\tblssy{book}{Further reading}{#1}}
-
-\newcommand{\discussionexercises}[1]{\setcounter{equation}{0}
-\tblssy{people}{Discussion exercises}{\vspace*{-7mm}#1}}
-
-\newcommand{\homeworkexercises}[1]{\setcounter{equation}{0}
-\tblssy{pencil}{Homework exercises}{\vspace*{-5mm}#1}}
 
 \newcommand{\modelanswer}[3][.95]{\fbox{\parbox{#1\textwidth}{\small\sffamily #2
 \vspace*{2mm}
@@ -69,12 +78,10 @@
 }%
 
 
-\definecolor{RED}{cmyk}{0.05,1,0.8,0}
-
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{AR PL UMing CN} %Chinese
-\newcommand{\zh}[1]{{\cn #1}}
-\XeTeXlinebreaklocale 'zh'  
-\XeTeXlinebreakskip = 0pt plus 1pt
+\newfontfamily\cjkfont
+  [Scale=MatchLowercase]
+  {SourceHanSerifSC-Regular.otf}
+\AdditionalFontImprint{Source Han Serif}
 
 
 \newcommand{\kroegertriple}[3]{\noindent%
