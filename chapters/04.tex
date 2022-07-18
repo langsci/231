@@ -16,7 +16,7 @@ Conclusion: & Sixty men can dig a posthole in one second.\\
 \noindent
 This may be called the syllogism arithmetical, in which, by combining logic and mathematics, we obtain a double certainty and are twice blessed.
 
-{\hfill} \textnormal{[entry from \textit{The Devil’s Dictionary} by Ambrose Bierce, 1911]}\\ 
+{\hfill} \textnormal{[entry from \textit{The devil’s dictionary} by Ambrose Bierce, 1911]}\\ 
 }
 \end{flushright}
 
@@ -225,7 +225,9 @@ The operator $\vee$ ‘or’ is defined by the truth table in \REF{ex:4.8}. This
 \end{tabular}
 }
 
+\begin{sloppypar}
 In spoken English we often use the word \textit{or} to mean ‘either … or … but not both’. For example, this is normally the usage that we intend when we ask, “Would you like white wine or red?” Table \REF{ex:4.9} shows how we would define this \textsc{exclusive} “sense” of \textit{or}, abbreviated here as \textit{XOR}. The table says that \textit{p XOR q} will be true whenever either \textit{p} or \textit{q} is true, but not both; it is false whenever \textit{p} and \textit{q} have the same truth value. (We will return in \chapref{sec:9} to the question of whether we should consider the English word \textit{or} to have two distinct senses.)
+\end{sloppypar}
 
 
 \eabox{ \label{ex:4.9}
@@ -366,7 +368,7 @@ Suppose we change the \textit{or} in the previous example to \textit{and}. This 
 Now let us consider a slightly more complex example: $((p\vee q) \wedge (\neg p)) \rightarrow q$. To construct a truth table which will allow us to evaluate this formula, we begin by putting the basic propositions \textit{p} and \textit{q} in the left-hand columns (1 \& 2). We put the complete formula that we want to prove in the far right column (6). We introduce a new column for each constituent part of the complete formula and calculate truth values for each cell, building from left to right, as seen in \REF{ex:4.14}. First, columns 1 \& 2 are used to construct column 3, based on the truth table for {$\vee$}. Next, column 4 is calculated from column 1. Columns 3 \& 4 are used to construct column 5, based on the truth table for {$\wedge$}. Finally, columns 2 \& 5 are used to construct column 6, based on the truth table for →.
 
 
-\eabox{ \label{ex:4.14}
+\eabox{\label{ex:4.14}%
 \begin{tabular}[t]{*{6}{>{\sffamily}c}}
 \lsptoprule
 \tablehead{ 1 & 2 & 3 & 4 & 5 & 6 \\
@@ -387,7 +389,7 @@ As mentioned above, it is helpful to check the predictions of the logical formal
 Now consider the biconditional formula $(p\vee q) \leftrightarrow \neg((\neg p) \wedge (\neg q))$. Using the procedure outlined above, we can construct the truth table in \REF{ex:4.15}. First, columns 1 \& 2 are used to construct column 3, based on the truth table for \textit{$\vee$}. Next, columns 4 \& 5 are used to construct column 6, based on the truth table for \textit{$\wedge$}. Column 7 is calculated from column 6, and finally columns 3 \& 7 are used to construct column 8, based on the truth table for $\leftrightarrow$.
 
 
-\eabox{ \label{ex:4.15}
+\eabox{\label{ex:4.15}%
 \begin{tabular}[t]{>{\sffamily}c>{\sffamily}c>{\sffamily\cellcolor{lsLightGray}}c>{\sffamily}c>{\sffamily}c>{\sffamily}c>{\sffamily\cellcolor{lsLightGray}}c>{\sffamily}c}
 \lsptoprule
 \tablehead{ 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
@@ -398,8 +400,7 @@ Now consider the biconditional formula $(p\vee q) \leftrightarrow \neg((\neg p) 
  \sffamily F & \sffamily T & \sffamily T & \sffamily T & \sffamily F & \sffamily F & \sffamily T & \sffamily T\\
  \sffamily F & \sffamily F & \sffamily F & \sffamily T & \sffamily T & \sffamily T & \sffamily F & \sffamily T\\
 \lspbottomrule
-\end{tabular}
-}
+\end{tabular}}
 
 Once again we see that every cell in the right-most column contains T, which means that this formula must always be true, purely because of its logical form. The biconditional operator in this formula expresses mutual entailment, that is, a paraphrase relation. This formula explains why the sentence \textit{Either he is crazy or he is lying} must always have the same truth value as \textit{It is not the case that he is both not crazy and not lying}. The first sentence is a paraphrase of the second, simply because of the logical structures involved.
 
@@ -490,21 +491,20 @@ Each of these sentences describes a property, event or relationship. The element
 
 
 
-In our logical notation we will write predicates in capital letters (to distinguish them from normal English words) and without inflectional morphology. We follow the common practice of using lower case initials to represent proper names. For predicates which require two arguments, the agent or experiencer is normally listed first. So the simple sentence \textit{John is hungry} would be translated into the logical metalanguage as HUNGRY(j), while the sentence \textit{John loves Mary} would be translated LOVE(j,m). Some additional examples are shown in \REF{ex:4.23}.
+In our logical notation we will write predicates in capital letters (to distinguish them from normal English words) and without inflectional morphology. We follow the common practice of using lower case initials to represent proper names. For predicates which require two arguments, the agent or experiencer is normally listed first. So the simple sentence \textit{John is hungry} would be translated into the logical metalanguage as $\text{HUNGRY}(j)$, while the sentence \textit{John loves Mary} would be translated $\text{LOVE}(j,m)$. Some additional examples are shown in \REF{ex:4.23}.
 
 
 \eabox{\label{ex:4.23}
-\begin{tabularx}{.9\textwidth}{@{}l Q l}
-a. & \textit{Henry VIII snores.} & SNORE(h)\\
-b. & \textit{Socrates is a man.} & MAN(s)\\
-c. & \textit{Napoleon is near Paris.} & NEAR(n,p)\\
-d. & \textit{Abraham Lincoln admired Queen Victoria.} & ADMIRE(a,v)\\
-e. & \textit{Jocasta is Oedipus’ mother}. & MOTHER\_OF(j,o)\\
-f. & \textit{Abraham Lincoln was tall and homely.} & TALL(a) $\wedge$ HOMELY(a)\\
-g. & \textit{Abraham Lincoln was a tall man.}  & TALL(a) $\wedge$ MAN(a)\\
-h. & \textit{Joe is neither honest nor competent}. & ¬ (HONEST(j) $\vee$ COMPETENT(j))
-\end{tabularx}
-}
+\begin{tabular}{@{} l @{~} >{\raggedright}p{.4\textwidth} l @{}}
+a. & \textit{Henry VIII snores.} & $\text{SNORE}(h)$\\
+b. & \textit{Socrates is a man.} & $\text{MAN}(s)$\\
+c. & \textit{Napoleon is near Paris.} & $\text{NEAR}(n,p)$\\
+d. & \textit{Abraham Lincoln admired Queen Victoria.} & $\text{ADMIRE}(a,v)$\\
+e. & \textit{Jocasta is Oedipus’ mother}. & $\text{MOTHER\_OF}(j,o)$\\
+f. & \textit{Abraham Lincoln was tall and homely.} & $\text{TALL}(a) \wedge \text{HOMELY}(a)$\\
+g. & \textit{Abraham Lincoln was a tall man.}  & $\text{TALL}(a) \wedge \text{MAN}(a)$\\
+h. & \textit{Joe is neither honest nor competent}. & $\neg (\text{HONEST}(j) \vee \text{COMPETENT}(j))$
+\end{tabular}}
 
 
 As these examples illustrate, semantic predicates can be expressed grammatically as verbs, adjectives, common nouns, or even prepositions. They can appear as part of the VP, or as modifiers within NP as in (\ref{ex:4.23}g).\footnote{VP = verb phrase, that is, the verb plus its non-subject arguments. NP = noun phrase.}
@@ -516,21 +516,21 @@ We have seen examples of one-place and two-place predicates; there are also pred
 
 \ea \label{ex:4.24}
 \begin{tabular}[t]{lll}
-a. & \textit{Henry thinks that Anne is beautiful.}  & THINK(h, BEAUTIFUL(a))\\
-b. & \textit{Susan wants to marry Ringo.} & WANT(s, MARRY(s,r))
+a. & \textit{Henry thinks that Anne is beautiful.}  & $\text{THINK}(h, \text{BEAUTIFUL}(a))$\\
+b. & \textit{Susan wants to marry Ringo.} & $\text{WANT}(s, \text{MARRY}(s,r))$
 \end{tabular}
 \z
 
 \subsection{Quantifiers (an introduction)}\label{sec:4.4.1}
-
+\begin{sloppypar}
 All the predicates in examples (\ref{ex:4.22}--\ref{ex:4.24}) have proper names as arguments. Of course we need to be able to represent other kinds of arguments as well. We will discuss this issue in more detail in later chapters, but as a brief introduction let us consider the subject NPs in \REF{ex:4.25}:
-
+\end{sloppypar}
 
 \ea \label{ex:4.25}
 \ea \textit{All students} are weary.\\
 \ex \textit{Some men} snore.\\
 \ex \textit{No crocodile} is warm-blooded.
-                       \z
+    \z
 \z
 
 The italicized phrases in \REF{ex:4.25} are examples of “quantified” NPs; they contain a special kind of determiner known as a \textsc{quantifier}. Sentence (\ref{ex:4.25}a) makes a universal generalization. It says that if you select anything within the universe of discourse that happens to be a student, that thing will also be weary. Notice that the phrase \textit{all students} does not refer to any specific individual, or set of individuals; that is why we said in \chapref{sec:2} that quantified NPs are generally not referring expressions. Rather, the phrase seems to express a kind of inference: if a given thing is a student, then it will also have the property expressed in the remainder of the sentence.
@@ -542,10 +542,10 @@ Sentence (\ref{ex:4.25}b) makes an existential claim. It says that there exists 
 \ea \label{ex:4.26}
 \ea \textit{Some guy} in the back row was snoring.  (at least one)\\
 \ex \textit{Some guys} in the back row were snoring.  (at least two)
-                       \z
+    \z
 \z
 
-Standard predicate logic makes use of two quantifier symbols: the universal quantifier ${\forall}$ and the existential quantifier ${\exists}$. As the mathematical examples in \REF{ex:4.27} illustrate, these quantifier symbols must introduce a \textsc{variable}, and this variable is said to be \textsc{bound} by the quantifier. The letters \textit{x}, \textit{y} or \textit{z} are normally used as variables that represent individuals. (We can read “$\forall x$” as ‘for all individuals x’, and “$\exists x$” as ‘there exists one or more individuals x’.) 
+Standard predicate logic makes use of two quantifier symbols: the universal quantifier ${\forall}$ and the existential quantifier ${\exists}$. As the mathematical examples in \REF{ex:4.27} illustrate, these quantifier symbols must introduce a \textsc{variable}, and this variable is said to be \textsc{bound} by the quantifier. The letters \textit{x}, \textit{y} or \textit{z} are normally used as variables that represent individuals. (We can read “$\forall x$” as ‘for all individuals $x$’, and “$\exists x$” as ‘there exists one or more individuals $x$’.) 
 
 \ea \label{ex:4.27}
 \ea  Universal quantifier:\\
@@ -583,18 +583,18 @@ The universal and existential quantifier symbols allow us to translate the sente
 
 
 \ea \label{ex:4.29}
-\ea  Universal quantifier: \textit{All students} \textit{are weary.}\\
-${\forall}$x[STUDENT(x) → WEARY(x)]
-\ex  Existential quantifier: \textit{Some men} \textit{snore.}\\
-${\exists}$x[MAN(x) $\wedge$ SNORE(x)]
+\ea  Universal quantifier: \textit{All students are weary.}\\
+$\forall x [\text{STUDENT}(x) \rightarrow \text{WEARY}(x)]$
+\ex  Existential quantifier: \textit{Some men snore.}\\
+$\exists x[\text{MAN}(x) \wedge \text{SNORE}(x)]$
 \ex  Negative Existential: \textit{No crocodile is warm-blooded.}\\
-¬${\exists}$x[CROCODILE(x) $\wedge$ WARM-BLOODED(x)]
+$\neg\exists x[\text{CROCODILE}(x) \wedge \text{WARM-BLOODED}(x)]$
 \z \z
 
-Notice that \textit{all} is translated differently from \textit{some} or \textit{no}. The universal quantifier is paired with material implication (→), while the existential quantifier introduces an \textit{and} statement. We will discuss the reason for this difference in more detail in Unit~\ref{unit:4}, but the fundamental issue is that we want our logical translation to have the same interpretation as the English sentence it is meant to represent. We might interpret the formula in (\ref{ex:4.29}a) roughly as follows: “Choose something within the universe of discourse. We will temporarily call that thing ‘x’. Is x a student? If so, then x will also be weary.” This long-winded paraphrase seems to describe the same state of affairs as the original sentence \textit{All students} \textit{are weary}. However, if we replace → with $\wedge$, we get the formula in \REF{ex:4.30}, which means something very different.
+Notice that \textit{all} is translated differently from \textit{some} or \textit{no}. The universal quantifier is paired with material implication (→), while the existential quantifier introduces an \textit{and} statement. We will discuss the reason for this difference in more detail in Unit~\ref{unit:4}, but the fundamental issue is that we want our logical translation to have the same interpretation as the English sentence it is meant to represent. We might interpret the formula in (\ref{ex:4.29}a) roughly as follows: “Choose something within the universe of discourse. We will temporarily call that thing ‘$x$’. Is $x$ a student? If so, then $x$ will also be weary.” This long-winded paraphrase seems to describe the same state of affairs as the original sentence \textit{All students} \textit{are weary}. However, if we replace → with $\wedge$, we get the formula in \REF{ex:4.30}, which means something very different.
 
 \ea \label{ex:4.30}
-${\forall}$x[STUDENT(x) $\wedge$ WEARY(x)]\\
+$\forall x[\text{STUDENT}(x) \wedge \text{WEARY}(x)]$\\
 ‘Everything in the universe of discourse is a student and is weary.’
 \z
 
@@ -604,29 +604,29 @@ So far we have only considered quantifier phrases which occur as subject NPs, bu
 
 \ea \label{ex:4.31}
 \ea \textit{John loves all girls.}\\
-  ${\forall}$x[GIRL(x) → LOVE(j,x)]\\
+  $\forall x[\text{GIRL}(x) \rightarrow \text{LOVE}(j,x)]$\\
 \ex \textit{Susan has married a cowboy.}\\
-  ${\exists}$x[COWBOY(x) $\wedge$ MARRY(s,x)]\\
+  $\exists x[\text{COWBOY}(x) \wedge \text{MARRY}(s,x)]$\\
 \ex \textit{Ringo lives in a yellow submarine}.\\
-  ${\exists}$x[YELLOW(x) $\wedge$ SUBMARINE(x) ${\wedge}$ LIVE\_IN(r,x)]
-                       \z
+  $\exists x[\text{YELLOW}(x) \wedge \text{SUBMARINE}(x) \wedge \text{LIVE\_IN}(r,x)]$
+  \z
 \z
 
 
 The patterns of inference observed in example \REF{ex:4.2} above illustrate two basic principles that govern the use of quantifiers. The first principle, which is called \textsc{universal instantiation}, states that anything which is true of all members of a particular class is true of any specific member of that class. This is the principle which licenses the inference shown in (\ref{ex:4.2}a), repeated here as (\ref{ex:4.32}a). The second principle, which is called \textsc{existential generalization}, licenses the inference shown in (\ref{ex:4.2}b), repeated here as (\ref{ex:4.32}b).
 
-\settowidth\jamwidth{${\exists}$x[LAWYER(x) $\wedge$ HONEST(x)]}
+\settowidth\jamwidth{$\exists x[\text{LAWYER}(x) \wedge \text{HONEST}(x)]$}
 \ea \label{ex:4.32}
-\ea  \textit{All men are mortal.}  \jambox{${\forall}$x[MAN(x) → MORTAL(x)]}
-\textit{Socrates is a man}.        \jambox{MAN(s)}
+\ea  \textit{All men are mortal.}  \jambox{$\forall x[\text{MAN}(x) \rightarrow \text{MORTAL}(x)]$}
+\textit{Socrates is a man}.        \jambox{$\text{MAN}(s)$}
 \FelixHRule
-\textit{Therefore,} \textit{Socrates is mortal.}  \jambox{MORTAL(s)}
+\textit{Therefore,} \textit{Socrates is mortal.}  \jambox{$\text{MORTAL}(s)$}
 \bigskip
 
-\ex   \textit{Arthur is a lawyer.}                \jambox{LAWYER(a)}
-\textit{Arthur is honest}.                        \jambox{HONEST(a)}
+\ex   \textit{Arthur is a lawyer.}                \jambox{$\text{LAWYER}(a)$}
+\textit{Arthur is honest}.                        \jambox{$\text{HONEST}(a)$}
 \FelixHRule
-\textit{Therefore,} \textit{some (= at least one) }  \jambox{${\exists}$x[LAWYER(x) $\wedge$ HONEST(x)]}
+\textit{Therefore,} \textit{some (= at least one)}  \jambox{$\exists x[\text{LAWYER}(x) \wedge \text{HONEST}(x)]$}
 \hspace{1cm} \textit{lawyer is honest.}
 \z \z
 
@@ -638,13 +638,13 @@ When a quantifier combines with another quantifier, with negation, or with vario
 \ea \label{ex:4.33}
 \ea \textit{Some man loves every woman.}\\
   \begin{xlisti} 
-      \ex ${\exists}$x[MAN(x) $\wedge$ (${\forall}$y[WOMAN(y) → LOVE(x,y)])]\\
-      \ex ${\forall}$y[WOMAN(y) → (${\exists}$x[MAN(x) $\wedge$ LOVE(x,y)])]
+      \ex $\exists x[\text{MAN}(x) \wedge (\forall y[\text{WOMAN}(y) \rightarrow \text{LOVE}(x,y)])]$\\
+      \ex $\forall y[\text{WOMAN}(y) \rightarrow (\exists x[\text{MAN}(x) \wedge \text{LOVE}(x,y)])]$
   \end{xlisti} 
 \ex  \textit{All that glitters is not gold.}\\
   \begin{xlisti}
-  \ex ${\forall}$x[GLITTER(x) → ¬GOLD(x)]\\
-  \ex ¬${\forall}$x[GLITTER(x) → GOLD(x)]
+  \ex $\forall x[\text{GLITTER}(x) \rightarrow \neg\text{GOLD}(x)]$\\
+  \ex $\neg \forall x[\text{GLITTER}(x) \rightarrow \text{GOLD}(x)]$
   \end{xlisti}
 \z \z
 
@@ -666,7 +666,7 @@ Our emphasis in this chapter was on translating sentences of English (or some ot
 Good, brief introductions to propositional and predicate logic are provided in \citet[chapters 4--5]{AllwoodEtAl1977} and \citet[chapter 2]{Kearns2000}. More detailed introductions are provided in \citet{Martin1987} and \citet{Gamut1991a}.\footnote{L.\ T.\ F.\ Gamut is a collective pen-name for the Dutch logicians Johan van Benthem, Jeroen Groenendijk, Dick de Jongh, Martin Stokhof and Henk Verkuyl.}
 }
 
-\discussionexercises{
+\discussionexercises{%
 
 \paragraph*{A. Create a truth table to prove each of the following tautologies:}
 
@@ -693,15 +693,15 @@ Good, brief introductions to propositional and predicate logic are provided in \
 \item  {Bill feeds all stray cats}.
 \end{enumerate}
 }
-\homeworkexercises{
+\homeworkexercises{%
 \paragraph*{A. Using truth tables.}
 
 Arthur has been selected to be a juror in a case which has generated a lot of local publicity. He is asked to promise not to read the newspaper or watch television until the trial is finished. There are two different ways in which he can make this commitment:
 
  
 \ea
-\ea {I will not read the newspaper or watch television until the trial is finished}.
-\ex  {I will not read the newspaper and I will not watch television until the trial is finished}. 
+\ea I will not read the newspaper or watch television until the trial is finished.
+\ex I will not read the newspaper and I will not watch television until the trial is finished. 
 \z
 \z 
  

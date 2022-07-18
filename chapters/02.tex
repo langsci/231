@@ -30,23 +30,18 @@ In \sectref{sec:2.6} we discuss a kind of meaning that does not seem to involve 
 
 \section{Denotational semantics vs. cognitive semantics}\label{sec:2.2}
 
-Let us begin by discussing the relationships between a speaker’s words, the situation in the world, and the thoughts or concepts associated with those words. These relationships are indicated in the figure in \REF{ex:2.2}, which is a version of a diagram that is sometimes referred to as the Semiotic Triangle.
+Let us begin by discussing the relationships between a speaker’s words, the situation in the world, and the thoughts or concepts associated with those words. These relationships are indicated in \figref{ex:2.2}, which is a version of a diagram that is sometimes referred to as the Semiotic Triangle.
 
 
-
- 
-
-\eabox{ \label{ex:2.2}
-(one version of) the Semiotic Triangle\\
+\begin{figure}
+\caption{\label{ex:2.2}(One version of) the Semiotic Triangle}
  \begin{tikzpicture}
   \node[regular polygon, regular polygon sides=3, minimum size=3cm,draw] (polygon3) {};
   \node[shift=(polygon3.corner 1),above] {\sffamily Mind}; 
   \node[shift=(polygon3.corner 3),below right] {\sffamily World}; 
   \node[shift=(polygon3.corner 2),below left] {\sffamily Language}; 
  \end{tikzpicture}
-% %  \caption{
-% }
-}
+\end{figure}
 
 
 Semiotics is the study of the relationship between signs and their meanings. In this book we are interested in the relationship between forms and meanings in certain kinds of symbolic systems, namely human languages. The diagram is a way of illustrating how speakers use language to describe things, events, and situations in the world. As we will see when we begin to look at word meanings, what speakers actually describe is a particular \textsc{construal} of, or way of thinking about, the situation. Now, the speaker’s linguistic description rarely if ever includes everything that the speaker knows or believes about the situation, and what the speaker believes about the situation may not match the actual state of the world. Thus there is no one-to-one correspondence between the speaker’s mental representation and either the actual situation in the world or the linguistic expressions used to describe that situation. However, there are strong links or associations connecting each of these domains with the others.
@@ -65,8 +60,9 @@ The two foundational concepts for denotational semantics, i.e., for talking abou
 Philosophers have found it hard to agree on a precise definition for \textit{reference}, but intuitively we are talking about the speaker’s use of words to “point to” something in the world; that is, to direct the hearer’s attention to something, or to enable the hearer to identify something. Suppose we are told that Brazilians used to “refer to” Pelé as \textit{o rei} ‘the king’.\footnote{Of course, Pelé rose to fame long after Brazil became a republic, so there was no king ruling the country at that time.} This means that speakers used the phrase \textit{o rei} to direct their hearers’ attention to a particular individual, namely the most famous soccer player of the 20\textsuperscript{th} century. Similarly, we might read that amyotrophic lateral sclerosis (ALS) is often “referred to” as Lou Gehrig’s Disease, in honor of the famous American baseball player who died of this disease. This means that people use the phrase \textit{Lou Gehrig’s Disease} to direct their hearers’ attention to that particular disease.
 
 
-
+\begin{sloppypar}
 A \textsc{referring expression} is an expression (normally some kind of noun phrase) which a speaker uses to refer to something. The identity of the referent is determined in different ways for different kinds of referring expressions. A proper name like \textit{King Henry VIII}, \textit{Abraham Lincoln}, or \textit{Mao Zedong}, always refers to the same individual. (In saying this, of course, we are ignoring various complicating factors, such as the fact that two people may have the same name. We will focus for the moment on the most common or basic way of using proper names, namely in contexts where they have a single unambiguous referent.) For this reason, they are sometimes referred to as \textsc{rigid designators}. “Natural kind” terms, e.g. names of species (\textit{camel, octopus, durian}) or substances (\textit{gold, salt, methane}), are similar. When they are used to refer to the species as a whole, or the substance in general, rather than any specific instance, these terms are also rigid designators: their referent does not depend on the context in which they are used. Some examples of this usage are presented in \REF{ex:2.3}.
+\end{sloppypar}
 
 
 \ea \label{ex:2.3}
@@ -130,8 +126,9 @@ As a final example, the contrast in \REF{ex:2.8} suggests that neither \textit{e
 \z
 \z
 
-
+\begin{sloppypar}
 Common noun phrases may or may not refer to anything. Definite noun phrases (sometimes called \textsc{definite descriptions}) like those in \REF{ex:2.9} are normally used in contexts where the hearer is able to identify a unique referent. But definite descriptions can also be used generically, without referring to any specific individual, like the italicized phrases in \REF{ex:2.10}.
+\end{sloppypar}
 
 
 \ea \label{ex:2.9}
@@ -295,7 +292,7 @@ Expressive: The speaker has a negative attitude towards the bird.\footnote{\cite
 
 \subsection{Nondisplaceability}\label{sec:2.6.2}
 
-\citet{Hockett1958,Hockett1960} used the term \textsc{Displacement} to refer to the fact that speakers can use human languages to describe events and situations which are separated in space and time from the speech event itself. Hockett listed this ability as one of the distinctive properties of human language, one which distinguishes it, for example, from most types of animal communication.
+\citet{Hockett1958,Hockett1960} used the term \textsc{displacement} to refer to the fact that speakers can use human languages to describe events and situations which are separated in space and time from the speech event itself. Hockett listed this ability as one of the distinctive properties of human language, one which distinguishes it, for example, from most types of animal communication.
 
 
 
