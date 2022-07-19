@@ -2,7 +2,7 @@
 
 \section{Introduction}\label{sec:7.1}
 
-The traditional model of writing definitions for words, which we discussed in \chapref{sec:6}, seems to assume that word meanings can (in many cases) be broken down into smaller elements of meaning.\footnote{\citet[126]{Engelberg2011}.} For example, we defined \textit{ewe} as ‘an adult female sheep’, which seems to suggest that the meanings of the words \textit{sheep}, \textit{adult}, and \textit{female} are included in the meaning of \textit{ewe}.\footnote{\citet[218]{Svensén2009}, in his \textit{Handbook of Lexicography}, identifies such intensional definitions as “the classic type of definition”. He explicitly defines intension (i.e. sense) in terms of components of meaning: “The term \textsc{intension} denotes the content of the concept, which can be defined as the combination of the distinctive features comprised by the concept.” Svensén seems to have in mind the representation of components of word meaning as binary distinctive features, the approach discussed in \sectref{sec:7.4} below.} In fact, if the phrase ‘adult female sheep’ is really a synonym for \textit{ewe}, one might say that the meaning of \textit{ewe} is simply the combination of the meanings of \textit{sheep}, \textit{adult}, and \textit{female}. Another way to express this intuition is to say that the meanings of \textit{sheep}, \textit{adult}, and \textit{female} are \textsc{components} of the meaning of \textit{ewe}.
+The traditional model of writing definitions for words, which we discussed in \chapref{sec:6}, seems to assume that word meanings can (in many cases) be broken down into smaller elements of meaning.\footnote{\citet[126]{Engelberg2011}.} For example, we defined \textit{ewe} as ‘an adult female sheep’, which seems to suggest that the meanings of the words \textit{sheep}, \textit{adult}, and \textit{female} are included in the meaning of \textit{ewe}.\footnote{\citet[218]{Svensén2009}, in his \textit{Handbook of lexicography}, identifies such intensional definitions as “the classic type of definition”. He explicitly defines intension (i.e. sense) in terms of components of meaning: “The term \textsc{intension} denotes the content of the concept, which can be defined as the combination of the distinctive features comprised by the concept.” Svensén seems to have in mind the representation of components of word meaning as binary distinctive features, the approach discussed in \sectref{sec:7.4} below.} In fact, if the phrase ‘adult female sheep’ is really a synonym for \textit{ewe}, one might say that the meaning of \textit{ewe} is simply the combination of the meanings of \textit{sheep}, \textit{adult}, and \textit{female}. Another way to express this intuition is to say that the meanings of \textit{sheep}, \textit{adult}, and \textit{female} are \textsc{components} of the meaning of \textit{ewe}.
 
 
 
@@ -129,14 +129,13 @@ The lexical entailments of words which occur in questions or negated statements 
 \z
 
 \largerpage[-1]% long distance 
-Selectional restrictions are part of the meanings of specific words; that is, they are linguistic in nature, rather than simply facts about the world. \citet[21]{Cruse1986} points out that hearers typically express astonishment or disbelief on hearing a statement that is improbable, given what we know about the world (\ref{ex:7.13}, \ref{ex:7.14}a). This is quite different from hearers’ reactions to violations of selectional restrictions like those in (\ref{ex:7.9}, \ref{ex:7.14}b). Those sentences are linguistically unacceptable, and hearers are more likely to respond, “You can’t say that.”
+Selectional restrictions are part of the meanings of specific words; that is, they are linguistic in nature, rather than simply facts about the world. \citet[21]{Cruse1986} points out that hearers typically express astonishment or disbelief on hearing a statement that is improbable, given what we know about the world (\ref{ex:7.13}, \ref{ex:7.14}a). This is quite different from hearers’ reactions to violations of selectional restrictions like those in (\ref{ex:7.9}, \ref{ex:7.14}b). Those sentences are linguistically unacceptable, and hearers are more likely to respond, “You can’t say that.”\largerpage[-1]% long distance
 
 \ea \label{ex:7.13}
 A: Our kitten drank a bottle of claret.\\
 B: No! Really?  (\citealt{Cruse1986}: 21)
 \z
-
-\largerpage[-1]% long distance 
+ 
 \ea \label{ex:7.14}
 \ea A: I know an old woman who swallowed a goat/cow/bulldozer.\\
 B: That’s impossible!
@@ -170,9 +169,9 @@ Violations of a collocational restriction are felt to be odd or unnatural, but t
 Many different theories have been proposed for representing components of lexical meaning. All of them aim to develop a formal representation of meaning components which will allow us to account for semantic properties of words, such as their sense relations, and perhaps some syntactic properties as well.
 
 
-
-One very influential approach during the middle of the 20\textsuperscript{th} century was to treat word meanings as bundles of distinctive semantic features, in much the same way that phonemes are defined in terms of distinctive phonetic/phonological features.\footnote{One early example of this approach is found in \citet{Nida1951}.} This approach is sometimes referred to as \textsc{componential analysis} of meaning. Some of the motivation for this approach can be seen in the following famous example from \citet{Hjelmslev1953}. The example makes it clear that the feature of gender is an aspect of meaning that distinguishes many pairs of lexical items within certain semantic domains. If we were to ignore this fact and just treat each word’s meaning as an \textsc{atom} (i.e., an unanalyzable unit), we would be missing a significant generalization.
-
+\begin{sloppypar}
+One very influential approach during the middle of the 20\textsuperscript{th} century was to treat word meanings as bundles of distinctive semantic features, in much the same way that phonemes are defined in terms of distinctive phonetic\slash phonological features.\footnote{One early example of this approach is found in \citet{Nida1951}.} This approach is sometimes referred to as \textsc{componential analysis} of meaning. Some of the motivation for this approach can be seen in the following famous example from \citet{Hjelmslev1953}. The example makes it clear that the feature of gender is an aspect of meaning that distinguishes many pairs of lexical items within certain semantic domains. If we were to ignore this fact and just treat each word’s meaning as an \textsc{atom} (i.e., an unanalyzable unit), we would be missing a significant generalization.
+\end{sloppypar}
 
 \eabox{
 \begin{tabular}[t]{*{5}{l}}
@@ -413,7 +412,7 @@ As noted above, verb meanings cannot be represented as an unordered bundle of co
 
 
 \ea \label{ex:7.33}
-{}[[x ACT] CAUSE [BECOME [y <\textsc{state}> ]]]
+{}[[$x$ ACT] CAUSE [BECOME [$y$ <\textsc{state}> ]]]
 \z
 
 \section{Conclusion}\label{sec:7.6}
@@ -430,8 +429,8 @@ However, there is no general consensus as to what the systematic aspects of mean
 
 
 \ea
-${\forall}$x[STALLION(x) → MALE(x)]\\
-${\forall}$x[BACHELOR(x) → ¬MARRIED(x)]
+$\forall x[\text{STALLION}(x) \rightarrow \text{MALE}(x)]$\\
+$\forall x[\text{BACHELOR}(x) \rightarrow \neg\text{MARRIED}(x)]$
 \z
 
 
