@@ -54,22 +54,21 @@ Sentence (\ref{ex:14.1}c), \textit{Some man snores}, will be true in any situati
 \z
 
 
-The key insight which has helped semanticists understand the meaning contributions of quantifier words like \textit{all}, \textit{some}, and \textit{no}, is that these words name relations between two sets. The table in \REF{ex:14.5} lists these and several other quantifying determiners, showing their interpretations stated as a relation between two sets. In these examples the two sets are $\llbracket$STUDENT$\rrbracket$  (the set of all students), which for convenience we will refer to as S, and $\llbracket$BRILLIANT$\rrbracket$  (the set of all brilliant individuals) which for convenience we will refer to as B.
+The key insight which has helped semanticists understand the meaning contributions of quantifier words like \textit{all}, \textit{some}, and \textit{no}, is that these words name relations between two sets. The table in \REF{ex:14.5} lists these and several other quantifying determiners, showing their interpretations stated as a relation between two sets. In these examples the two sets are $\llbracket$STUDENT$\rrbracket$  (the set of all students), which for convenience we will refer to as $S$, and $\llbracket$BRILLIANT$\rrbracket$  (the set of all brilliant individuals) which for convenience we will refer to as $B$.
 
 \ea \label{ex:14.5}
-\ea  \parbox{4.5cm}{All students are brilliant.}\parbox{6cm}{$S \subseteq B$}
-\ex   \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} = $ ∅}
-\ex \parbox{4.5cm}{Some students are brilliant.}\parbox{6cm}{$|S \cap {B}{|} {\geq} 2$}
-\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq $ ∅; or:  $|S \cap B| \geq 1$}
+\ea \parbox{4.5cm}{All students are brilliant.}\parbox{6cm}{$S \subseteq B$}
+\ex \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} = \emptyset$}
+\ex \parbox{4.5cm}{Some students are brilliant.}\parbox{6cm}{$|S \cap B| \geq 2$}
+\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq  \emptyset$; or:  $|S \cap B| \geq 1$}
 \ex \parbox{4.5cm}{Four students are brilliant.}\parbox{6cm}{$|S \cap B | = 4$\footnotemark{}}
-\ex \parbox{4.5cm}{Most students are brilliant.}\parbox{6cm}{$|S \cap B | > |S - B|$; or: $|S \cap B| > ½|S|$}
-\ex  \parbox{4.5cm}{Few students are brilliant.}\parbox[t]{5.7cm}{$|S \cap B | <$ some contextually defined\\\rule{0pt}{0pt}\hfill number}
-\ex \parbox{4.5cm}{Both students are brilliant.}\parbox{6cm}{$S  \subseteq B  \wedge |S| = 2$}
-% \lspbottomrule
+\ex \parbox{4.5cm}{Most students are brilliant.}\parbox{6cm}{$|S \cap B | > |S - B|$; or: $|S \cap B| > 1/2|S|$}
+\ex \parbox{4.5cm}{Few students are brilliant.}\parbox[t]{5.7cm}{$|S \cap B | <$ some contextually defined\\\rule{0pt}{0pt}\hfill number}
+\ex \parbox{4.5cm}{Both students are brilliant.}\parbox{6cm}{$S  \subseteq B  \wedge |S| = 2$}\label{ex:14.5h}
 \z \z
-\footnotetext{Recall from \chapref{sec:9} that numerals seem to allow two different interpretations. In light of that discussion, this sentence could mean either \textsc{{\textbar}S} ${\cap}$ \textsc{B}{\textbar} = 4 or \textsc{{\textbar}S} ${\cap}$ \textsc{B}{\textbar} ${\geq}$ 4 depending on context. For the purposes of this chapter we will ignore the ‘at least’ reading.}
+\footnotetext{Recall from \chapref{sec:9} that numerals seem to allow two different interpretations. In light of that discussion, this sentence could mean either $|S \cap B| = 4$ or $|S \cap B|\geq 4$ depending on context. For the purposes of this chapter we will ignore the ‘at least’ reading.}
 
-Notice that we have distinguished plural vs. singular uses of \textit{some} by stating that plural \textit{some} (ex. \ref{ex:14.5}c) indicates an intersection with cardinality of two or more. The interpretation suggested in (h) indicates that the meaning of \textit{both} includes the subset relation and the assertion that the cardinality of the first set equals two. This amounts to saying that \textit{both} means ‘all two of them’. Strictly speaking, it might be more accurate to treat the information about cardinality as a presupposition, because that part of the meaning is preserved in questions (\textit{Are} \textit{both students brilliant?}), conditionals (\textit{If} \textit{both students are brilliant, then …}), etc. However, we will not pursue that issue here.
+Notice that we have distinguished plural vs. singular uses of \textit{some} by stating that plural \textit{some} (ex. \ref{ex:14.5}c) indicates an intersection with cardinality of two or more. The interpretation suggested in \REF{ex:14.5h} indicates that the meaning of \textit{both} includes the subset relation and the assertion that the cardinality of the first set equals two. This amounts to saying that \textit{both} means ‘all two of them’. Strictly speaking, it might be more accurate to treat the information about cardinality as a presupposition, because that part of the meaning is preserved in questions (\textit{Are} \textit{both students brilliant?}), conditionals (\textit{If} \textit{both students are brilliant, then …}), etc. However, we will not pursue that issue here.
 
 
 
@@ -80,7 +79,8 @@ All of the examples in \REF{ex:14.5} involve relations between two sets. We migh
 \ea  \textit{Half as many} guests attended \textit{as} were invited.\\
 {\textbar} $\llbracket$GUEST$\rrbracket$  ${\cap}$ $\llbracket$ATTEND$\rrbracket$  {\textbar}  $= \:$  ½  {\textbar} $\llbracket$GUEST$\rrbracket$  ${\cap}$ $\llbracket$INVITED$\rrbracket$  {\textbar}
 \ex In every {Australian} election from 1967 to 1998, \textit{more} men \textit{than} women voted for the Labor party.\\
-{\textbar} $\llbracket$MAN$\rrbracket$  ${\cap}$ \{x:~$\langle$x,\,l$\rangle \: {\in} \: \llbracket$VOTE\_FOR$\rrbracket$ \}{\textbar}  $>$ \\ {\textbar} $\llbracket$WOMAN$\rrbracket$  ${\cap}$ \{x:~$\langle$x,\,l$\rangle \: {\in} \: \llbracket$VOTE\_FOR$\rrbracket$ \}{\textbar}
+$|\llbracket \text{MAN} \rrbracket \cap  \{x: \langle x, l\rangle \in \llbracket\text{VOTE\_FOR}\rrbracket \}|  >$ \\ 
+$| \llbracket \text{WOMAN} \rrbracket \cap \{x: \langle x, l\rangle \in \llbracket \text{VOTE\_FOR}\rrbracket \}|$
 \z \z
 
 
@@ -126,10 +126,10 @@ Our analysis of \textit{all} as denoting a subset relation, \textit{no} as meani
 
 
 \ea \label{ex:14.10}
-\ea   {All men snore}.  ${\forall}$x[MAN(x) → SNORE(x)]\\
-\ex  {No women snore}.  ${\lnot}$${\exists}$x[WOMAN(x) $\wedge$ SNORE(x)]\\
-\ex  {Some man snores}.  ${\exists}$x[MAN(x) $\wedge$ SNORE(x)]
-                       \z
+\ea  {All men snore}.  $\forall x [\text{MAN}(x) \rightarrow \text{SNORE}(x)]$\\
+\ex  {No women snore}.  $\neg\exists x[\text{WOMAN}(x) \wedge \text{SNORE}(x)]$\\
+\ex  {Some man snores}.  $\exists x[\text{MAN}(x) \wedge \text{SNORE}(x)]$
+     \z
 \z
 
 
@@ -137,23 +137,18 @@ Now we are in a position to understand why these forms work as translations of t
 
 
 \ea \label{ex:14.11}
-\ea 
-\small
-(A ${\subseteq}$ B)  ↔   ${\forall}$x[(x${\in}$A) → (x${\in}$B)]  \hfill [\textsc{subset}] \\
-  ($\llbracket$MAN $\rrbracket$  ${\subseteq} \llbracket$ SNORE $\rrbracket$ )  ↔   ${\forall}$x[(x${\in}\llbracket$ MAN$\rrbracket$ ) → (x${\in}\llbracket$ SNORE $\rrbracket$ )]
-\ex 
-\small
-${\forall}$x[x ${\in}$ (A${\cap}$B)  ↔   ((x${\in}$A) $\wedge$ (x${\in}$B))]  \hfill [\textsc{intersection}] \\
-  ($\llbracket$MAN$\rrbracket$ ${\cap}$ $\llbracket$SNORE$\rrbracket$  ≠ ∅) ↔   ${\exists}$x[(x${\in}\llbracket$ MAN $\rrbracket$ ) $\wedge$ (x${\in} \llbracket$  SNORE $\rrbracket$ )]
+\ea $(A \subseteq B)  \leftrightarrow   \forall x[(x \in A) \rightarrow (x \in B)]$  \hfill [\textsc{subset}] \\
+$(\llbracket \text{MAN} \rrbracket \subseteq \llbracket \text{SNORE} \rrbracket )  \leftrightarrow   \forall x[(x \in \llbracket \text{MAN}\rrbracket ) \rightarrow (x \in \llbracket \text{SNORE} \rrbracket )]$
+\ex  $\forall x[x \in (A \cap B)  \leftrightarrow   ((x \in A) \wedge (x \in B))]$  \hfill [\textsc{intersection}] \\
+$(\llbracket \text{MAN}\rrbracket \cap \llbracket \text{SNORE}\rrbracket \neq \emptyset) \leftrightarrow  \exists x[(x \in \llbracket \text{MAN} \rrbracket) \wedge (x \in \llbracket \text{SNORE} \rrbracket)]$
 \z \z
-\normalsize
 
 Many other quantifier meanings can also be expressed using the basic predicate logic notation. For example, the NP \textit{four men} could be translated as shown in \REF{ex:14.12}:
 
 
 \ea \label{ex:14.12}
 \textit{Four men snore}.\\
-${\exists}$w${\exists}$x${\exists}$y${\exists}$z[w≠x≠y≠z $\wedge$ MAN(w) $\wedge$ MAN(x) $\wedge$ MAN(y) $\wedge$ MAN(z) $\wedge$ SNORE(w) $\wedge$ SNORE(x) $\wedge$ SNORE(y) $\wedge$ SNORE(z)]
+$\exists w \exists x \exists y \exists z [w\neq x \neq y \neq z \wedge \text{MAN}(w) \wedge \text{MAN}(x) \wedge \text{MAN}(y) \wedge \text{MAN}(z) \wedge \text{SNORE}(w) \wedge \text{SNORE}(x) \wedge \text{SNORE}(y) \wedge \text{SNORE}(z)]$
 \z
 
 
@@ -164,16 +159,17 @@ As we can see even in this simple example, the standard predicate logic notation
 For example, we could define the denotation set of a NP like \textit{most men} to be the set of all properties which are true of most men. The sentence \textit{Most men snore} would be true just in case the property of snoring is a member of $\llbracket$\textit{most men}$\rrbracket$.\footnote{This analysis, under which quantified NPs denote sets of sets, is called the Generalized Quantifier approach. The meanings of the quantified NPs themselves are referred to as Generalized Quantifiers, which leads to a certain amount of ambiguity in the use of the word \textit{quantifier}. Sometimes it is used to refer to the whole NP, and sometimes just to the quantifying determiner.} However, the mathematical formalism of this approach is more complex than we can handle in the present book. Rather than trying to work out all the technical details, we will proceed from here on with a more descriptive approach.
 
 
-
-One convenient way of expressing propositions which contain quantifier meanings like \textit{most} is called the \textsc{restricted quantifier} notation. This notation consists of three parts: the quantifier operator, the restriction, and the nuclear scope. In example (\ref{ex:14.13}a), the operator is \textit{most}; the restriction is the open proposition “STUDENT(x)”; and the nuclear scope is the open proposition “BRILLIANT(x)”. This same format can be used for other quantifiers as well, as illustrated in (\ref{ex:14.13}b--c).
+\begin{sloppypar}
+One convenient way of expressing propositions which contain quantifier meanings like \textit{most} is called the \textsc{restricted quantifier} notation. This notation consists of three parts: the quantifier operator, the restriction, and the nuclear scope. In example (\ref{ex:14.13}a), the operator is \textit{most}; the restriction is the open proposition “$\text{STUDENT}(x)$”; and the nuclear scope is the open proposition “$\text{BRILLIANT}(x)$”. This same format can be used for other quantifiers as well, as illustrated in (\ref{ex:14.13}b--c).
+\end{sloppypar}
 
 
 \ea \label{ex:14.13}
-\ea \textit{Most students are brilliant}.  [\textit{most} x: STUDENT(x)] BRILLIANT(x)\\
-\hspace{35pt}\textsc{(operator} = “\textit{most}”; \textsc{restriction} = “STUDENT(x)”;\\
-\hspace{40pt}\textsc{scope} = “BRILLIANT(x)”)
-\ex  \textit{No women snore}.  [\textit{no} x: WOMAN(x)] SNORE(x)\\
-\ex \textit{All brave men are lonely}.  [\textit{all} x: MAN(x) $\wedge$ BRAVE(x)] LONELY(x)
+\ea \textit{Most students are brilliant}.  [\textit{most} $x$: $\text{STUDENT}(x)$] $\text{BRILLIANT}(x)$\\
+\hspace{35pt}\textsc{(operator} = “\textit{most}”; \textsc{restriction} = “$\text{STUDENT}(x)$”;\\
+\hspace{40pt}\textsc{scope} = “$\text{BRILLIANT}(x)$”)
+\ex  \textit{No women snore}.  [\textit{no} $x$: $\text{WOMAN}(x)$] $\text{SNORE}(x)$\\
+\ex \textit{All brave men are lonely}.  [\textit{all} $x$: $\text{MAN}(x) \wedge \text{BRAVE}(x)$] $\text{LONELY}(x)$
 \z \z
 
 
@@ -186,15 +182,15 @@ In contrast to the standard logical notation, using this restricted quantifier n
 \item the rest of the sentence specifies the material in the nuclear scope.
 \end{itemize}
 
-For example, the quantifying determiner in (\ref{ex:14.13}c) is \textit{all}; this determines the operator. The remainder of the NP which contains the quantifying determiner is \textit{brave men}; this specifies the material in the restriction (MAN(x) $\wedge$ BRAVE(x)). The rest of the sentence (\textit{are lonely}) specifies the material in the nuclear scope (LONELY(x)). Some additional examples are provided in \REF{ex:14.14}.
+For example, the quantifying determiner in (\ref{ex:14.13}c) is \textit{all}; this determines the operator. The remainder of the NP which contains the quantifying determiner is \textit{brave men}; this specifies the material in the restriction ($\text{MAN}(x) \wedge \text{BRAVE}(x)$). The rest of the sentence (\textit{are lonely}) specifies the material in the nuclear scope ($\text{LONELY}(x)$). Some additional examples are provided in \REF{ex:14.14}.
 
 
 \ea \label{ex:14.14}
 \ea  \textit{Most men who snore are libertarians}.\\
-  {}[\textit{most} x: MAN(x) $\wedge$ SNORE(x)] LIBERTARIAN(x)\\
+  {}[\textit{most} $x$: $\text{MAN}(x) \wedge \text{SNORE}(x)$] $\text{LIBERTARIAN}(x)$\\
 \ex \textit{Few strict Baptists drink or smoke}.\\
-  {}[\textit{few} x: BAPTIST(x) $\wedge$ STRICT(x)] DRINK(x) $\vee$ SMOKE(x)\footnote{This logical rendering of the sentence meaning ignores the fact that \textit{strict} is actually a non-intersective adjective. See \chapref{sec:15} for discussion.}
-                       \z
+  {}[\textit{few} $x$: $\text{BAPTIST}(x) \wedge \text{STRICT}(x)$] $\text{DRINK}(x) \vee \text{SMOKE}(x)$\footnote{This logical rendering of the sentence meaning ignores the fact that \textit{strict} is actually a non-intersective adjective. See \chapref{sec:15} for discussion.}
+   \z
 \z
 
 
@@ -202,11 +198,11 @@ Of course, translations in this format do not tell us what the quantifying deter
 
 
 \ea \label{ex:14.15}
-\ea \relax [\textit{all} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\subseteq}$ $\llbracket$Q$\rrbracket$ \\
-\ex{} [\textit{no} x: P(x)] Q(x)  ↔   $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  $=$ ∅ \\
-\ex{} [\textit{four} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $=$ 4\\
-\ex{} [\textit{most} x: P(x)] Q(x)  ↔   {\textbar} $\llbracket$P$\rrbracket$  ${\cap}$ $\llbracket$Q$\rrbracket$  {\textbar}  $>$  ½ {\textbar} $\llbracket$P$\rrbracket$ {\textbar}
-                       \z
+\ea \relax [\textit{all} $x$: $P(x)$] $Q(x)  \leftrightarrow   \llbracket P\rrbracket  \subseteq \llbracket Q \rrbracket$ \\
+\ex{} [\textit{no} $x$: $P(x)$] $Q(x)  \leftrightarrow   \llbracket P \rrbracket \cap \llbracket Q \rrbracket = \emptyset$ \\
+\ex{} [\textit{four} $x$: $P(x)$] $Q(x) \leftrightarrow   | \llbracket P \rrbracket \cap \llbracket Q \rrbracket| =  4$\\
+\ex{} [\textit{most} $x$: $P(x)$] $Q(x)  \leftrightarrow  | \llbracket P \rrbracket \cap \llbracket Q \rrbracket | >  0.5 |\llbracket P \rrbracket|$
+     \z
 \z
 
 
@@ -215,14 +211,14 @@ As these definitions show, a quantifying determiner names a relation between two
 
 \ea \label{ex:14.16}
 \ea  \textit{Most students are brilliant}.\\
-{}[\textit{most} x: STUDENT(x)] BRILLIANT(x)\\
-{\textbar} $\llbracket$STUDENT$\rrbracket$  ${\cap}$ $\llbracket$BRILLIANT$\rrbracket$  {\textbar}  $>$  ½ \textsc{{\textbar}} $\llbracket$STUDENT$\rrbracket$ {\textbar}
+{}[\textit{most} $x$: $\text{STUDENT}(x)$] $\text{BRILLIANT}(x)$\\
+$|\llbracket \text{STUDENT} \rrbracket \cap \llbracket \text{BRILLIANT} \rrbracket | > 0.5 | \llbracket \text{STUDENT} \rrbracket|$
 \ex \textit{No women snore}.\\
-{}[\textit{no} x: WOMAN(x)] SNORE(x)\\
-$\llbracket$WOMAN$\rrbracket$  ${\cap}$ $\llbracket$SNORE$\rrbracket$  $=$ ∅
+{}[\textit{no} $x$: $\text{WOMAN}(x)$] $\text{SNORE}(x)$\\
+$\llbracket \text{WOMAN} \rrbracket \cap \llbracket \text{SNORE} \rrbracket = \emptyset$
 \ex   \textit{All brave men are lonely}.\\
-{}[\textit{all} x: MAN(x) $\wedge$ BRAVE(x)] LONELY(x)\\
-($\llbracket$MAN$\rrbracket$  ${\cap}$ $\llbracket$BRAVE$\rrbracket$ )  ${\subseteq}$ $\llbracket$LONELY$\rrbracket$ 
+{}[\textit{all} $x$: $\text{MAN}(x) \wedge \text{BRAVE}(x)$] $\text{LONELY}(x)$\\
+$(\llbracket \text{MAN} \rrbracket \cap \llbracket \text{BRAVE} \rrbracket ) \subseteq \llbracket \text{LONELY} \rrbracket$ 
 \z \z
 
 
@@ -231,11 +227,11 @@ This same procedure applies whether the quantified NP is a subject, object, or o
 
 \ea \label{ex:14.17}
 \ea \textit{John loves all pretty girls.}\\
-{}[\textit{all} x: GIRL(x) $\wedge$ PRETTY(x)] LOVE(j,x)\\
-($\llbracket$GIRL$\rrbracket$  ${\cap}$ $\llbracket$PRETTY$\rrbracket$) ${\subseteq}$ \{x:~$\langle$j,x$\rangle \, {\in} \, \llbracket$LOVE$\rrbracket$ \}
+{}[\textit{all} $x$: $\text{GIRL}(x) \wedge \text{PRETTY}(x)$] $\text{LOVE}(j,x)$\\
+$(\llbracket \text{GIRL} \rrbracket \cap \llbracket \text{PRETTY} \rrbracket) \subseteq  \{x: \langle j,x\rangle  \in \llbracket \text{LOVE} \rrbracket \}$
 \ex \textit{Susan has married a cowboy who teases her.}\\
-{}[\textit{an} x: COWBOY(x) $\wedge$ TEASE(x,s)] MARRY(s,x)\\
-($\llbracket$COWBOY$\rrbracket$  ${\cap}$ \{x:~$\langle$x,s$\rangle \, {\in} \, \llbracket$TEASE$\rrbracket$ \}) ${\cap}$ \{y:~$\langle$s,y$\rangle \, {\in} \, \llbracket$MARRY$\rrbracket$ \} $\neq$ ∅ 
+{}[\textit{an} $x$: $\text{COWBOY}(x) \wedge \text{TEASE}(x,s)$] $\text{MARRY}(s,x)$\\
+$(\llbracket \text{COWBOY} \rrbracket \cap \{x: \langle x,s \rangle \in  \llbracket \text{TEASE} \rrbracket \}) \cap  \{y: \langle s,y \rangle  \in \llbracket \text{MARRY} \rrbracket  \} \neq \emptyset$ 
 \z \z
 
 
@@ -247,9 +243,9 @@ Compound words such as \textit{someone}, \textit{everyone}, \textit{no one}, \te
 
 
 \ea \label{ex:14.18}
-\ea \textit{Everyone loves Snoopy}.         \hfill  [\textit{all} x: PERSON(x)] LOVE(x,s)\\
-\ex \textit{Columbus discovered something}. \hfill [\textit{some} x: THING(x)] DISCOVER(c,x)\\
-\ex \textit{Nowhere on Earth is safe}.      \hfill [\textit{no} x: PLACE(x) $\wedge$ ON(x,e)] SAFE(x)
+\ea \textit{Everyone loves Snoopy}.         \hfill  [\textit{all} $x$: $\text{PERSON}(x)$] $\text{LOVE}(x,s)$\\
+\ex \textit{Columbus discovered something}. \hfill [\textit{some} $x$: $\text{THING}(x)$] $\text{DISCOVER}(c,x)$\\
+\ex \textit{Nowhere on Earth is safe}.      \hfill [\textit{no} $x$: $\text{PLACE}(x) \wedge \text{ON}(x,e)$] $\text{SAFE}(x)$
                        \z
 \z
 
@@ -265,37 +261,32 @@ The determiners \textit{many} and \textit{few} are ambiguous between a cardinal 
 \ea \label{ex:14.19}
 \ea Few people in America have an IQ over 145, but many students at Cal Tech are in that range.\\
 \ex Today we are facing many problems, but we have few solutions.
-                       \z
+     \z
 \z
 
 
 Both the cardinal and proportional senses of \textit{many} and \textit{few} are vague, and this can make it tricky to distinguish the two senses in some contexts. Cardinal \textit{many} probably means more than several, but how much more? Generally speaking, proportional \textit{many} should probably be more than half, and proportional \textit{few} should probably be less than half; but how much more, or how much less? And in certain contexts, even this tendency need not hold. In a country where 80\% of the citizens normally come out to vote, we might say \textit{Few people bothered to vote this year} if the turnout dropped below 60\%. In a city where less than 20\% of the citizens normally bother to vote in local elections, we might say \textit{Many people came to vote this year} if the turnout reached 40\%. So, like other vague expressions, the meanings of \textit{many} and \textit{few} are partly dependent on context.
 
-
-\newpage 
-Relationships expressed by cardinal quantifiers are generally symmetric, as illustrated in the examples in (\ref{ex:14.20}--\ref{ex:14.23}):\footnote{This symmetry follows from the fact that cardinal quantifiers generally have meanings of the form {\textbar}A${\cap}$B{\textbar}=n; and the intersection function is commutative (A ${\cap}$ B = B ${\cap}$ A).}
+ 
+Relationships expressed by cardinal quantifiers are generally symmetric, as illustrated in the examples in (\ref{ex:14.20}--\ref{ex:14.23}):\footnote{This symmetry follows from the fact that cardinal quantifiers generally have meanings of the form $|A\cap B|=n$; and the intersection function is commutative ($A \cap  B = B \cap A$).}
 
 
 \ea \label{ex:14.20}
-\ea No honest men are lawyers. \hfill  (a entails b)\\
+\ea No honest men are lawyers. \hfill  ($a$ entails $b$)\\
 \ex No lawyers are honest men.
-                       \z
-\z
-
-\ea \label{ex:14.21}
-\ea Three senators are Vietnam War veterans. \hfill  (a entails b)\\
+ \z
+\ex \label{ex:14.21}
+\ea Three senators are Vietnam War veterans. \hfill  ($a$ entails $b$)\\
 \ex Three Vietnam War veterans are senators.
-\z \z
-
-\ea \label{ex:14.22}
-\ea Some drug dealers are federal employees. \hfill  (a entails b)\\
+\z 
+\ex \label{ex:14.22}
+\ea Some drug dealers are federal employees. \hfill  ($a$ entails $b$)\\
 \ex Some federal employees are drug dealers.
-\z \z
-
-\ea \label{ex:14.23}
-\ea Several Indo-European languages are verb-initial. \hfill  (a entails b)\\
+\z 
+\ex \label{ex:14.23}
+\ea Several Indo-European languages are verb-initial. \hfill  ($a$ entails $b$)\\
 \ex Several verb-initial languages are Indo-European.
-                       \z
+\z
 \z
 
 
@@ -303,21 +294,18 @@ Relationships expressed by proportional quantifiers, in contrast, are not symmet
 
 
 \ea \label{ex:14.24}
-\ea All brave men are lonely. \hfill  (a does not entail b)\\
+\ea All brave men are lonely. \hfill  ($a$ does not entail $b$)\\
 \ex All lonely men are brave.
-                       \z
 \z
-
-\ea \label{ex:14.25}
-\ea  Most Popes are {Italian}.  \hfill  (a does not entail b)\\
+\ex \label{ex:14.25}
+\ea  Most Popes are {Italian}.  \hfill  ($a$ does not entail $b$)\\
 \ex Most Italians are Popes.
-\z \z
-
-\ea \label{ex:14.26}
-\ea Few people are Zoroastrians.  \hfill (a does not entail b, \\
+\z 
+\ex \label{ex:14.26}
+\ea Few people are Zoroastrians.  \hfill ($a$ does not entail $b$, \\
 \hfill in proportional sense of \textit{few})\\
 \ex Few Zoroastrians are people.
-                       \z
+ \z
 \z
 
 
@@ -325,10 +313,10 @@ There are several distributional differences which distinguish these two classes
 
 
 \ea \label{ex:14.27}
-\ea \relax {There are several/some/no/many/six unicorns in the garden.\\}
-\ex[*]{There are all/most unicorns in the garden.\\}
-\ex[*]{There is every unicorn in the garden.\\}
-                       \z
+\ea[]{There are several/some/no/many/six unicorns in the garden.}
+\ex[*]{There are all/most unicorns in the garden.}
+\ex[*]{There is every unicorn in the garden.}
+\z
 \z
 
 
@@ -338,10 +326,8 @@ This contrast may be related to the fact that proportional quantifiers seem to p
 \ea \label{ex:14.28}
 \ea Most people attend the Baptist church.\\
 \ex All students are required to pass phonetics.
-                       \z
 \z
-
-\ea \label{ex:14.29}
+\ex \label{ex:14.29}
 \ea Many people attend the Baptist church.\\
 \ex Six hundred students got grants from the National Science Foundation this year.\\
 \ex No aircraft are allowed to fly over the White House.
@@ -367,9 +353,9 @@ As noted in \chapref{sec:4}, when a quantifier combines with another quantifier,
 
 \ea \label{ex:14.31}
 \textit{I did not find many valuable books}.\\
-\ea  {[\textit{many} x: BOOK(x) $\wedge$ VALUABLE(x)]} ¬FIND(speaker,x)\\
-\ex  ¬[\textit{many} x: BOOK(x) $\wedge$ VALUABLE(x)] FIND(speaker,x)
-                       \z
+\ea \relax [\textit{many} $x$: $\text{BOOK}(x) \wedge \text{VALUABLE}(x)$] $\neg \text{FIND}(\text{speaker},x)$\\
+\ex  ¬[\textit{many} $x$: $\text{BOOK}(x) \wedge \text{VALUABLE}(x)$] $\text{FIND}(\text{speaker},x)$
+   \z
 \z
 
 
@@ -382,8 +368,8 @@ In \chapref{sec:4} we noted that the proverb \textit{All that glitters is not go
 
 \ea \label{ex:14.32}
 \textit{All that glitters is not gold.}\\
-\ea   {[\textit{all} x: GLITTER(x)]} ¬GOLD(x)\\
-\ex  ¬[\textit{all} x: GLITTER(x)] GOLD(x)
+\ea   {[\textit{all} $x$: $\text{GLITTER}(x)$]} $\neg\text{GOLD}(x)$\\
+\ex  ¬[\textit{all} $x$: $\text{GLITTER}(x)$] $\text{GOLD}(x)$
                        \z
 \z
 
@@ -396,14 +382,14 @@ Therefore, this rock is not gold.\footnote{\url{http://www.fallacyfiles.org/scop
 
 Part of the reason that speakers do not feel the proverb to be ambiguous is that only one reading is consistent with what we know about the world. However, a number of other factors also contribute to making one reading seem more plausible than the other in particular cases. These factors include grammatical functions (e.g., subject vs. object), discourse functions (topic vs. focus), word order effects, linguistic context, pragmatic plausibility, etc.
 
-Another significant factor is our general tendency when speaking to avoid ambiguity when possible. If an unambiguous paraphrase (e.g., \textit{not all X are Y} or \textit{no  X is Y}) is possible, the ambiguous form \textit{all X are not Y} may seem unnatural and hard to process. Nevertheless, naturally occurring examples of this pattern are easy to find, and either of the possible readings may be intended. The examples in \REF{ex:14.34}--\REF{ex:14.41} come from the internet. The intended reading for the examples listed in \REF{ex:14.34}, as the context makes clear, gives widest scope to the universal quantifier. Example (\ref{ex:14.34}c) for example is intended to mean that no person is perfect.
+Another significant factor is our general tendency when speaking to avoid ambiguity when possible. If an unambiguous paraphrase (e.g., \textit{not all X are Y} or \textit{no  X is Y}) is possible, the ambiguous form \textit{all X are not Y} may seem unnatural and hard to process. Nevertheless, naturally occurring examples of this pattern are easy to find, and either of the possible readings may be intended. The examples in (\ref{ex:14.34}--\ref{ex:14.41}) come from the internet. The intended reading for the examples listed in \REF{ex:14.34}, as the context makes clear, gives widest scope to the universal quantifier. Example (\ref{ex:14.34}c) for example is intended to mean that no person is perfect.
 
 
 \ea \label{ex:14.34}
 \ea All social features are not working.\\
 \ex All external storage devices are not being detected as drives.\\
 \ex Every person is not perfect.
-                       \z
+   \z
 \z
 
 
@@ -424,8 +410,8 @@ Example \REF{ex:14.35} illustrates how ambiguity can (and frequently does) arise
 
 \ea \label{ex:14.35}
 \textit{Many linguists have read every paper by Chomsky}.\\
-\ea{}  [\textit{many} x: LINGUIST(x)] ([\textit{every} y: PAPER(y) $\wedge$ BY(y,c)] READ(x,y))\\
-\ex{}  [\textit{every} y: PAPER(y) $\wedge$ BY(y,c)] ([\textit{many} x: LINGUIST(x)] READ(x,y))
+\ea{}  [\textit{many} $x$: $\text{LINGUIST}(x)$] ([\textit{every} $y$: $\text{PAPER}(y) \wedge \text{BY}(y,c)$] $\text{READ}(x,y)$)\\
+\ex{}  [\textit{every} $y$: $\text{PAPER}(y) \wedge \text{BY}(y,c)$] ([\textit{many} $x$: $\text{LINGUIST}(x)$] $\text{READ}(x,y)$)
                        \z
 \z
 
@@ -433,14 +419,14 @@ Example \REF{ex:14.35} illustrates how ambiguity can (and frequently does) arise
 Scope ambiguities involving two quantifiers often seem more obvious (e.g., to the addressee) than those involving one quantifier plus negation. This may be because unambiguous paraphrases of the various readings are harder to construct, and in many cases would be more complex in their structure than the original (ambiguous) sentence. This extra complexity might reduce the addressee's expectation that speaker would choose the unambiguous form.
 
 
-Another example involving two quantifiers is presented in \REF{ex:14.36}. The (a) reading says that every student in some contextually-determined set, e.g. all those enrolled in a certain course, knows two languages; but each student could know a different pair of languages. The (b) reading says that there is some specific pair of languages, e.g.  {Urdu} and  {Swahili}, which every student in the relevant set knows. (Another example of this type was mentioned in \chapref{sec:4}, ex. \ref{ex:4.29}a.)
+Another example involving two quantifiers is presented in \REF{ex:14.36}. The (a) reading says that every student in some contextually-determined set, e.g. all those enrolled in a certain course, knows two languages; but each student could know a different pair of languages. The (b) reading says that there is some specific pair of languages, e.g.  Urdu and  Swahili, which every student in the relevant set knows. (Another example of this type was mentioned in \chapref{sec:4}, ex. \ref{ex:4.29}a.)
 
 
 \ea \label{ex:14.36}
 \textit{Every student knows two languages}.\\
-\ea  {[\textit{every} x: STUDENT(x)]} ([\textit{two} y: LANGUAGE(y)] KNOW(x, y))\\
-\ex  {[\textit{two} y: LANGUAGE(y)]} ([\textit{every} x: STUDENT(x)] KNOW(x, y))
-                       \z
+\ea  {[\textit{every} $x$: $\text{STUDENT}(x)$]} ([\textit{two} $y$:  $\text{LANGUAGE}(y)$] $\text{KNOW}(x, y)$)\\
+\ex  {[\textit{two} $y$: $\text{LANGUAGE}(y)$]} ([\textit{every} $x$: $\text{STUDENT}(x)$] $\text{KNOW}(x, y)$)
+   \z
 \z
 
 
@@ -449,14 +435,14 @@ Scope ambiguities can also arise when a quantifier combines with a modal auxilia
 
 \ea \label{ex:14.37}
 \textit{Every student might fail the course}.\footnote{\citet[48]{Abbott2010}.}\\
-\ea ${\forall}$x[STUDENT(x) → ${\lozenge}$ FAIL(x)]\\
-\ex ${\lozenge}$ ${\forall}$x[STUDENT(x) → FAIL(x)]
-\z \z
+\ea $\forall x[\text{STUDENT}(x) \rightarrow \lozenge \text{FAIL}(x)]$\\
+\ex $\lozenge \forall x[\text{STUDENT}(x) \rightarrow \text{FAIL}(x)]$
+\z 
 
-\ea \label{ex:14.38}
+\ex \label{ex:14.38}
 \textit{Some sanctions must be imposed}.\\
-\ea ${\exists}$x[SANCTION(x) $\wedge$ ${\square}$ BE-IMPOSED(x)]\\
-\ex ${\square}$ ${\exists}$x[SANCTION(x) $\wedge$ BE-IMPOSED(x)]
+\ea $\exists x[\text{SANCTION}(x) \wedge \square \text{BE-IMPOSED}(x)]$\\
+\ex $\square \exists x[\text{SANCTION}(x) \wedge \text{BE-IMPOSED}(x)]$
 \z \z
 
 
@@ -465,8 +451,8 @@ We will mention just one more possible source of scope ambiguity, namely the int
 
 \ea \label{ex:14.39}
 \textit{John thinks that he has visited every state.}\\
-\ea \label{ex:14.}  [\textit{all} x: STATE(x)] (THINK(j, VISIT(j,x)))\\
-\ex  THINK(j, [\textit{all} x: STATE(x)] VISIT(j,x))
+\ea \label{ex:14.}  [\textit{all} $x$: $\text{STATE}(x)$] $(\text{THINK}(j, \text{VISIT}(j,x)))$\\
+\ex  $\text{THINK}(j, [\textit{all } x: \text{STATE}(x)]$ $\text{VISIT}(j,x))$
                        \z
 \z
 
@@ -480,8 +466,8 @@ It is possible to analyze many cases of \textit{de dicto-de re} ambiguity (\chap
 
 \ea \label{ex:14.40}
 \textit{Susan wants to marry a cowboy.}\\
-\ea  ${\exists}$x[COWBOY(x) $\wedge$ WANT(s, MARRY(s,x))]\\
-\ex  WANT(s, ${\exists}$x[COWBOY(x) $\wedge$ MARRY(s,x)])
+\ea  $\exists x[\text{COWBOY}(x) \wedge \text{WANT}(s, \text{MARRY}(s,x))]$\\
+\ex  $\text{WANT}(s, \exists x[\text{COWBOY}(x) \wedge \text{MARRY}(s,x)])$
                        \z
 \z
 
@@ -513,8 +499,8 @@ Express the following sentences in restricted quantifier notation, and provide a
 
 \begin{enumerate}
 \item \textit{Every Roman is patriotic}.\\
-\shortmodelanswer{Model answer}{[\textit{every} x: ROMAN(x)] PATRIOTIC(x)\\
-$\llbracket$\textsf{ROMAN}$\rrbracket {\subseteq} \llbracket$\textsf{PATRIOTIC}$\rrbracket$ 
+\shortmodelanswer{Model answer}{[\textit{every} $x$: $\text{ROMAN}(x)$] $\text{PATRIOTIC}(x)$\\
+$\llbracket \textsf{ROMAN} \rrbracket \subseteq \llbracket \textsf{PATRIOTIC}\rrbracket$ 
 } 
 \item {Some wealthy Romans are patriotic}.
 \item {Both Romans are patriotic}.
@@ -545,7 +531,7 @@ Use logical notation to express the two readings for the following sentences, an
 \begin{enumerate}
 \item Solomon answered every riddle.
 
-\shortmodelanswer{Model answer}{${\forall}$x[RIDDLE(x) \LARGE→\normalsize ANSWER(s,x)]}
+\shortmodelanswer{Model answer}{$\forall x[\text{RIDDLE}(x) \rightarrow \text{ANSWER}(s,x)]$}
  
 \item All ambitious politicians visit Paris.
 \item Someone betrayed Caesar.
@@ -562,7 +548,7 @@ Use logical notation to express the two readings for the following sentences, an
 
 \item Arthur eats everything that Susan cooks.
 
-\shortmodelanswer{Model answer}{[Every x: THING(x) $\wedge$ COOK(s,x)] EAT(a,x)}
+\shortmodelanswer{Model answer}{[Every $x$: $\text{THING}(x) \wedge \text{COOK}(s,x)$] $\text{EAT}(a,x)$}
 
 \item Boris mistrusts most reports from Brussels.\\
 {}[hint: treat \textit{from} as a two-place predicate]
@@ -583,7 +569,7 @@ Use logical notation to express the two readings for the following sentences, an
 \begin{enumerate}
 \item \textit{More than twenty}  senators are guilty.   
 
-\shortmodelanswer{Model answer}{{{\textbar}} $\llbracket${SENATOR}$\rrbracket$  { ${\cap}$} $\llbracket${GUILTY}$\rrbracket$ {{\textbar} > 20}}
+\shortmodelanswer{Model answer}{$|\llbracket \text{SENATOR} \rrbracket \cap \llbracket \text{GUILTY} \rrbracket | > 20$}
 
 \item \textit{Between six and twelve} generals are loyal.
 \item \textit{Both} sisters are champions.
@@ -597,5 +583,4 @@ The discontinuous determiners in the next examples express three-place quantifie
 \item \textit{More} men \textit{than} women snore.
 \item \textit{Exactly as many} Americans are lawyers \textit{as} are prisoners.\footnote{Actually the figures are only approximately equal, but there are clearly too many of both.} 
 \item \textit{Fewer} wrestlers \textit{than} boxers are famous. 
-\end{enumerate}
-}
+\end{enumerate}}

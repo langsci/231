@@ -141,7 +141,7 @@ We have seen that the meanings of adjectives like \textit{typical} and \textit{s
 Subsective adjectives are intensional in the sense defined in \sectref{sec:15.2}: they combine with the senses, rather than the denotations, of the nouns they modify. One way of representing this is suggested in the following informal definition of \textit{skillful}:
 
 
-\ea \label{ex:15.9}
+\eanoraggedright \label{ex:15.9}
 \textit{skillful} combines with a common noun (N) to form a phrase which denotes a set of individuals. Any given individual within the universe of discourse will belong to the set of all “skillful Ns” just in case that individual belongs to the set of all Ns and is extremely good at the activity named by N.\\
 {}[\textsc{selectional restriction}: \textit{skillful} combines with nouns that denote the actor of a volitional activity.]
 \z
@@ -163,13 +163,13 @@ The adjective \textit{former} is not subsective because a former Member of Parli
 How do we calculate the denotation of phrases like those in \REF{ex:15.10}? Although they cannot be defined as a simple intersection, the phrases are still compositional; knowing what each word means allows us to predict the meanings of the phrases. The trick is that with adjectives like these, as with propositional attitude verbs, we need to combine senses rather than denotations. In other words, these adjectives are intensional: they combine with the senses of the nouns they modify. Informal definitions of \textit{former} and \textit{alleged} are suggested in \REF{ex:15.11}:
 
 
-\ea \label{ex:15.11}
-\ea   \textit{former} combines with a common noun (N) to form a phrase which denotes a set of individuals. Any given individual within the universe of discourse will belong to the set of all “former Ns” just in case that individual has belonged to the set of all Ns at some time in the past, but no longer does.
+\eanoraggedright \label{ex:15.11}
+\eanoraggedright   \textit{former} combines with a common noun (N) to form a phrase which denotes a set of individuals. Any given individual within the universe of discourse will belong to the set of all “former Ns” just in case that individual has belonged to the set of all Ns at some time in the past, but no longer does.
 \ex  \textit{alleged} combines with a common noun (N) to form a phrase which denotes a set of individuals. Any given individual (x) within the universe of discourse will belong to the set of all “alleged Ns” just in case there is some other individual who claims that x belongs to the set of all Ns.
 \z \z
 
 
-The adjective \textit{former} has the interesting property that a “former N” cannot be a member of the denotation set $\llbracket$N$\rrbracket$. In other words, denotation sets of phrases containing the word \textit{former} are subject to the following constraint: $\llbracket$Adj~N$\rrbracket \cap \llbracket \text{N} \rrbracket  = \emptyset$. Adjectives that satisfy this constraint are referred to as \textsc{privative} adjectives. Other privative adjectives include: \textit{counterfeit, spurious, imaginary, fictitious, fake, would-be, wannabe, past, fabricated} (in one sense). Some prefixes have similar semantics, e.g. \textit{ex-, pseudo-, non-}.
+The adjective \textit{former} has the interesting property that a “former N” cannot be a member of the denotation set $\llbracket$N$\rrbracket$. In other words, denotation sets of phrases containing the word \textit{former} are subject to the following constraint: $\llbracket \text{Adj~N}\rrbracket \cap \llbracket \text{N} \rrbracket  = \emptyset$. Adjectives that satisfy this constraint are referred to as \textsc{privative} adjectives. Other privative adjectives include: \textit{counterfeit, spurious, imaginary, fictitious, fake, would-be, wannabe, past, fabricated} (in one sense). Some prefixes have similar semantics, e.g. \textit{ex-, pseudo-, non-}.
 
 
 
@@ -289,10 +289,7 @@ Modals are similar to negation in certain ways: both combine with a single propo
 \ea  Barack Obama is the first black President of the United States. \hfill  [F]\\
 \ex Nelson Mandela is the first black President of the United States.  \hfill [F]
                        \z
-\z
-
-\pagebreak  %manual page break; is there a better way?
-\ea \label{ex:15.22}
+\ex \label{ex:15.22}
 (spoken in 2006) \\
 \ea  Barack Obama is not the first black President of the United States. \hfill [T]\\
 \ex Nelson Mandela is not the first black President of the United States. \\  \hfill [T]
@@ -448,30 +445,30 @@ We noted in \chapref{sec:13} that the membership of a set can always be expresse
 
 
 
-We will not explore this approach in any detail in the present book, but it will be useful for the reader to be aware of a notation for defining functions that is very widely used in formal semantics. In the standard function-argument format that we learn in secondary school, functions generally have names. For example, the two functions defined in (\ref{ex:15.36}) are named “f\textsubscript{1}” and “f\textsubscript{2}”. In this kind of definition, the function takes a bound variable (x) as argument and expresses the value as a formula which contains the bound variable. When the function is applied to a real argument, we calculate the value by substituting that argument for the bound variable in the formula. So for example, f\textsubscript{1}(13)$ = 13 – 4 = 9$.
+We will not explore this approach in any detail in the present book, but it will be useful for the reader to be aware of a notation for defining functions that is very widely used in formal semantics. In the standard function-argument format that we learn in secondary school, functions generally have names. For example, the two functions defined in (\ref{ex:15.36}) are named “$f_1$” and “$f_2$”. In this kind of definition, the function takes a bound variable (x) as argument and expresses the value as a formula which contains the bound variable. When the function is applied to a real argument, we calculate the value by substituting that argument for the bound variable in the formula. So for example, $f_1 (13) = 13 - 4 = 9$.
 
 
 \ea \label{ex:15.36}
 Named functions:\\
 \begin{tabular}{ll}
-f\textsubscript{1}(x) = x – 4  & f\textsubscript{1}(13) = 9\\
-f\textsubscript{2}(x) = 3x\textsuperscript{2} + 1  & f\textsubscript{2}(3) = 28
+$f_1(x) = x - 4$  & $f_1(13) = 9$\\
+$f_2(x) = 3x^2 + 1 $ & $f_2(3) = 28$
 \end{tabular}
 \z
 
 
 
-Another way of defining functions, using the {Greek} letter lambda (λ), is illustrated in (\ref{ex:15.45}). These two functions are identical to f\textsubscript{1} and f\textsubscript{2}, but written in a different format. Once again, when the function is applied to an argument, we calculate the value by substituting that argument for the bound variable which is introduced by the λ. However, in this format the functions have no names. Functions defined using λ are sometimes described as “anonymous functions”.
+Another way of defining functions, using the {Greek} letter lambda (λ), is illustrated in (\ref{ex:15.45}). These two functions are identical to $f_1$ and $f_2$, but written in a different format. Once again, when the function is applied to an argument, we calculate the value by substituting that argument for the bound variable which is introduced by the λ. However, in this format the functions have no names. Functions defined using λ are sometimes described as “anonymous functions”.
 
 \ea \label{ex:15.45}
 Anonymous functions:\\
 \begin{tabular}{ll}
-{}[λx. x – 4] & [λx. x – 4](13) = 9\\
-{}[λx. 3x\textsuperscript{2} + 1] & [λx. 3x\textsuperscript{2} + 1](3) = 28
+{}[$\text{λ}x. x - 4$] & $[\text{λ}x. x - 4](13) = 9$\\
+{}[$\text{λ}x. 3x^2 + 1$] & $[\text{λ}x. 3x^{2} + 1](3) = 28$
 \end{tabular}
 \z 
 
-We can also think of lambda (λ) as an operator which changes propositions into predicates by replacing some element of the proposition with an appropriate bound variable. For example, from the proposition \textit{Caesar loves Brutus} we can derive “[λy.~Caesar~loves~y]” by replacing the object NP with the variable y. This formula represents a predicate which corresponds to the property of being loved by Caesar. Alternatively, we can derive “[λx.~x~loves~Brutus]” by replacing the subject NP with the variable x. This formula represents a predicate which corresponds to the property of being someone who loves Brutus.
+We can also think of lambda (λ) as an operator which changes propositions into predicates by replacing some element of the proposition with an appropriate bound variable. For example, from the proposition \textit{Caesar loves Brutus} we can derive “[$\text{λ}y$.~Caesar~loves~$y$]” by replacing the object NP with the variable $y$. This formula represents a predicate which corresponds to the property of being loved by Caesar. Alternatively, we can derive “[$\text{λ}x$.~$x$~loves~Brutus]” by replacing the subject NP with the variable $x$. This formula represents a predicate which corresponds to the property of being someone who loves Brutus.
 
 
 
@@ -480,10 +477,10 @@ This process is referred to as \textsc{lambda abstraction}. Once again, when we 
 
 \ea \label{ex:15.37}
 \begin{tabbing}\relax
-[λx. LOVE(x,c) $\wedge$ HATE(x,b)](a)  \= = LOVE(a,c)  \=  ‘Caesar loves Brutus’ \kill
-[λy. LOVE(c,y)](b) \> = LOVE(c,b) \> ‘Caesar loves Brutus’ \\
-{[λx. LOVE(x,b)]}(c)  \> = LOVE(c,b) \> ‘Caesar loves Brutus’ \\
-{[λx. LOVE(x,c) $\wedge$ HATE(x,b)]}(a) \> = LOVE(a,c) $\wedge$ HATE(a,b) 
+[$\text{λ}x. \text{LOVE}(x,c) \wedge \text{HATE}(x,b)](a)$  \= $= \text{LOVE}(a,c)$  \=  ‘Caesar loves Brutus’ \kill
+[$\text{λ}y. \text{LOVE}(c,y)](b)$ \> $= \text{LOVE}(c,b)$ \> ‘Caesar loves Brutus’ \\
+{[$\text{λ}x. \text{LOVE}(x,b)](c)$ } \> = $\text{LOVE}(c,b)$ \> ‘Caesar loves Brutus’ \\
+{[$\text{λ}x. \text{LOVE}(x,c) \wedge \text{HATE}(x,b)](a)$} \> $= \text{LOVE}(a,c) \wedge \text{HATE}(a,b)$
 \end{tabbing}
 \hfill ‘Antony loves Caesar and hates Brutus’
 \z
@@ -494,36 +491,36 @@ Predicates derived by lambda abstraction can be interpreted as characteristic fu
 
 \ea \label{ex:15.38} 
 \begin{tabbing}\relax
-[λx. LOVE(x,c)$\wedge$ HATE(x,b)](n)  \= = \=  1 iff n loves Caesar and hates Brutus \kill 
-[λy. LOVE(c,y)](n)  \> = \>  1 iff Caesar loves n \\
+[$\text{λ}x. \text{LOVE}(x,c)\wedge \text{HATE}(x,b)](n)$  \= $=$ \=  1 iff n loves Caesar and hates Brutus \kill 
+[$\text{λ}y. \text{LOVE}(c,y)](n)$  \> $=$ \>  1 iff Caesar loves n \\
                     \>   \> 0 otherwise \\
-{[λx. LOVE(x,b)]}(n)  \> = \>  1 iff n loves Brutus \\
+{[$\text{λ}x. \text{LOVE}(x,b)](n)$}  \> = \>  1 iff n loves Brutus \\
                     \>   \> 0 otherwise \\
-{[λx. LOVE(x,c)$\wedge$ HATE(x,b)]}(n)  \> = \>  1 iff n loves Caesar and hates Brutus \\
+{[$\text{λ}x. \text{LOVE}(x,c)\wedge \text{HATE}(x,b)](n)$}  \> $=$ \>  1 iff n loves Caesar and hates Brutus \\
                     \>   \> 0 otherwise \\
 \end{tabbing}
 \z 
 
-This means that the semantic value of an intransitive predicate like \textit{snore} can be represented as a function which takes a single argument: [λx.~SNORE(x)]. The semantic value of the sentence \textit{Henry snores} can be derived by applying this function to the semantic value of the subject NP, as shown in \REF{ex:15.39}:
+This means that the semantic value of an intransitive predicate like \textit{snore} can be represented as a function which takes a single argument: [$\text{λ}x$.~$\text{SNORE}(x)$]. The semantic value of the sentence \textit{Henry snores} can be derived by applying this function to the semantic value of the subject NP, as shown in \REF{ex:15.39}:
 
 
 \ea \label{ex:15.39}
 \begin{tabbing}\relax
-[λx. SNORE(x)](h)  \= = \=  1 iff Henry snores \kill
-[λx. SNORE(x)](h)  \> = \>  SNORE(h)\\
+[$\text{λ}x$. $\text{SNORE}(x)](h)$  \= = \=  1 iff Henry snores \kill
+[$\text{λ}x$. $\text{SNORE}(x)](h)$  \> = \>  $\text{SNORE}(h)$\\
                    \> = \> 1 iff Henry snores\\
                    \>   \> 0 otherwise
 \end{tabbing}
 \z
 
 
-The semantic value of a transitive predicate like \textit{love} can be represented as a function which takes two arguments: [λy.~[λx.~LOVE(x,y)]]. In calculating the truth conditions for a sentence like \textit{Caesar loves Brutus}, the function named by the verb is applied first to the semantic value of the object NP, as shown in (\ref{ex:15.40}a), to derive the semantic value of the VP. The function named by the VP is then applied to the semantic value of the subject NP, as shown in (\ref{ex:15.40}b), to derive the semantic value of the sentence as a whole.
+The semantic value of a transitive predicate like \textit{love} can be represented as a function which takes two arguments: [$\text{λ}y$.~[$\text{λ}x$.~$\text{LOVE}(x,y)$]]. In calculating the truth conditions for a sentence like \textit{Caesar loves Brutus}, the function named by the verb is applied first to the semantic value of the object NP, as shown in (\ref{ex:15.40}a), to derive the semantic value of the VP. The function named by the VP is then applied to the semantic value of the subject NP, as shown in (\ref{ex:15.40}b), to derive the semantic value of the sentence as a whole.
 
 
 \ea \label{ex:15.40}
-\ea  {[λy. [λx. LOVE(x,y)]]}(b) = [λx. LOVE(x,b)] \\
+\ea  {[$\text{λ}y$. [$\text{λ}x$. $\text{LOVE}(x,y)]](b) = [\text{λ}x$. $\text{LOVE}(x,b)]$}\\
 \hfill  ‘is someone who loves Brutus’
-\ex  {[λx. LOVE(x,b)]}(c) =  LOVE(c,b) \hfill ‘Caesar loves Brutus’
+\ex  {[$\text{λ}x$. $\text{LOVE}(x,b)](c) =  \text{LOVE}(c,b)$} \hfill ‘Caesar loves Brutus’
 \z \z
 
 
@@ -531,7 +528,7 @@ In formal semantics, intensions (senses) are often defined as functions from pos
 
 
 
-Using the lambda abstraction operator, we might represent the intension of \textit{speak} as: “[λw.~[λx.~SPEAK(x)~in~w]]”. In the same way, the intension of \textit{yellow} could be represented as: “[λw.~[λx.~YELLOW(x)~in~w]]”. The \textit{w} in these formulae is a variable over the domain of possible worlds. These functions take a possible world as their argument, and return as a value the set of all yellow things (or speaking things) in that world.
+Using the lambda abstraction operator, we might represent the intension of \textit{speak} as: “[$\text{λ}w.~[\text{λ}x.~\text{SPEAK}(x)$~in~$w$]]”. In the same way, the intension of \textit{yellow} could be represented as: “[$\text{λ}w.~[\text{λ}x.~\text{YELLOW}(x)$~in~$w$]]”. The \textit{w} in these formulae is a variable over the domain of possible worlds. These functions take a possible world as their argument, and return as a value the set of all yellow things (or speaking things) in that world.
 
 
 \section{Conclusion}\label{sec:15.7}
