@@ -60,11 +60,11 @@ The time clause in (\ref{ex:18.1}a) functions as a modifier; it makes the propos
 
 
 \ea \label{ex:18.4}
-\textit{CAUSE(p,q)} is true iff \textit{p} is true, \textit{q} is true, and \textit{p} being true causes \textit{q} to be true.
+$\text{CAUSE}(p,q)$ is true iff $p$ is true, $q$ is true, and $p$ being true causes $q$ to be true.
 \z
 
 
-For example, if \textit{p} and \textit{q} are descriptions of events in the past, \textit{CAUSE(p,q)} would mean that \textit{p} happening caused \textit{q} to happen. A truth table for \textit{CAUSE} would look very much like the truth table for \textit{and}; but there is a crucial additional element of meaning that would not show up in the truth table, namely the causal relationship between the two propositions.\footnote{The definition of causality is a long-standing problem in philosophy, which we will not address here. One way to think about it makes use of a counter-factual conditional (see \chapref{sec:19}): \textit{CAUSE(p,q)} means that if \textit{p} had not happened, \textit{q} would not have happened either.}
+For example, if \textit{p} and \textit{q} are descriptions of events in the past, $\text{CAUSE}(p,q)$ would mean that \textit{p} happening caused \textit{q} to happen. A truth table for CAUSE would look very much like the truth table for \textit{and}; but there is a crucial additional element of meaning that would not show up in the truth table, namely the causal relationship between the two propositions.\footnote{The definition of causality is a long-standing problem in philosophy, which we will not address here. One way to think about it makes use of a counter-factual conditional (see \chapref{sec:19}): $\text{CAUSE}(p,q)$ means that if \textit{p} had not happened, \textit{q} would not have happened either.}
 
 
 
@@ -73,9 +73,9 @@ This analysis provides an immediate explanation for the ambiguity of sentence (\
 
 \ea \label{ex:18.5}
   \textit{Arthur didn’t marry Susan because she is rich.}\\
-\ea  ¬CAUSE(RICH(s), MARRY(a,s))\\
-\ex CAUSE(RICH(s), ¬MARRY(a,s))
-                       \z
+\ea  $\neg\text{CAUSE}(\text{RICH}(s), \text{MARRY}(a,s))$\\
+\ex  $ \text{CAUSE}(\text{RICH}(s), \neg\text{MARRY}(a,s))$
+   \z
 \z
 
 
@@ -84,16 +84,14 @@ If this approach is on the right track, we would expect to find other kinds of s
 
 \ea \label{ex:18.6}
 \textit{Few people admired Churchill because he joined the Amalgamated Union of Building Trade Workers.}\\
-\ea  CAUSE(JOIN(c,aubtw), [few x: person(x)] ADMIRE(x,c))\\
-\ex{} [few x: person(x)] CAUSE(JOIN(c,aubtw), ADMIRE(x,c))
+\ea  $\text{CAUSE}(\text{JOIN}(c,\text{aubtw})$, [few $x$: $\text{person}(x)$] $\text{ADMIRE}(x,c))$\\
+\ex{} [few $x$: $\text{person}(x)$] $\text{CAUSE}(\text{JOIN}(c,\text{aubtw}), \text{ADMIRE}(x,c))$
                        \z
-\z
-
-\ea \label{ex:18.7}
+\ex \label{ex:18.7}
 \textit{I believed that you love me because I am gullible.}\\
-\ea  BELIEVE(s, CAUSE(GULLIBLE(s), LOVE(h,s))\\
-\ex CAUSE(GULLIBLE(s), BELIEVE(s, LOVE(h,s)))\\
-    {}[s = speaker; h = hearer]
+\ea  $\text{BELIEVE}(s, \text{CAUSE}(\text{GULLIBLE}(s), \text{LOVE}(h,s))$\\
+\ex $\text{CAUSE}(\text{GULLIBLE}(s), \text{BELIEVE}(s, \text{LOVE}(h,s)))$\\
+    {}[$s$ = speaker; $h$ = hearer]
                        \z
 \z
 
@@ -135,9 +133,9 @@ We might (somewhat informally) express the causal relations involved in these th
 
 \ea \label{ex:18.40}
 \ea  \textit{John came back because he loved her.}  \hfill  [real-world causation]
-CAUSE(LOVE(j,m), COME\_BACK(j))  \hfill (assuming \textit{her} = Mary)\\
+$\text{CAUSE}(\text{LOVE}(j,m), \text{COME\_BACK}(j))$  \hfill (assuming \textit{her} = Mary)\\
 \ex \textit{John loved her, because he came back.} \hfill   [evidential use] 
-CAUSE(COME\_BACK(j), I have grounds to assert that LOVE(j,m))\\
+$\text{CAUSE}(\text{COME\_BACK}(j)$, I have grounds to assert that $\text{LOVE}(j,m)$)\\
 \ex \textit{What are you doing tonight, because there’s a good movie on.}
 \newline
 CAUSE(there’s a good movie on, I ask you what you are doing tonight) 
@@ -253,9 +251,8 @@ why  \textsc{aux}  the.\textsc{nom}  cat  jumped \\
 \textsc{1sg}  believe  \textsc{neg}  \textsc{comp}  Peter  to  home  goes  because  he  headache  has\\
 \glt ‘I don’t believe that Peter is going home because he has a headache.’ \\
 \ex  \#Ich glaube nicht, daß Peter nach Hause geht, \textit{denn} er hat Kopfschmerzen.\footnote{This sentence cannot be used with the intended meaning, in which the speaker expresses disbelief that the headache was the reason for Peter’s going home. The \textit{denn} clause would be grammatical as a parenthetical comment, but in this particular example that parenthetical reading seems semantically incoherent.}
-\z \z
-
-\ea \label{ex:18.37}
+\z 
+\ex\label{ex:18.37}
 \ea  Wenn Peter zu spät kam, \textit{weil} er den Bus verpaßt hat, war es seine eigene Schuld.\\
 \glt ‘If Peter was late because he missed the bus, it was his own fault.’ \\
 \ex \#Wenn Peter zu spät kam, \textit{denn} er hat den Bus verpaßt, war es seine eigene Schuld.
@@ -330,9 +327,9 @@ Only subordinating \textit{because} clauses can be fronted. For this reason, fro
 
 Consistent with the pattern described in the previous section, subordinating \textit{because} clauses express at-issue content, whereas paratactic \textit{because} clauses express use-conditional meaning. For this reason, subordinating \textit{because} can be negated, questioned, and embedded within a conditional, whereas none of these things are possible with paratactic \textit{because}.
 
-
+\begin{sloppypar}
 Since subordinating \textit{because} can be negated, examples like (\ref{ex:18.43}a) involve a scope ambiguity. In this case the more plausible reading (the husband was scolded, not for forgetfulness but for some other reason) requires negation to take scope over causation. This reading is not available in the paratactic example (\ref{ex:18.43}b). The only possible reading for that example is the one in which causation takes scope over negation: because he forgot, he was not scolded (a highly unlikely scenario).
-
+\end{sloppypar}
 
 \ea \label{ex:18.43}
 \ea  Mary didn’t scold her husband because he forgot their anniversary.
@@ -350,9 +347,9 @@ Example (\ref{ex:18.44}a) illustrates how the causal relation itself can be ques
                        \z
 \z
 
-
+\begin{sloppypar}
 In questions, as in statements, when the speech act function is intended, only paratactic \textit{because} is possible (\ref{ex:18.45}a, \ref{ex:18.46}a). Subordinating \textit{because} gives rise to bizarre readings in which real-world causation is being questioned, as in (\ref{ex:18.45}b) and (\ref{ex:18.46}b).
-
+\end{sloppypar}
 
 \ea \label{ex:18.45}
 \ea  Did Arnold sell his Jaguar? because I just saw him driving a 1995 minivan.
@@ -369,6 +366,7 @@ Example (\ref{ex:18.12}a) illustrates how subordinating \textit{because} can be 
 
 
 \ea \label{ex:18.12}
+\judgewidth{??}
 \ea[]{If Mary scolded her husband because he forgot their anniversary, they will be back on speaking terms in a few days.}
 \ex[]{If Mary scolded her husband, because he forgot their anniversary, they will be back on speaking terms in a few days.}
 \z 
@@ -386,7 +384,7 @@ To summarize, we have proposed that adverbial clauses introduced by \textit{beca
 
 \section{Conclusion}\label{sec:18.6}
 
-In this chapter we have distinguished two types of reason clauses: truth-conditional vs. use-conditional. These two types can be distinguished using familiar tests for truth-conditional (at-issue) content. First, truth-conditional reason clauses can be part of what is negated or questioned when the sentence as a whole is negated or questioned, but this is not the case with the use-conditional type. Second, truth-conditional reason clauses can be embedded within the antecedent clause of a conditional construction, but use-conditional reason clauses cannot.\footnote{Challengeability  was not discussed in this chapter, but this test can also be used to confirm the distinction we are making here. The truth of a statement can be appropriately challenged based on the causal relationship expressed in a truth-conditional reason clause, but not on that expressed in a use-conditional reason clause.}
+In this chapter we have distinguished two types of reason clauses: truth-con\-di\-tion\-al vs. use-conditional. These two types can be distinguished using familiar tests for truth-conditional (at-issue) content. First, truth-conditional reason clauses can be part of what is negated or questioned when the sentence as a whole is negated or questioned, but this is not the case with the use-conditional type. Second, truth-conditional reason clauses can be embedded within the antecedent clause of a conditional construction, but use-conditional reason clauses cannot.\footnote{Challengeability  was not discussed in this chapter, but this test can also be used to confirm the distinction we are making here. The truth of a statement can be appropriately challenged based on the causal relationship expressed in a truth-conditional reason clause, but not on that expressed in a use-conditional reason clause.}
 
 
 We have shown that use-conditional reason clauses can be used to express a variety of causal relations. The three most prominent of these are (a) real-world causation; (b) the evidential basis for asserting the content of the main clause; or (c) the reason for performing the speech act contained in the main clause. Truth-conditional reason clauses, on the other hand, always express real-world causation.  
@@ -409,14 +407,11 @@ We have argued for both English and \ili{German} that subordinate reason clauses
 
 \begin{enumerate}
 \item  Arthur didn’t marry Susan because she is rich.
-\newpage ~ 
-\smallskip 
-\vspace*{-4mm}
 
 \shortmodelanswer{Model answer}{
 \begin{enumerate}[label=\alph*.]
-\item  ¬CAUSE(RICH(s), MARRY(a,s))
-\item  CAUSE(RICH(s), ¬MARRY(a,s))
+\item  $\neg\text{CAUSE}(\text{RICH}(s), \text{MARRY}(a,s))$
+\item  $\text{CAUSE}(\text{RICH}(s), \neg\text{MARRY}(a,s))$
 \end{enumerate}
 }
 \item  Mrs. Thatcher will not win because she is a woman. \\
@@ -429,19 +424,19 @@ We have argued for both English and \ili{German} that subordinate reason clauses
 \paragraph*{B: Show how you could use some of the tests discussed in this chapter to determine whether the \textit{because} clauses in the following examples contribute truth-conditional or use-conditional meaning:}
 
 \begin{enumerate}
-\item  Arthur works for the State Department, because he has a STATE.GOV e-mail address.
+\item  Arthur works for the State Department, because he has a \texttt{state.gov} e-mail address.
 \item  Oil prices are rising, because OPEC has agreed to cut production.
 \end{enumerate}
 }
 \homeworkexercises{
 In \sectref{sec:18.2} we proposed the following analysis for the scopal ambiguity of sentence (\ref{ex:18.2}b):
-\textit{Arthur didn’t marry Susan because she is rich.}
+\textit{Arthur didn’t marry Susan because she is rich.}\smallskip\\
 \begin{itemize}[noitemsep]
-\item[i.]  ¬CAUSE(RICH(s), MARRY(a,s))\\
-\item[ii.]  CAUSE(RICH(s), ¬MARRY(a,s))
+\item[i.]  $\neg\text{CAUSE}(\text{RICH}(s), \text{MARRY}(a,s))$\\
+\item[ii.]  $\text{CAUSE}(\text{RICH}(s), \neg\text{MARRY}(a,s))$
 \end{itemize}
 
-Provide a similar analysis showing the two possible readings for each of the following sentences. If you wish, you may write out the clauses in prose rather than using formal logic notation, e.g.: ¬CAUSE(\textit{Susan is rich}, \textit{Arthur marry Susan}).
+Provide a similar analysis showing the two possible readings for each of the following sentences. If you wish, you may write out the clauses in prose rather than using formal logic notation, e.g.: $\neg\text{CAUSE}(\textit{Susan is rich}, \textit{Arthur marry Susan})$.
 
 \begin{enumerate}
 \item Steve Jobs didn’t start Apple because he loved technology.\footnote{\url{https://www.fastcompany.com/3001441/do-steve-jobs-did-dont-follow-your-passion}}
