@@ -27,8 +27,8 @@ In \chapref{sec:20} we quoted the following standard definitions of tense:
 
 
 \ea \label{ex:21.2}
-\ea   “\textbf{\textsc{Tense}} is grammaticalised expression of location in time… [T]enses locate situations either at the same time as the present moment…, or prior to the present moment, or subsequent to the present moment.” (\citealt{Comrie1985}: 9, 14)
-\ex   “\textbf{\textsc{Tense}} refers to the grammatical expression of the time of the situation described in the proposition, relative to some other time.” (\citealt[144]{Bybee1992})
+\ea   “\textbf{\textsc{tense}} is grammaticalised expression of location in time… [T]enses locate situations either at the same time as the present moment…, or prior to the present moment, or subsequent to the present moment.” (\citealt{Comrie1985}: 9, 14)
+\ex   “\textbf{\textsc{tense}} refers to the grammatical expression of the time of the situation described in the proposition, relative to some other time.” (\citealt[144]{Bybee1992})
 \z \z
 
 
@@ -36,12 +36,12 @@ An important feature of these definitions is that they are restricted to “gram
 
 
 
-One way to represent the “location” of a situation in time is to define logical operators (e.g.~\textsc{past} and \textsc{future}) which will add tense information to a basic proposition. These tense operators can be defined as existential quantifiers over times, as suggested in \REF{ex:21.3}.\footnote{\citet{Prior1957,Prior1967}.} This definition says that \textsc{past}(p) will be true at the time of speaking just in case there was some time prior to the time of speaking when $p$ was true; and similarly for \textsc{future}(p). (The letter \textit{t} stands for ‘time’, and “{$<$}” in this context means ‘prior to’. TU represents the time of speaking; this is typically the time for which the truth value of a statement is evaluated.)
+One way to represent the “location” of a situation in time is to define logical operators (e.g.~\textsc{past} and \textsc{future}) which will add tense information to a basic proposition. These tense operators can be defined as existential quantifiers over times, as suggested in \REF{ex:21.3}.\footnote{\citet{Prior1957,Prior1967}.} This definition says that $\textsc{past}(p)$ will be true at the time of speaking just in case there was some time prior to the time of speaking when $p$ was true; and similarly for $\textsc{future}(p)$. (The letter \textit{t} stands for ‘time’, and “{$<$}” in this context means ‘prior to’. TU represents the time of speaking; this is typically the time for which the truth value of a statement is evaluated.)
 
 
 \ea \label{ex:21.3}
-\textsc{past}(p) is true at TU  iff  ${\exists}$t [t {$<$} TU $\wedge$ (p is true at time t)]\\
-\textsc{future}(p) is true at TU  iff  ${\exists}$t [TU {$<$} t $\wedge$ (p is true at time t)]
+$\textsc{past}(p)$ is true at TU  iff  $\exists t [t < \text{TU} \wedge (p \text{ is true at time } t)]$\\
+$\textsc{future}(p)$ is true at TU  iff  $\exists t [\text{TU} < t \wedge (p \text{ is true at time } t)]$
 \z
 
 
@@ -58,10 +58,10 @@ If the positive statement \textit{I turned off the stove} is interpreted as show
 
 \ea \label{ex:21.5}
 \ea   \textit{I turned off the stove}. \\ 
-${\exists}$t [t {$<$} TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]
+$\exists t [t < \text{TU} \wedge (\text{TURN\_OFF}(\text{speaker}, \text{stove})$ is true at $t$)]
 \ex   \textit{I didn’t turn off the stove}. \\
-$¬{\exists}$t [t {$<$} TU $\wedge$ (TURN\_OFF(speaker, stove) is true at t)]\\
-  or:  ${\exists}$t [t {$<$} TU $\wedge$ ($¬$TURN\_OFF(speaker, stove) is true at t)]
+$\neg\exists t [t < \text{TU} \wedge (\text{TURN\_OFF}(\text{speaker}, \text{stove})$ is true at $t$)]\\
+  or:  $\exists t [t < \text{TU} \wedge (\neg\text{TURN\_OFF}(\text{speaker}, \text{stove})$ is true at $t$)]
 \z \z
 
 In \chapref{sec:20} we introduced Klein’s analysis of tense, which crucially defines tense as indicating the location of Topic Time rather than the location in time of the situation itself. Under Klein’s analysis, the past tense in \REF{ex:21.4} \textit{I didn’t turn off the stove} indicates that Topic Time is prior to the Time of Utterance. The Topic Time is determined by the context; in this situation, it would be the time immediately before leaving the house. The speaker is asserting that at that particular time, she didn’t turn off the stove. No assertion is made about other times. This analysis provides the correct interpretation.
@@ -71,19 +71,15 @@ To review, Klein defines tense and aspect as shown in \REF{ex:21.6}, where TT = 
 
 
 \ea \label{ex:21.6}
-\ea  \textsc{Tense} indicates a temporal relation between TT and TU;\\
-\ex \textsc{Aspect} indicates a temporal relation between TT and TSit.
+\ea  \textsc{tense} indicates a temporal relation between TT and TU;\\
+\ex \textsc{aspect} indicates a temporal relation between TT and TSit.
                        \z
 \z
 
 
 So, for example, past tense can be defined as a grammatical marker which indicates that TT is prior to TU. Future tense can be defined as indicating that TU is prior to TT. Present tense might be defined as indicating that TU is contained within TT.
 
-
-\largerpage
 Klein’s framework is based on the very influential work of \citet{Reichenbach1947}. Reichenbach defined tense categories in terms of three cardinal points in time: \textsc{speech time} (S), the time of the utterance; \textsc{event time} (E), the time of the event or situation which is being described; and \textsc{reference time} (R). S and E correspond to Klein’s TU and TSit, respectively. Reichenbach’s “reference time” can be seen as analogous to Klein’s TT, although there is some disagreement as to what Reichenbach actually meant by this term. In the discussion that follows we will use Klein’s terminology, but Reichenbach’s terms (E, S, and R) are also widely used, and it will be helpful to be aware of these as well.
-
-
 
 Because tense is (normally) marked relative to the time of the speech event, tense markers are considered to be deictic elements. It is helpful to remember that tense markers normally do not fully specify the location of the topic time; rather, they impose constraints on that location, such as TT {$<$} TU (for past tense). More specific time reference can be achieved by using temporal adverbs, adverbial clauses, etc.
 
@@ -92,7 +88,7 @@ Because tense is (normally) marked relative to the time of the speech event, ten
 Klein’s definition of tense as marking a temporal relation between TT and TU provides us with a foundation for analyzing the semantic content of specific tense markers. However, as \citet[26--29, 54--55]{Comrie1985} points out, tense markers can be associated with other kinds of meaning as well, including presuppositions, implicatures, idiomatic uses, and polysemous senses. These factors often combine to create a complex range of possible uses even for tense markers whose basic semantic content is relatively simple. We can illustrate some of the challenges involved in analyzing tense systems by looking at the simple present tense in English.
 
 
-\section{Case study: English simple present tense}\label{sec:21.3}
+\section{Case study: English simple present tense}\label{sec:21.3}\largerpage
 
 The simple present tense in English is notoriously puzzling, as \citet{Langacker2001} observes:
 
@@ -125,9 +121,7 @@ What happens when an event-type predicate is expressed in the simple pres\-ent? 
 \ea  Mary is playing tennis.\\
 \ex Mary \textit{plays} tennis.
                        \z
-\z
-
-\ea \label{ex:21.10}
+\ex \label{ex:21.10}
 \ea  Sam is feeding the cat.\\
 \ex Sam \textit{feeds} the cat.
                        \z
@@ -404,24 +398,18 @@ Some additional examples illustrating this contrast are presented below. One gen
 
 
 \ea \label{ex:21.29}
-\ea  Yesterday I invited John to go out for pizza, but he said that he \textit{had/*has} just \textit{eaten}.\\
+\ea Yesterday I invited John to go out for pizza, but he said that he \textit{had/*has} just \textit{eaten}.\\
 \ex If you invite him for pizza tomorrow, he will say that he \textit{has/*will~have} just \textit{eaten}.
-                       \z
-\z
-
-
-\ea \label{ex:21.30}
+    \z
+\ex \label{ex:21.30}
 (spoken in 1998):\\
-\ea   {In 2008} Ebenezer will say, “I \textit{will} get tenure in 2011.”\\
-\ex  {In 2008} Ebenezer will say that he \textit{will} get tenure in 2011.
-                       \z
-\z
-
-\ea \label{ex:21.31}
-(spoken in 1998):\\
-\ea  {In 1987} Ebenezer said, “I \textit{will} get tenure in 1992.”\\
-\ex {In 1987} Ebenezer said that he \textit{would}/*\textit{will} get tenure in 1992.
-                       \z
+\ea  In 2008 Ebenezer will say, “I \textit{will} get tenure in 2011.”\\
+\ex  In 2008 Ebenezer will say that he \textit{will} get tenure in 2011.
+     \z
+\ex\label{ex:21.31}(spoken in 1998):\\
+\ea In 1987 Ebenezer said, “I \textit{will} get tenure in 1992.”\\
+\ex In 1987 Ebenezer said that he \textit{would}/*\textit{will} get tenure in 1992.
+    \z
 \z
 
 
@@ -432,14 +420,12 @@ When the original, reported utterance contains a verb in the simple past tense, 
 (spoken in 1998):\\
 \ea  {In 2008} Ebenezer will say, “I \textit{got} tenure in 2004.”\\
 \ex {In 2008} Ebenezer will say that he \textit{got}/*\textit{will get} tenure in 2004.
-                       \z
-\z
-
-\ea \label{ex:21.33}
+     \z
+\ex \label{ex:21.33}
 (spoken in 1998):\\
 \ea  {In 1987} Ebenezer said, “I \textit{got} tenure in 1982.”\\
 \ex {In 1987} Ebenezer said that he \textit{got}/\textit{had gotten} tenure in 1982.
-                       \z
+     \z
 \z
 
 
@@ -450,14 +436,12 @@ There are certain other contexts where back-shifting appears to be optional as w
 \ea  Yesterday the mayor revealed that he \textit{is/was} terminally ill.\\
 \ex Last week John told me that he \textit{likes/liked} you.\\
 \ex The ancient Babylonians did not know that the earth \textit{circles}/\textit{circled} the sun.
-                       \z
-\z
-
-\ea \label{ex:21.35}
+    \z
+\ex \label{ex:21.35}
 \ea  I \textsc{knew} you \textit{liked}/*\textit{like} her.\\
 \ex This is John’s wife.\\
   – Yes, I \textsc{thought} he \textit{was}/*\textit{is} married.
-                       \z
+    \z
 \z
 
 
@@ -556,12 +540,11 @@ ne du-\textit{də\textsubscript{2}} bla \\
 \z
 \z
 
-\largerpage
-These systems are sometimes referred to as “metrical tense” or “graded tense” systems. However, some recent research has argued that at least in some languages, these markers indicate the location of the situation time (TSit), rather than the topic time (TT), relative to the time of speaking.\footnote{\citet{Cable2013,LaCross2016}.} If this is true, then these markers would not fit Klein’s definition of tense. The widely-used label \textsc{Temporal Remoteness} is general enough to include this type as well.
+These systems are sometimes referred to as “metrical tense” or “graded tense” systems. However, some recent research has argued that at least in some languages, these markers indicate the location of the situation time (TSit), rather than the topic time (TT), relative to the time of speaking.\footnote{\citet{Cable2013,LaCross2016}.} If this is true, then these markers would not fit Klein’s definition of tense. The widely-used label \textsc{temporal remoteness} is general enough to include this type as well.
 
 
 
-As examples (\ref{ex:21.37}--\ref{ex:21.38}) illustrate, Temporal Remoteness systems frequently make distinctions such as ‘today’ vs. ‘yesterday’, ‘yesterday’ vs. ‘before yesterday’, etc. In such systems, the “today” category is sometimes referred to as \textsc{Hodiernal}, and the “yesterday past” category is sometimes referred to as \textsc{Hesternal}, based on the \ili{Latin} words for ‘today’ and ‘yesterday’. In some languages, temporal remoteness is measured in other units of time, e.g. months or years; and in some, there can be a shift in the choice of unit depending on which unit would be contextually most relevant. Some languages make other kinds of distinctions, e.g. between remembered past vs. non-remembered past.\footnote{\citet{Botne2012}.}
+As examples (\ref{ex:21.37}--\ref{ex:21.38}) illustrate, Temporal Remoteness systems frequently make distinctions such as ‘today’ vs. ‘yesterday’, ‘yesterday’ vs. ‘before yesterday’, etc. In such systems, the “today” category is sometimes referred to as \textsc{hodiernal}, and the “yesterday past” category is sometimes referred to as \textsc{hesternal}, based on the \ili{Latin} words for ‘today’ and ‘yesterday’. In some languages, temporal remoteness is measured in other units of time, e.g. months or years; and in some, there can be a shift in the choice of unit depending on which unit would be contextually most relevant. Some languages make other kinds of distinctions, e.g. between remembered past vs. non-remembered past.\footnote{\citet{Botne2012}.}
 
 
 
