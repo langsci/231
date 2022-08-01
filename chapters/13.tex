@@ -545,7 +545,7 @@ We can assume that the semantic contribution of the copular verb \textit{is} is 
 
 
 
-Sentence (\ref{ex:13.30}c) is more complex, because the predicate NP contains a modifying adjective as well as the head noun. As with transitive verbs, we can determine the denotation set of the VP (in this case, \textit{is a happy man}) by asking what set the sentence asserts that Henry VIII belongs to? Here the relevant set is the set of happy men, i.e., the set of all individuals who are both happy and men.
+Sentence (\ref{ex:13.30}c) is more complex, because the predicate NP contains a modifying adjective as well as the head noun. As with transitive verbs, we can determine the denotation set of the VP (in this case, \textit{is a happy man}) by asking what set the sentence asserts that Henry VIII belongs to? Here the relevant set is the set of happy men, i.e., the set of all individuals who are both happy and men.\largerpage
 
 
 
@@ -566,15 +566,11 @@ In this chapter we have worked through a compositional analysis for the meanings
 
 
 
-In discussing the meanings of quantifiers, conditionals, tense markers, etc. in later chapters we will focus more on understanding the phenomena than on formalizing the rule system, but we will still draw heavily on the concepts introduced in this chapter. Moreover, an important assumption in everything that follows is that our description of the meanings of these elements must be compatible with the kind of compositional analysis illustrated in this chapter.
+In discussing the meanings of quantifiers, conditionals, tense markers, etc. in later chapters we will focus more on understanding the phenomena than on formalizing the rule system, but we will still draw heavily on the concepts introduced in this chapter. Moreover, an important assumption in everything that follows is that our description of the meanings of these elements must be compatible with the kind of compositional analysis illustrated in this chapter.\largerpage
 
 
 
-\furtherreading{
-
-
-
-Good brief introductions to set theory are provided in \citet[ch. 2]{AllwoodEtAl1977},
+\furtherreading{Good brief introductions to set theory are provided in \citet[ch. 2]{AllwoodEtAl1977},
 \citet[ch. 2]{Martin1987},
 \citet[ch. 2]{Coppock2016}, and 
 \citet[ch. 5]{McCawley1981a}. Readable introductory textbooks include \citet{Halmos1960} and \citet{Enderton1977}. Formal introductions to truth-conditional semantics are provided in  \citet{DowtyEtAl1981} and \citet{HeimKratzer1998}. Informal discussions of this approach are presented in \citet{Bach1989} and \citet{Portner2005}. A brief introduction to Model Theory is provided by \citet{Hodges2013}. Standard textbooks for this topic include \citet{ChangKeisler1990} and \citet{Hodges1997}.
@@ -593,7 +589,7 @@ Fill in the following tables:
 \lsptoprule
  & Set $A$ & Set $B$ & $A \cap B$  \\
 \midrule
-a. &  the set of all mammals & the set of all animals that lay eggs & the set of all \textsc{monotremes}\footnote{Platypus plus four species of echidna}\\
+a. &  the set of all mammals & the set of all animals that lay eggs & the set of all \textsc{monotremes}\textsuperscript{\textit{a}}\\
 \tablevspace
 b. &  $\{p,q,s,t\}$ & $\{q,t,w,x\}$ & \\
 \tablevspace
@@ -603,7 +599,7 @@ d. &  the set containing all members of the Beatles& the set of all people with 
 \tablevspace
 e. & the set of all Hollywood stars  & the set of all governors of California (past and present) & \\
 \lspbottomrule
-\end{tabularx}
+\end{tabularx}\smallskip\\\noindent\textsuperscript{\textit{a}}\,Platypus plus four species of echidna.
 % }
  \bigskip 
  
@@ -621,14 +617,12 @@ c. & the set of all odd numbers & the set of all even numbers & \\
 \tablevspace
 d. & the set of all members of the  British House of Lords & the set of all members of the British House of Commons & \\
 \tablevspace
-e. & the set of all female     British monarchs            & the set of all female {French} monarchs\footnote{Note: there were no female {French} monarchs.} & \\
+e. & the set of all female     British monarchs            & the set of all female {French} monarchs\textsuperscript{\textit{a}} & \\
 \lspbottomrule
-\end{tabularx} 
+\end{tabularx}\smallskip\\\noindent\textsuperscript{\textit{a}}\,Note: there were no female {French} monarchs.
 }
 %     }
-\bigskip 
 
-\vspace*{1cm}
 \noindent
 % \eabox{ 
 \begin{tabularx}{\textwidth}{lQQQ}
@@ -682,7 +676,7 @@ e. & the set of all Indo-European  languages & the set of all SVO languages & \\
 
 
 \ea the set of individuals $U$ = \{Able, Baker, Charlie, Doug, Echo, Fred, Geronimo\}
-\ex denotation assignments:\smallskip\\
+\tcbbreak\ex denotation assignments:\smallskip\\
   \begin{tabularx}{\linewidth}{@{} l@{~}c@{~}Q  @{}}
 $\llbracket\text{FISH}\rrbracket$      & = & \{Able, Baker, Charlie, Doug\}\\
 $\llbracket\text{SUBMARINE}\rrbracket$ & = & \{Echo\}\\
@@ -704,8 +698,16 @@ $\llbracket g\rrbracket$ & = & Geronimo\\
     \z 
     
 \ex  
-          Complete the following table by providing logical formulae and set-theoretic interpretations for sentences (e–i), and evaluate the truth value of each sentence relative to the model provided above.
-    \z 
+    Complete the table on the next page by providing logical formulae and set-theoretic interpretations for sentences (e–i), and evaluate the truth value of each sentence relative to the model provided above.
+\z 
+
+\ea  
+    Draw annotated tree diagrams for the following sentences showing how their truth conditions would be derived compositionally from our rules of interpretation:\\
+\ea   {Henry snores}.\\
+\ex  {Henry loves Jane}.\\
+\ex  {Henry is a happy man}.
+                       \z
+    \z
 
 \noindent
 \fittable{    
@@ -733,29 +735,20 @@ i. & \textit{Two fish are red}. &  &  & \\
 \lspbottomrule
 \end{tabular} 
 }
-
-\ea  
-    Draw annotated tree diagrams for the following sentences showing how their truth conditions would be derived compositionally from our rules of interpretation:\\
-\ea   {Henry snores}.\\
-\ex  {Henry loves Jane}.\\
-\ex  {Henry is a happy man}.
-                       \z
-    \z
-
+    
 }
 \homeworkexercises{
 \label{ex:13:hw:ref}
-\paragraph*{A:} Assume that the following individuals are included in our universe of discourse:\\
-
-\begin{quote}
-$\llbracket b \rrbracket$  = Mrs. Bennet\\
+\paragraph*{A:} Assume that the following individuals are included in our universe of discourse:\smallskip\\
+\begin{multicols}{2}
+\noindent $\llbracket b \rrbracket$  = Mrs. Bennet\\
 $\llbracket c \rrbracket$  = Mr. Collins\\
 $\llbracket d \rrbracket$  = Mr. Darcy\\
 $\llbracket e \rrbracket$  = Elizabeth (Bennet)\\
 $\llbracket l \rrbracket$  = Lydia (Bennet)\\
 $\llbracket w \rrbracket$  = Mr. Wickham\\
-\end{quote}
-
+\end{multicols}
+\tcbbreak
 For each of the following logical formulae, provide an English translation and an interpretation stated in terms of set notation. Then create a model under which sentences (2--3) will be false, and the rest (including 1) will be true.\footnote{Patterned loosely after \citet[350]{Saeed2009}.} 
 
 \medskip 
@@ -765,7 +758,7 @@ For each of the following logical formulae, provide an English translation and a
 
 \shortmodelanswer{Model answer}{English translation: ‘Mr. Darcy loves/loved Elizabeth.’\\
 truth conditions: $\langle$Darcy, Elizabeth$\rangle \in \llbracket\text{LOVE}\rrbracket$ 
-}\smallskip 
+}\smallskip
 
 \item $\text{REJECT}(e,c)$
 \item $\forall x [(\text{MAN}(x)\wedge \text{WEALTHY}(x)) \rightarrow \text{ADMIRE}(b,x)]$
