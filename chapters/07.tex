@@ -173,7 +173,8 @@ Many different theories have been proposed for representing components of lexica
 One very influential approach during the middle of the 20\textsuperscript{th} century was to treat word meanings as bundles of distinctive semantic features, in much the same way that phonemes are defined in terms of distinctive phonetic\slash phonological features.\footnote{One early example of this approach is found in \citet{Nida1951}.} This approach is sometimes referred to as \textsc{componential analysis} of meaning. Some of the motivation for this approach can be seen in the following famous example from \citet{Hjelmslev1953}. The example makes it clear that the feature of gender is an aspect of meaning that distinguishes many pairs of lexical items within certain semantic domains. If we were to ignore this fact and just treat each word’s meaning as an \textsc{atom} (i.e., an unanalyzable unit), we would be missing a significant generalization.
 \end{sloppypar}
 
-\eabox{
+\begin{table}
+\caption{Evidence for gender as a shared component of meaning}
 \begin{tabular}[t]{*{5}{l}}
 \lsptoprule
  & horse & human & child & sheep\\
@@ -182,14 +183,14 @@ One very influential approach during the middle of the 20\textsuperscript{th} ce
 “she” & mare & woman & girl & ewe\\
 \lspbottomrule
 \end{tabular}
-}
+\end{table}
 
-Features like gender and adulthood are binary, and so lend themselves to representation in either tree or matrix format, as illustrated in \REF{ex:7.17}. Notice that in addition to the values + and –, features may also be unspecified (represented by ∅ in the matrix). For example, the word \textit{foal} is unspecified for gender, and the word \textit{horse} is unspecified for both age and gender.
+Features like gender and adulthood are binary, and so lend themselves to representation in either tree or matrix format, as illustrated in \tabref{ex:7.17}. Notice that in addition to the values + and –, features may also be unspecified (represented by ∅ in the matrix). For example, the word \textit{foal} is unspecified for gender, and the word \textit{horse} is unspecified for both age and gender.
 
 
-\ea \label{ex:7.17}
-Binary feature analysis for horse terms:\\
-\begin{multicols}{2}
+\begin{table}
+\caption{\label{ex:7.17}Binary feature analysis for horse terms}
+\hbox{}\hfill%
 \begin{tabular}[t]{lcc}
 \lsptoprule
 & [adult] & [male]\\\midrule
@@ -200,7 +201,7 @@ Binary feature analysis for horse terms:\\
 \itshape colt & – & +\\
 \itshape filly & – & –\\
 \lspbottomrule
-\end{tabular}\\
+\end{tabular}\hfill%
 \begin{forest}
 [\scshape horse
   [??, edge label={node[midway,above left,font=\scriptsize]{[+A]}}
@@ -211,12 +212,12 @@ Binary feature analysis for horse terms:\\
     [\itshape filly, edge label={node[midway,above right,font=\scriptsize]{[−M]}}]
   ]
 ]
-\end{forest}
-\end{multicols}
-\z
+\end{forest}\hfill\hbox{}%
+\end{table}
 
 
-\ea  \label{ex:7.18} Binary feature analysis for human terms:\\
+\begin{table}
+\caption{\label{ex:7.18}Binary feature analysis for human terms}
 \begin{tabular}[t]{lcc} 
 \lsptoprule
 & [adult] & [male]\\ \midrule
@@ -228,7 +229,7 @@ Binary feature analysis for horse terms:\\
 \itshape girl & – & –\\
 \lspbottomrule
 \end{tabular}
-\z
+\end{table}
 
 Componential analysis provides neat explanations for some sense relations. Synonymous senses can be represented as pairs that share all the same components of meaning. Complementary pairs are perfectly modeled by binary features: the two elements differ only in the polarity for one feature, e.g. [+/– alive], [+/– awake], [+/– possible], [+/– legal], etc. The semantic components of a hyperonym (e.g. \textit{child} [+human, –adult]) are a proper subset of the semantic components of its hyponyms (e.g. \textit{boy} [+human, –adult, +male]); \textit{girl} [+human, –adult, –male])). In other words, each hyponym contains all the semantic components of the hyperonym plus at least one more; and these “extra” components are the ones that distinguish the meanings of taxonomic sisters. Reverse pairs might be treated in a way somewhat similar to complementary pairs; they differ in precisely one component of meaning, typically a direction, with the dimension and manner of motion and the reference point held steady.
 
