@@ -57,8 +57,9 @@
             \item Brindle, Jonathan. A dictionary and grammatical outline of Chakali.
             \item Friesen, Dianne. A grammar of Moloko.
             \item Ali, Mark, Scott Grimm \& Adams Bodomo. A dictionary and  grammatical sketch of Dagaare.
-            \end{enumerate}
             \item  Namyalo, Saudah,   Alena Witzlack-Makarevich,   Anatole Kiriggwajjo,   Amos Atuhairwe,   Zarina Molochieva,   Ruth Gimbo Mukama   \& Margaret Zellers. A dictionary and grammatical sketch of Ruruuli-Lunyala.
+            \item Gunnink, Hilde. A grammar of Fwe.
+            \end{enumerate}
         }
 \fi
 \ifx\lsSeries\calseries %\cal is already taken as a command
@@ -193,7 +194,7 @@
             \item Asoulin, Eran. Language and scientific explanation: Where does semantics fit in?
             \item Boeckx, Cedric. Reflections on language evolution: From minimalism to pluralism.
             \item Archangeli, Diana \& Douglas Pulleyblank. Emergent phonology.
-            \item Lund, Kristine, Pierluigi Basso Fossali, Audrey Mazur \& Magali Ollagnier-Beldame (eds.). Language is a complex adaptive system.
+            \item Lund, Kristine, Pierluigi Basso Fossali, Audrey Mazur \& Magali Ollagnier-Beldame (eds.). Language is a complex adaptive system: Explorations and evidence.
             \end{enumerate}
 
             }
@@ -402,8 +403,8 @@
             \item Van Rooy, Raf. Greece’s labyrinth of language: A study in the early modern discovery of dialect diversity.
             \item Aussant, Émilie \& Jean-Michel Fortis. Historical journey in a linguistic archipelago: Case studies on concepts, fields, and commitments.
             \item McElvenny, James \& Ploder, Andrea. Holisms of communication: The early history of audio-visual sequence analysis.
+            \item Anderson, Stephen R. Phonology in the Twentieth Century: Second edition, revised and expanded.
             \end{enumerate}
-            \item Anderson, Stephen R. Phonology in the Twentieth Century : Second edition, revised and expanded.
 
             }
 \fi
@@ -781,7 +782,7 @@
              
              \bigskip
              
-             Editors: Stefan Müller, Martin Haspelmath\\
+             Editors: Stefan Müller, Antonio Machicao y Priemer\\
              Editorial Board: Claude Hagège, Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap
              
              \bigskip
@@ -797,6 +798,7 @@
              \item Ferreira, Marcelo. Curso de semântica formal.
              \item Stefanowitsch, Anatol. Corpus linguistics: A guide to the methodology.
              \item Müller, Stefan. {\tblseight}.
+             \item Hejná, Míša  \& George Walkden. A history of English.
              \item Kahane, Sylvain \& Kim Gerdes. Syntaxe théorique et formelle. Vol. 1: Modélisation, unités, structures.
              \end{enumerate}
              }
