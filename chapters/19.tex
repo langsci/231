@@ -38,7 +38,7 @@ One factor that makes the analysis of conditional sentences so challenging is th
 
 
 
-In \sectref{sec:19.4} we will return to the question raised in \chapref{sec:9} as to whether the meaning of English \textit{if} can be adequately represented or defined in terms of the material implication operator (→) of propositional logic. We will see that, for a number of reasons, this does not seem to be possible. (Of course, that does not mean that the material implication operator is useless for doing natural language semantics; it is an indispensible part of the logical metalanguage. It just means that material implication does not provide a simple translation equivalent for English \textit{if}.)
+In \sectref{sec:19.4} we will return to the question raised in \chapref{sec:9} as to whether the meaning of English \textit{if} can be adequately represented or defined in terms of the material implication operator ($\rightarrow$) of propositional logic. We will see that, for a number of reasons, this does not seem to be possible. (Of course, that does not mean that the material implication operator is useless for doing natural language semantics; it is an indispensible part of the logical metalanguage. It just means that material implication does not provide a simple translation equivalent for English \textit{if}.)
 
 
 
@@ -289,11 +289,11 @@ To sum up, counterfactual conditionals get distinctive marking in many languages
 
 \section{English \textit{if} vs. material implication}\label{sec:19.4}
 
-In \chapref{sec:9} we presented evidence in support of Grice’s analysis of the English words \textit{and} and \textit{or}. Grice suggested that the lexical semantic content of these words is actually equivalent to their logical counterparts ($\wedge$ and $\vee$), and that apparent differences in meaning are best understood as conversational implicatures. This approach seems to work fairly well for those two words; could a similar approach work for English \textit{if}? Grice argued that it could, specifically proposing that the lexical semantic content of English \textit{if} is equivalent to the material implication operator (→). However, there are a number of reasons to believe that this approach will not work for \textit{if}.
+In \chapref{sec:9} we presented evidence in support of Grice’s analysis of the English words \textit{and} and \textit{or}. Grice suggested that the lexical semantic content of these words is actually equivalent to their logical counterparts ($\wedge$ and $\vee$), and that apparent differences in meaning are best understood as conversational implicatures. This approach seems to work fairly well for those two words; could a similar approach work for English \textit{if}? Grice argued that it could, specifically proposing that the lexical semantic content of English \textit{if} is equivalent to the material implication operator ($\rightarrow$). However, there are a number of reasons to believe that this approach will not work for \textit{if}.
 
 
 
-First, if \textit{if} really means material implication, then the truth table for material implication predicts that the sentences in \REF{ex:19.21} should all be true. (Recall that \textit{p→q} is only false when $p$ is true and $q$ is false.) However, this does not match our intuitions about these sentences; most English speakers are very reluctant to call any of them true.
+First, if \textit{if} really means material implication, then the truth table for material implication predicts that the sentences in \REF{ex:19.21} should all be true. (Recall that $p\rightarrow q$ is only false when $p$ is true and $q$ is false.) However, this does not match our intuitions about these sentences; most English speakers are very reluctant to call any of them true.
 
 
 \ea \label{ex:19.21}
@@ -304,11 +304,11 @@ First, if \textit{if} really means material implication, then the truth table fo
 \z
 
 
-What makes these sentences seem so odd is that there is no relationship between the antecedent and consequent. Whatever \textit{if} means, it seems to require that some such relationship be present. Grice argued that this inference of relationship between antecedent and consequent is only a conversational implicature. Several other authors have also proposed that the semantic content of \textit{if} is simply material implication, and that the apparent differences between the two are pragmatic rather than semantic in nature. Other authors have tried to account for the requirement of relationship between antecedent and consequent by suggesting that \textit{if p then q} expresses the claim that \textit{p→q} is true in all possible worlds, i.e., under any imaginable circumstances.\footnote{\citet{Lewis1918}, cited in \citet{vonFintel2011}.} But any attempt to derive the meaning of \textit{if} from material implication must deal with a number of problems.
+What makes these sentences seem so odd is that there is no relationship between the antecedent and consequent. Whatever \textit{if} means, it seems to require that some such relationship be present. Grice argued that this inference of relationship between antecedent and consequent is only a conversational implicature. Several other authors have also proposed that the semantic content of \textit{if} is simply material implication, and that the apparent differences between the two are pragmatic rather than semantic in nature. Other authors have tried to account for the requirement of relationship between antecedent and consequent by suggesting that \textit{if p then q} expresses the claim that $p\rightarrow q$ is true in all possible worlds, i.e., under any imaginable circumstances.\footnote{\citet{Lewis1918}, cited in \citet{vonFintel2011}.} But any attempt to derive the meaning of \textit{if} from material implication must deal with a number of problems.
 
 
 
-As discussed in \chapref{sec:4}, the meaning of the material implication operator is entirely defined by its truth table. We need to know the truth values for both \textit{p} and \textit{q} (but nothing else) before we can determine the truth value for \textit{p→q}. But this does not match our judgments about the truth of English conditionals. It would be entirely possible for a competent native speaker to believe that sentence \REF{ex:19.22} is true without knowing whether either of the two clauses alone expresses a true proposition. What is being asserted in \REF{ex:19.22} is not a specific combination of truth values, but a relationship between the meanings of the clauses.\footnote{The material in this paragraph and the next are based on observations made by \citet{Podlesskaya2001}.}
+As discussed in \chapref{sec:4}, the meaning of the material implication operator is entirely defined by its truth table. We need to know the truth values for both \textit{p} and \textit{q} (but nothing else) before we can determine the truth value for $p\rightarrow q$. But this does not match our judgments about the truth of English conditionals. It would be entirely possible for a competent native speaker to believe that sentence \REF{ex:19.22} is true without knowing whether either of the two clauses alone expresses a true proposition. What is being asserted in \REF{ex:19.22} is not a specific combination of truth values, but a relationship between the meanings of the clauses.\footnote{The material in this paragraph and the next are based on observations made by \citet{Podlesskaya2001}.}
 
 
 \ea \label{ex:19.22}
@@ -333,17 +333,17 @@ Finally, as we will argue in more detail below, the antecedent in a speech act c
 \ea  If you have a pen, may I please borrow it?\\
 \ex If you want my advice, don’t invite George to the party!\\
 \ex If I may say so, you do not look well.
-                       \z
+    \z
 \z
 
 
-Even if we focus only on truth values, the logical properties of → make predictions which do not seem to hold true for English \textit{if}. For example, it is easy to show (from the truth table for →) that $\neg(p\rightarrow q)$ logically entails $p$. So if the semantic value of \textit{if} is material implication, anyone who believes that (\ref{ex:19.25}a) is false is committed to believing that (\ref{ex:19.25}b) is true. However, it does not seem to be logically inconsistent for a speaker to believe both statements to be false.
+Even if we focus only on truth values, the logical properties of $\rightarrow$ make predictions which do not seem to hold true for English \textit{if}. For example, it is easy to show (from the truth table for $\rightarrow$) that $\neg(p\rightarrow q)$ logically entails $p$. So if the semantic value of \textit{if} is material implication, anyone who believes that (\ref{ex:19.25}a) is false is committed to believing that (\ref{ex:19.25}b) is true. However, it does not seem to be logically inconsistent for a speaker to believe both statements to be false.
 
 
 \ea \label{ex:19.25}
-\ea  If I win the National Lottery, I will be happy for the rest of my life.\\
+\ea If I win the National Lottery, I will be happy for the rest of my life.\\
 \ex I will win the National Lottery.
-                       \z
+    \z
 \z
 
 
@@ -352,8 +352,8 @@ Counterfactuals raise a number of special problems for the material implication 
 
 \ea \label{ex:19.26}
 \ea  If kangaroos had no tails, they would topple over.\\
-\ex If kangaroos had no tails and they used crutches, they would topple over.
-                       \z
+\ex  If kangaroos had no tails and they used crutches, they would topple over.
+     \z
 \z
 
 

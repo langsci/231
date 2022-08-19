@@ -244,7 +244,7 @@ $B = \{2,3,4,5,6,7\}$
 \ea $\{a,b,c\} \subseteq \{a,b,c,d,f\}$\\
 \ex $\{a,b,c\}  \nsubseteq \{c,d,f\}$ \\
 \ex $\{a,b,c\}  \subseteq \{a,b,c\}$\\
-\ex $\forall S$ (where $S$ is a set), Ø $\subseteq S$
+\ex $\forall S$ (where $S$ is a set), ${∅ \subseteq S}$
                        \z
 \z
 
@@ -409,26 +409,25 @@ The denotation sets encode information about the current state of the world. For
 
 
 
-\begin{table}
-\scriptsize
-\caption{Sentence interpretation examples}
-\label{extab:13.21} 
-\begin{tabularx}{\textwidth}{l@{~} >{\itshape}Q@{}l@{~}l@{}c}
+\begin{sidewaystable}
+\small
+\caption{Sentence interpretation examples\label{extab:13.21}} 
+\begin{tabular}{l@{~} >{\itshape}l l l l}
 \lsptoprule
- & \textup{English sentence} &  logical form &  interpretation &  truth value\\
-\midrule
-a. &  Thomas More is a man. &  MAN(t) & Thomas More ${\in} \llbracket\text{MAN}\rrbracket$  &   T \\
+ & \textup{English sentence} &  Logical form &  Interpretation &  Truth\\
+ &                           &               &                 &  value\\\midrule
+a. &  Thomas More is a man. &  $\text{MAN}(t)$ & $\text{Thomas More} \in \llbracket\text{MAN}\rrbracket$  &   T \\
 \tablevspace
-b. &  Anne Boleyn is a man or a woman. &  MAN(a) $\vee$ WOMAN(a)  &  Anne Boleyn ${\in}$ ($\llbracket\text{MAN}\rrbracket {\cup} \llbracket\text{WOMAN}\rrbracket$ ) & T\\
+b. &  Anne Boleyn is a man or a woman. &  $\text{MAN}(a) \vee \text{WOMAN}(a)$  &  $\text{Anne Boleyn} \in (\llbracket\text{MAN}\rrbracket \cup \llbracket\text{WOMAN}\rrbracket )$ & T\\
 \tablevspace
-c. &   {Henry VIII is a man who snores}. & MAN(h) $\wedge$ SNORE(h) & Henry VIII ${\in}$ ($\llbracket\text{MAN}\rrbracket {\cap} \llbracket\text{SNORE}\rrbracket$ ) & T\\
+c. &   {Henry VIII is a man who snores}. & $\text{MAN}(h) \wedge \text{SNORE}(h)$ & $\text{Henry VIII} \in (\llbracket\text{MAN}\rrbracket \cap \llbracket\text{SNORE}\rrbracket)$ & T\\
 \tablevspace
-d. & {All men snore}.& ${\forall}$x[MAN(x) → SNORE(x)] & $\llbracket\text{MAN}\rrbracket {\subseteq} \llbracket\text{SNORE}\rrbracket$  & F\\
+d. & {All men snore}.& $\forall x[\text{MAN}(x) \rightarrow \text{SNORE}(x)]$ & $\llbracket\text{MAN}\rrbracket \subseteq \llbracket\text{SNORE}\rrbracket$  & F\\
 \tablevspace
-e. &   {No women snore.} &  ¬${\exists}$x[WOMAN(x) $\wedge$ SNORE(x)]\hspace{2mm} & $\llbracket\text{WOMAN}\rrbracket {\cap} \llbracket\text{SNORE}\rrbracket$  = ∅ & T\\
+e. &   {No women snore.} &  $\neg \exists x[\text{WOMAN}(x) \wedge \text{SNORE}(x)]$ & $\llbracket\text{WOMAN}\rrbracket \cap \llbracket\text{SNORE}\rrbracket  = ∅$ & T\\
 \lspbottomrule
-\end{tabularx} 
-\end{table}
+\end{tabular} 
+\end{sidewaystable}
 
 The interpretations in \tabref{extab:13.21}b--e can be derived from the corresponding logical forms, based on the definitions of intersection, union, and subset provided in \REF{extab:13.19}. For example, the \textit{or} statement in \tabref{extab:13.21}b constitutes a claim that a certain individual (Anne Boleyn) is a member of the union of two sets, because the definition of $A\cup B$ involves an \textit{or} statement. Once the truth conditions are stated in terms of set relations, we can determine the truth values for each sentence by inspecting the membership of the denotation sets specified in the model. The statement in \tabref{extab:13.21}b is true relative to Model 1 because the individual Anne Boleyn is a member of the set $\llbracket\text{WOMAN}\rrbracket$ , and thus a member of $\llbracket\text{MAN}\rrbracket \cup \llbracket\text{WOMAN}\rrbracket$ .
 
@@ -449,7 +448,7 @@ We have already stated an informal rule of interpretation for simple sentences: 
 
 
 \ea \label{ex:13.23}
-\textit{Syntax}: S  →  NP\textsubscript{subj}  VP\\
+\textit{Syntax}: S  $\rightarrow$  NP\textsubscript{subj}  VP\\
 \textit{Semantics}: The semantic value of a sentence is ‘true’ if the semantic value of the subject is a member of the set which is the semantic value of the VP, and ‘false’ otherwise; {}$\llbracket\text{S}\rrbracket$  = ‘true’  iff  $\llbracket\text{NP\textsubscript{subj}}\rrbracket \in \llbracket\text{VP}\rrbracket$ 
 \z
 
@@ -520,7 +519,7 @@ The main syntactic difference between the sentences in \REF{ex:13.27} and those 
 
 \ea \label{ex:13.29}
 \ea $\llbracket\text{\textit{loves Anne Boleyn}}\rrbracket  = \{x: \langle x, \text{Anne Boleyn}\rangle \in \llbracket\text{LOVE}\rrbracket \}$
-\ex \textit{Syntax}: VP  →  V\textsubscript{trans}  NP\textsubscript{obj}\\
+\ex \textit{Syntax}: VP  $\rightarrow$  V\textsubscript{trans}  NP\textsubscript{obj}\\
 \textit{Semantics}: The semantic value of a VP containing a transitive verb meaning $P$ together with an object NP meaning $\alpha$ is the set of all individuals $x$ for which $P(x,\alpha)$ is true;\\
 {}$\llbracket\text{VP}\rrbracket  =  \{x: \langle x, \llbracket\text{NP\textsubscript{obj}}\rrbracket \rangle \in \llbracket\text{V\textsubscript{trans}}\rrbracket \}$
 \z \z
@@ -555,7 +554,7 @@ The combination of word meanings in \textit{happy man} follows the same pattern 
 \ea \label{ex:13.31}
 \ea  $\text{HAPPY}(h) \wedge \text{MAN}(h)$\\
 \ex  $\llbracket\text{HAPPY}(h) \wedge \text{MAN}(h)\rrbracket$  = ‘true’  iff  $\llbracket h\rrbracket \in (\llbracket\text{HAPPY}\rrbracket \cap \llbracket\text{MAN}\rrbracket)$
-\ex  \textit{Syntax}: N$'$ →  A N\\
+\ex  \textit{Syntax}: N$'$ $\rightarrow$  A N\\
      \textit{Semantics}: The semantic value of an N$'$ constituent containing a modifying adjective and a head noun is the intersection of the semantic values of the adjective and noun;\\
 {}$\llbracket\text{A N}\rrbracket$  =  $\llbracket\text{A}\rrbracket \cap \llbracket\text{N}\rrbracket$ 
 \z \z
@@ -749,7 +748,7 @@ $\llbracket l \rrbracket$  = Lydia (Bennet)\\
 $\llbracket w \rrbracket$  = Mr. Wickham\\
 \end{multicols}
 \tcbbreak
-For each of the following logical formulae, provide an English translation and an interpretation stated in terms of set notation. Then create a model under which sentences (2--3) will be false, and the rest (including 1) will be true.\footnote{Patterned loosely after \citet[350]{Saeed2009}.} 
+For each of the following logical formulae, provide an English translation and an interpretation stated in terms of set notation. Then create a model under which sentences (2--3) will be false, and the rest (including~1) will be true.\footnote{Patterned loosely after \citet[350]{Saeed2009}.} 
 
 \medskip 
 
@@ -765,7 +764,7 @@ truth conditions: $\langle$Darcy, Elizabeth$\rangle \in \llbracket\text{LOVE}\rr
 \item $\exists x [\text{MAN}(x) \wedge \text{WEALTHY}(x) \wedge \text{ADMIRE}(b,x)]$
 \item $\neg \exists x [\text{WOMAN}(x) \wedge \text{LOVE}(x,c)]$
 \item $\text{DECEIVE}(w,l) \wedge \text{RESCUE}(d,l)$
-\item $\forall x [\text{WOMAN}(x) \rightarrow \text{CHARM}(w,x)] \wedge \forall y [\text{MAN}(y) \rightarrow \text{ANGER}(w,y)]$
+\item\raggedright $\forall x [\text{WOMAN}(x) \rightarrow \text{CHARM}(w,x)] \wedge \forall y [\text{MAN}(y) \rightarrow \text{ANGER}(w,y)]$
 \end{enumerate}
 }
 

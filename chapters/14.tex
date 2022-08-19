@@ -58,9 +58,9 @@ The key insight which has helped semanticists understand the meaning contributio
 
 \ea \label{ex:14.5}
 \ea \parbox{4.5cm}{All students are brilliant.}\parbox{6cm}{$S \subseteq B$}
-\ex \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} =$ Ø}
+\ex \parbox{4.5cm}{No students are brilliant.}\parbox{6cm}{$S  \cap {B} = ∅$}
 \ex \parbox{4.5cm}{Some students are brilliant.}\parbox{6cm}{$|S \cap B| \geq 2$}
-\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq$ Ø; or:  $|S \cap B| \geq 1$}
+\ex \parbox{4.5cm}{A/Some student is brilliant.}\parbox{6cm}{$S  \cap B \neq ∅$; or:  $|S \cap B| \geq 1$}
 \ex \parbox{4.5cm}{Four students are brilliant.}\parbox{6cm}{$|S \cap B | = 4$\footnotemark{}}
 \ex \parbox{4.5cm}{Most students are brilliant.}\parbox{6cm}{$|S \cap B | > |S - B|$; or: $|S \cap B| > 1/2|S|$}
 \ex \parbox{4.5cm}{Few students are brilliant.}\parbox[t]{5.7cm}{$|S \cap B | <$ some contextually defined\\\rule{0pt}{0pt}\hfill number}
@@ -79,8 +79,8 @@ All of the examples in \REF{ex:14.5} involve relations between two sets. We migh
 \ea  \textit{Half as many} guests attended \textit{as} were invited.\\
 {\textbar} $\llbracket$GUEST$\rrbracket$  ${\cap}$ $\llbracket$ATTEND$\rrbracket$  {\textbar}  $= \:$  ½  {\textbar} $\llbracket$GUEST$\rrbracket$  ${\cap}$ $\llbracket$INVITED$\rrbracket$  {\textbar}
 \ex In every {Australian} election from 1967 to 1998, \textit{more} men \textit{than} women voted for the Labor party.\\
-$|\llbracket \text{MAN} \rrbracket \cap  \{x: \langle x, l\rangle \in \llbracket\text{VOTE\_FOR}\rrbracket \}|  >$ \\ 
-$| \llbracket \text{WOMAN} \rrbracket \cap \{x: \langle x, l\rangle \in \llbracket \text{VOTE\_FOR}\rrbracket \}|$
+$|\llbracket \text{MAN} \rrbracket \cap  \{x$: $\langle x, l\rangle \in \llbracket\text{VOTE\_FOR}\rrbracket \}|  >$ \\ 
+$| \llbracket \text{WOMAN} \rrbracket \cap \{x$: $\langle x, l\rangle \in \llbracket \text{VOTE\_FOR}\rrbracket \}|$
 \z \z
 
 
@@ -133,14 +133,14 @@ Our analysis of \textit{all} as denoting a subset relation, \textit{no} as meani
 \z
 
 
-Now we are in a position to understand why these forms work as translations of the English quantifier words. The use of material implication (→) in (\ref{ex:14.10}a) follows from the definition of the subset relation which we presented in \chapref{sec:13}, repeated here in (\ref{ex:14.11}a). The use of logical $\wedge$ ‘and’ in (\ref{ex:14.10}b--c) follows from the definition of set intersection presented in \chapref{sec:13}, repeated here in (\ref{ex:14.11}b).
+Now we are in a position to understand why these forms work as translations of the English quantifier words. The use of material implication ($\rightarrow$) in (\ref{ex:14.10}a) follows from the definition of the subset relation which we presented in \chapref{sec:13}, repeated here in (\ref{ex:14.11}a). The use of logical $\wedge$ ‘and’ in (\ref{ex:14.10}b--c) follows from the definition of set intersection presented in \chapref{sec:13}, repeated here in (\ref{ex:14.11}b).
 
 
 \ea \label{ex:14.11}
 \ea $(A \subseteq B)  \leftrightarrow   \forall x[(x \in A) \rightarrow (x \in B)]$  \hfill [\textsc{subset}] \\
 $(\llbracket \text{MAN} \rrbracket \subseteq \llbracket \text{SNORE} \rrbracket )  \leftrightarrow   \forall x[(x \in \llbracket \text{MAN}\rrbracket ) \rightarrow (x \in \llbracket \text{SNORE} \rrbracket )]$
 \ex  $\forall x[x \in (A \cap B)  \leftrightarrow   ((x \in A) \wedge (x \in B))]$  \hfill [\textsc{intersection}] \\
-($\llbracket \text{MAN}\rrbracket \cap \llbracket \text{SNORE}\rrbracket \neq$ Ø) $\leftrightarrow  \exists x[(x \in \llbracket \text{MAN} \rrbracket) \wedge (x \in \llbracket \text{SNORE} \rrbracket)]$
+($\llbracket \text{MAN}\rrbracket \cap \llbracket \text{SNORE}\rrbracket \neq ∅$) $\leftrightarrow  \exists x[(x \in \llbracket \text{MAN} \rrbracket) \wedge (x \in \llbracket \text{SNORE} \rrbracket)]$
 \z \z
 
 Many other quantifier meanings can also be expressed using the basic predicate logic notation. For example, the NP \textit{four men} could be translated as shown in \REF{ex:14.12}:
@@ -199,9 +199,9 @@ Of course, translations in this format do not tell us what the quantifying deter
 
 \ea \label{ex:14.15}
 \ea \relax [\textit{all} $x$: $P(x)$] $Q(x)  \leftrightarrow   \llbracket P\rrbracket  \subseteq \llbracket Q \rrbracket$ \\
-\ex{} [\textit{no} $x$: $P(x)$] $Q(x)  \leftrightarrow   \llbracket P \rrbracket \cap \llbracket Q \rrbracket =$ Ø \\
-\ex{} [\textit{four} $x$: $P(x)$] $Q(x) \leftrightarrow   | \llbracket P \rrbracket \cap \llbracket Q \rrbracket| =  4$\\
-\ex{} [\textit{most} $x$: $P(x)$] $Q(x)  \leftrightarrow  | \llbracket P \rrbracket \cap \llbracket Q \rrbracket | >  0.5 |\llbracket P \rrbracket|$
+\ex{} [\textit{no} $x$: $P(x)$] $Q(x)  \leftrightarrow   \llbracket P \rrbracket \cap \llbracket Q \rrbracket = ∅$ \\
+\ex{} [\textit{four} $x$: $ P(x)$] $Q(x) \leftrightarrow   | \llbracket P \rrbracket \cap \llbracket Q \rrbracket| =  4$\\
+\ex{} [\textit{most} $x$: $ P(x)$] $Q(x)  \leftrightarrow  | \llbracket P \rrbracket \cap \llbracket Q \rrbracket | >  \text{½} |\llbracket P \rrbracket|$
      \z
 \z
 
@@ -211,13 +211,13 @@ As these definitions show, a quantifying determiner names a relation between two
 
 \ea \label{ex:14.16}
 \ea  \textit{Most students are brilliant}.\\
-{}[\textit{most} $x$: $\text{STUDENT}(x)$] $\text{BRILLIANT}(x)$\\
-$|\llbracket \text{STUDENT} \rrbracket \cap \llbracket \text{BRILLIANT} \rrbracket | > 0.5 | \llbracket \text{STUDENT} \rrbracket|$
+{}[\textit{most} $x$: $ \text{STUDENT}(x)$] $\text{BRILLIANT}(x)$\\
+$|\llbracket \text{STUDENT} \rrbracket \cap \llbracket \text{BRILLIANT} \rrbracket | > \text{½} | \llbracket \text{STUDENT} \rrbracket|$
 \ex \textit{No women snore}.\\
-{}[\textit{no} $x$: $\text{WOMAN}(x)$] $\text{SNORE}(x)$\\
-$\llbracket \text{WOMAN} \rrbracket \cap \llbracket \text{SNORE} \rrbracket =$ Ø\\
+{}[\textit{no} $x$: $ \text{WOMAN}(x)$] $\text{SNORE}(x)$\\
+$\llbracket \text{WOMAN} \rrbracket \cap \llbracket \text{SNORE} \rrbracket = ∅$\\
 \ex   \textit{All brave men are lonely}.\\
-{}[\textit{all} $x$: $\text{MAN}(x) \wedge \text{BRAVE}(x)$] $\text{LONELY}(x)$\\
+{}[\textit{all} $x$: $ \text{MAN}(x) \wedge \text{BRAVE}(x)$] $\text{LONELY}(x)$\\
 $(\llbracket \text{MAN} \rrbracket \cap \llbracket \text{BRAVE} \rrbracket ) \subseteq \llbracket \text{LONELY} \rrbracket$ 
 \z \z
 
@@ -227,11 +227,11 @@ This same procedure applies whether the quantified NP is a subject, object, or o
 
 \ea \label{ex:14.17}
 \ea \textit{John loves all pretty girls.}\\
-{}[\textit{all} $x$: $\text{GIRL}(x) \wedge \text{PRETTY}(x)$] $\text{LOVE}(j,x)$\\
-$(\llbracket \text{GIRL} \rrbracket \cap \llbracket \text{PRETTY} \rrbracket) \subseteq  \{x: \langle j,x\rangle  \in \llbracket \text{LOVE} \rrbracket \}$
+{}[\textit{all} $x$: $ \text{GIRL}(x) \wedge \text{PRETTY}(x)$] $\text{LOVE}(j,x)$\\
+$(\llbracket \text{GIRL} \rrbracket \cap \llbracket \text{PRETTY} \rrbracket) \subseteq  \{x$: $ \langle j,x\rangle  \in \llbracket \text{LOVE} \rrbracket \}$
 \ex \textit{Susan has married a cowboy who teases her.}\\
-{}[\textit{an} $x$: $\text{COWBOY}(x) \wedge \text{TEASE}(x,s)$] $\text{MARRY}(s,x)$\\
-$(\llbracket \text{COWBOY} \rrbracket \cap \{x: \langle x,s \rangle \in  \llbracket \text{TEASE} \rrbracket \}) \cap  \{y: \langle s,y \rangle  \in \llbracket \text{MARRY} \rrbracket  \} \neq$ Ø
+{}[\textit{an} $x$: $ \text{COWBOY}(x) \wedge \text{TEASE}(x,s)$] $\text{MARRY}(s,x)$\\
+$(\llbracket \text{COWBOY} \rrbracket \cap \{x$: $ \langle x,s \rangle \in  \llbracket \text{TEASE} \rrbracket \}) \cap  \{y$: $ \langle s,y \rangle  \in \llbracket \text{MARRY} \rrbracket  \} \neq \emptyset$
 \z \z
 
 
@@ -452,7 +452,7 @@ We will mention just one more possible source of scope ambiguity, namely the int
 \ea \label{ex:14.39}
 \textit{John thinks that he has visited every state.}\\
 \ea \label{ex:14.}  [\textit{all} $x$: $\text{STATE}(x)$] $(\text{THINK}(j, \text{VISIT}(j,x)))$\\
-\ex  $\text{THINK}(j, [\textit{all } x: \text{STATE}(x)]$ $\text{VISIT}(j,x))$
+\ex  $\text{THINK}(j, [\textit{all } x$: $\text{STATE}(x)]$ $\text{VISIT}(j,x))$
                        \z
 \z
 

@@ -160,7 +160,7 @@ We have said that one important goal of logic is to provide a systematic account
 \section{Propositional logic}\label{sec:4.3}
 \subsection{Propositional operators}\label{sec:4.3.1}
 
-In \sectref{sec:4.1} we introduced the logical negation operator “¬”. (An alternate symbol for this is the tilde, “{\textasciitilde}”; so in logical notation, ‘not $p$’ can be written as either $\neg p$ or {\textasciitilde}\textit{p}.) Logical negation is referred to as a “one-place” operator, because it combines with a single proposition to form a new proposition. The other basic operators of propositional logic are referred to as “two-place” operators, because they are used to combine two propositions to form a new complex proposition. The basic two-place operators include $\wedge$ ‘and’, $\vee$ ‘or’, and the \textsc{material} \textsc{implication} operator → (generally read as ‘if…then…’). If \textit{p} and \textit{q} are well-formed propositions, then the formulae $p \wedge q$ ‘$p$ and $q$’, $p \vee q$ ‘$p$ or $q$’, and \textit{p→q} ‘if $p$, (then) $q$’ are also well-formed propositions. (The \textit{p} and \textit{q} in these formulae are \textsc{variables} which represent propositions.)
+In \sectref{sec:4.1} we introduced the logical negation operator “¬”. (An alternate symbol for this is the tilde, “{\textasciitilde}”; so in logical notation, ‘not $p$’ can be written as either $\neg p$ or {\textasciitilde}\textit{p}.) Logical negation is referred to as a “one-place” operator, because it combines with a single proposition to form a new proposition. The other basic operators of propositional logic are referred to as “two-place” operators, because they are used to combine two propositions to form a new complex proposition. The basic two-place operators include $\wedge$ ‘and’, $\vee$ ‘or’, and the \textsc{material} \textsc{implication} operator $\rightarrow$ (generally read as ‘if…then…’). If \textit{p} and \textit{q} are well-formed propositions, then the formulae $p \wedge q$ ‘$p$ and $q$’, $p \vee q$ ‘$p$ or $q$’, and $p \rightarrow q$ ‘if $p$, (then) $q$’ are also well-formed propositions. (The \textit{p} and \textit{q} in these formulae are \textsc{variables} which represent propositions.)
 
 
 
@@ -244,14 +244,14 @@ In spoken English we often use the word \textit{or} to mean ‘either … or …
 \end{tabular}
 }
 
-The \textsc{material} \textsc{implication} operator (→) is defined by the truth table in \REF{ex:4.10}. (The formula \textit{p}→\textit{q} can be read as \textit{if p (then) q}, \textit{p only if q}, or \textit{q if p}.) The truth table says that \textit{p}→\textit{q} is defined to be false just in case \textit{p} is true but \textit{q} is false; it is true in all other situations.
+The \textsc{material} \textsc{implication} operator ($\rightarrow$) is defined by the truth table in \REF{ex:4.10}. (The formula $p \rightarrow q$ can be read as \textit{if p (then) q}, \textit{p only if q}, or \textit{q if p}.) The truth table says that $p \rightarrow q$ is defined to be false just in case \textit{p} is true but \textit{q} is false; it is true in all other situations.
 
 
 \eabox{ \label{ex:4.10}
 \begin{tabular}[t]{>{\sffamily}c>{\sffamily}c>{\sffamily}c}
 \lsptoprule
 \tablehead{
- p & q & p\LARGE→\normalsize q\\\midrule
+ p & q & p $\rightarrow$ q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily F\\
@@ -265,14 +265,14 @@ In order to get an intuitive sense of what this definition means, suppose that a
 
 
 
-For convenience we will introduce one additional operator here, which is referred to as the \textsc{biconditional} operator ($\leftrightarrow$). The formula $p\leftrightarrow q$ (read as ‘p if and only if q’) is a short-hand or abbreviation for: (\textit{p→q}) $\wedge$ (\textit{q→p}). The biconditional operator is defined by the truth table in \REF{ex:4.11}:
+For convenience we will introduce one additional operator here, which is referred to as the \textsc{biconditional} operator ($\leftrightarrow$). The formula $p\leftrightarrow q$ (read as ‘p if and only if q’) is a short-hand or abbreviation for: ($p\rightarrow q$) $\wedge$ ($q\rightarrow p$). The biconditional operator is defined by the truth table in \REF{ex:4.11}:
 
 
 \eabox{ \label{ex:4.11}
 \begin{tabular}[t]{>{\sffamily}c>{\sffamily}c>{\sffamily}c}
 \lsptoprule
 \tablehead{
- p & q & p$\leftrightarrow $q\\\midrule
+ p & q & p $\leftrightarrow $ q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily F\\
@@ -365,14 +365,14 @@ Suppose we change the \textit{or} in the previous example to \textit{and}. This 
 \end{tabular}
 }
 
-Now let us consider a slightly more complex example: $((p\vee q) \wedge (\neg p)) \rightarrow q$. To construct a truth table which will allow us to evaluate this formula, we begin by putting the basic propositions \textit{p} and \textit{q} in the left-hand columns (1 \& 2). We put the complete formula that we want to prove in the far right column (6). We introduce a new column for each constituent part of the complete formula and calculate truth values for each cell, building from left to right, as seen in \REF{ex:4.14}. First, columns 1 \& 2 are used to construct column 3, based on the truth table for {$\vee$}. Next, column 4 is calculated from column 1. Columns 3 \& 4 are used to construct column 5, based on the truth table for {$\wedge$}. Finally, columns 2 \& 5 are used to construct column 6, based on the truth table for →.
+Now let us consider a slightly more complex example: $((p\vee q) \wedge (\neg p)) \rightarrow q$. To construct a truth table which will allow us to evaluate this formula, we begin by putting the basic propositions \textit{p} and \textit{q} in the left-hand columns (1 \& 2). We put the complete formula that we want to prove in the far right column (6). We introduce a new column for each constituent part of the complete formula and calculate truth values for each cell, building from left to right, as seen in \REF{ex:4.14}. First, columns 1 \& 2 are used to construct column 3, based on the truth table for {$\vee$}. Next, column 4 is calculated from column 1. Columns 3 \& 4 are used to construct column 5, based on the truth table for {$\wedge$}. Finally, columns 2 \& 5 are used to construct column 6, based on the truth table for $\rightarrow$.
 
 
 \eabox{\label{ex:4.14}%
 \begin{tabular}[t]{*{6}{>{\sffamily}c}}
 \lsptoprule
 \tablehead{ 1 & 2 & 3 & 4 & 5 & 6 \\
- p & q & p$\vee$q & ¬p & (p$\vee$q)$\wedge$¬p & ((p$\vee$q)$\wedge$¬p)\LARGE→\normalsize q\\\midrule
+ p & q & p$\vee$q & ¬p & (p$\vee$q)$\wedge$¬p & ((p$\vee$q)$\wedge$¬p) $\rightarrow$ q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T & \sffamily F & \sffamily F & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily T & \sffamily F & \sffamily F & \sffamily T\\
@@ -413,7 +413,7 @@ As we noted in an earlier chapter, tautologies are not very informative because 
 \begin{tabular}[t]{*{5}{>{\sffamily}c}}
 \lsptoprule
 \tablehead{%
- p & q & p\LARGE→\normalsize q & (p\LARGE→\normalsize q) $\wedge$ p & ((p\LARGE→\normalsize q) $\wedge$ p)\LARGE→\normalsize q\\\midrule
+ p & q & p $\rightarrow$ q & (p $\rightarrow$ q) $\wedge$ p & ((p $\rightarrow$ q) $\wedge$ p) $\rightarrow$ q\\\midrule
 }
  \sffamily T & \sffamily T & \sffamily T & \sffamily T & \sffamily T\\
  \sffamily T & \sffamily F & \sffamily F & \sffamily F & \sffamily T\\
@@ -591,7 +591,7 @@ $\exists x[\text{MAN}(x) \wedge \text{SNORE}(x)]$
 $\neg\exists x[\text{CROCODILE}(x) \wedge \text{WARM-BLOODED}(x)]$
 \z \z
 
-Notice that \textit{all} is translated differently from \textit{some} or \textit{no}. The universal quantifier is paired with material implication (→), while the existential quantifier introduces an \textit{and} statement. We will discuss the reason for this difference in more detail in Unit~\ref{unit:4}, but the fundamental issue is that we want our logical translation to have the same interpretation as the English sentence it is meant to represent. We might interpret the formula in (\ref{ex:4.29}a) roughly as follows: “Choose something within the universe of discourse. We will temporarily call that thing ‘$x$’. Is $x$ a student? If so, then $x$ will also be weary.” This long-winded paraphrase seems to describe the same state of affairs as the original sentence \textit{All students} \textit{are weary}. However, if we replace → with $\wedge$, we get the formula in \REF{ex:4.30}, which means something very different.
+Notice that \textit{all} is translated differently from \textit{some} or \textit{no}. The universal quantifier is paired with material implication ($\rightarrow$), while the existential quantifier introduces an \textit{and} statement. We will discuss the reason for this difference in more detail in Unit~\ref{unit:4}, but the fundamental issue is that we want our logical translation to have the same interpretation as the English sentence it is meant to represent. We might interpret the formula in (\ref{ex:4.29}a) roughly as follows: “Choose something within the universe of discourse. We will temporarily call that thing ‘$x$’. Is $x$ a student? If so, then $x$ will also be weary.” This long-winded paraphrase seems to describe the same state of affairs as the original sentence \textit{All students} \textit{are weary}. However, if we replace $\rightarrow$ with $\wedge$, we get the formula in \REF{ex:4.30}, which means something very different.
 
 \ea \label{ex:4.30}
 $\forall x[\text{STUDENT}(x) \wedge \text{WEARY}(x)]$\\
