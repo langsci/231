@@ -1,7 +1,10 @@
 \documentclass[output=book,
 %   colorlinks,citecolor=brown,
-%   draft,draftmode,
+%   draft
+% ,draftmode,
 %   showindex, 
+tblseight,
+copyright=CC-BY-SA
 		  ]{langscibook}    
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -11,40 +14,14 @@
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
+\input{localcommands.tex} 
 \bibliography{localbibliography} 
  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% \includeonly{ 
-% % chapters/01,
-% % chapters/02,
-% % chapters/03,
-% % chapters/04,
-% % chapters/05,
-% % chapters/06,
-% % chapters/07,
-% chapters/08,
-% chapters/09,
-% % chapters/10,
-% % chapters/11,
-% % chapters/12,
-% % chapters/13,
-% % chapters/14,
-% % chapters/15,
-% % chapters/16,
-% % chapters/17,
-% chapters/18,
-% chapters/19,
-% chapters/20,
-% chapters/21,
-% chapters/22
-% }
 \begin{document} 
- 
-\input{localcommands.tex} 
- 
 
 \maketitle                
 \frontmatter 
@@ -99,8 +76,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Backmatter                       %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\sloppy
 \input{localseealso.tex}  
 \input{backmatter.tex} 
 \end{document} 
- 
