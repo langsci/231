@@ -160,7 +160,7 @@ We have said that one important goal of logic is to provide a systematic account
 \section{Propositional logic}\label{sec:4.3}
 \subsection{Propositional operators}\label{sec:4.3.1}
 
-In \sectref{sec:4.1} we introduced the logical negation operator “¬”. (An alternate symbol for this is the tilde, “{\textasciitilde}”; so in logical notation, ‘not $p$’ can be written as either $\neg p$ or {\textasciitilde}\textit{p}.) Logical negation is referred to as a “one-place” operator, because it combines with a single proposition to form a new proposition. The other basic operators of propositional logic are referred to as “two-place” operators, because they are used to combine two propositions to form a new complex proposition. The basic two-place operators include $\wedge$ ‘and’, $\vee$ ‘or’, and the \textsc{material} \textsc{implication} operator → (generally read as ‘if…then…’). If \textit{p} and \textit{q} are well-formed propositions, then the formulae $p \wedge q$ ‘$p$ and $q$’, $p \vee q$ ‘$p$ or $q$’, and $p \rightarrow q$ ‘if $p$, (then) $q$’ are also well-formed propositions. (The \textit{p} and \textit{q} in these formulae are \textsc{variables} which represent propositions.)
+In \sectref{sec:4.1} we introduced the logical negation operator “¬”. (An alternate symbol for this is the tilde, “{\textasciitilde}”; so in logical notation, ‘not $p$’ can be written as either $\neg p$ or {\textasciitilde}\textit{p}.) Logical negation is referred to as a “one-place” operator, because it combines with a single proposition to form a new proposition. The other basic operators of propositional logic are referred to as “two-place” operators, because they are used to combine two propositions to form a new complex proposition. The basic two-place operators include $\wedge$ ‘and’, $\vee$ ‘or’, and the \textsc{material} \textsc{implication} operator → (generally read as ‘if…then…’). If \textit{p} and \textit{q} are well-formed propositions, then the formulae $p \wedge q$ ‘$p$ and $q$’, $p \vee q$ ‘$p$ or $q$’, and \textit{p→q} ‘if $p$, (then) $q$’ are also well-formed propositions. (The \textit{p} and \textit{q} in these formulae are \textsc{variables} which represent propositions.)
 
 
 
@@ -265,7 +265,7 @@ In order to get an intuitive sense of what this definition means, suppose that a
 
 
 
-For convenience we will introduce one additional operator here, which is referred to as the \textsc{biconditional} operator ($\leftrightarrow$). The formula $p\leftrightarrow q$ (read as ‘p if and only if q’) is a short-hand or abbreviation for: $(p\rightarrow q) \wedge (q \rightarrow p)$. The biconditional operator is defined by the truth table in \REF{ex:4.11}:
+For convenience we will introduce one additional operator here, which is referred to as the \textsc{biconditional} operator ($\leftrightarrow$). The formula $p\leftrightarrow q$ (read as ‘p if and only if q’) is a short-hand or abbreviation for: (\textit{p→q}) $\wedge$ (\textit{q→p}). The biconditional operator is defined by the truth table in \REF{ex:4.11}:
 
 
 \eabox{ \label{ex:4.11}
