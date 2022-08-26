@@ -4,7 +4,7 @@
 - Publication Date: 2022
 - Series: Textbooks in Language Sciences
 - Volume: 5
-- Edition: Second corrected and slightly revised edition
+- Edition: Third edition
 ## Description
 [Book page on langsci-press.org](https://langsci-press.org/catalog/book/359)
 ## License
